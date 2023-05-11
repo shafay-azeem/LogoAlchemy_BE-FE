@@ -27,6 +27,11 @@ const NavigationBar = () => {
     });
   };
 
+  const portfolio = () => {
+    navigate({
+      pathname: `/Portfolio`,
+    });
+  };
 
   const logoRoute2 = (routeId) => {
     navigate({
@@ -102,7 +107,7 @@ const NavigationBar = () => {
               </NavDropdown>
 
               <Nav.Link
-                href="#pricing"
+                onClick={portfolio}
                 className="font-face-hm"
                 style={{ fontSize: "15px", paddingRight: "2rem" }}
               >
@@ -210,20 +215,7 @@ const NavigationBar = () => {
             >
               Home
             </Nav.Link>
-            {/* 
-            <NavDropdown
-              title="Service"
-              id="collasible-nav-dropdown"
-              className="li font-face-hm"
-              style={{ fontSize: "15px", paddingRight: "2rem" }}
-            >
-              <NavDropdown.Item onClick={logoRoute}>Logo</NavDropdown.Item>
-              <NavDropdown.Item onClick={illustration}>
-                Illustration
-              </NavDropdown.Item>
-              <NavDropdown.Item onClick={branding}>Branding</NavDropdown.Item>
-              <NavDropdown.Divider />
-            </NavDropdown> */}
+
             <NavDropdown
               title="Service"
               id="collasible-nav-dropdown"
@@ -233,7 +225,7 @@ const NavigationBar = () => {
               {renderDropdownItems()}
             </NavDropdown>
             <Nav.Link
-              href="#pricing"
+              onClick={portfolio}
               className="font-face-hm"
               style={{ fontSize: "15px", paddingRight: "2rem" }}
             >
