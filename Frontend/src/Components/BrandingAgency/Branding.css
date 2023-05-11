@@ -1,0 +1,159 @@
+.brandingBanner {
+  background-image: url("../../assets/brandingBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brandingContainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .brandingContainer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .brandingContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.brandingImg {
+  height: auto;
+  background-image: url("../../assets/BrandingText.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 500px;
+  text-align: center;
+}
+
+.brandingChild {
+  animation: upndown 2s linear infinite alternate;
+}
+
+@media (min-width: 1024px) {
+  .brandingImg {
+    background-size: 300px;
+    background-position: top 90px left 70px;
+  }
+
+  .brandingChild {
+    margin-right: -230px;
+    width: 250px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .brandingImg {
+    background-size: 280px;
+    background-position: center bottom 10px;
+  }
+
+  .brandingChild {
+    /* margin-right: -150px; */
+    margin-right: -80px;
+    width: 200px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .brandingImg {
+    background-size: 280px;
+    background-position: center bottom 10px;
+  }
+
+  .brandingChild {
+    margin-right: -150px;
+    width: 200px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  .brandingImg {
+    background-size: 400px;
+    background-position: center bottom 15px;
+  }
+
+  .brandingChild {
+    margin-right: -230px;
+    width: 270px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .brandingImg {
+    background-size: 300px;
+    background-position: top 90px left 70px;
+  }
+
+  .brandingChild {
+    margin-right: -230px;
+    width: 250px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .brandingImg {
+    background-size: 300px;
+    background-position: top 90px left 70px;
+  }
+
+  .brandingChild {
+    margin-right: -230px;
+    width: 250px;
+  }
+}
+
+.brandingTitle {
+  color: white;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .brandingTitle {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .brandingTitle {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+}
+
+
+
+
+/* =========BRANDING AGENCY HELP US SECTION============ */
+
+.BrandinghelpUsSection h5 {
+  text-align: start;
+  color: #c80228;
+}
+
+.BrandinghelpUsSection h2 {
+  text-align: start;
+  color: black;
+}
+
+.BrandinghelpUsSection h2 span {
+  color: #c80228;
+}
+
+.BrandinghelpUsSection p {
+  line-height: 1.1;
+  text-align: start;
+}

@@ -1,0 +1,66 @@
+.Cartoon {
+    background-image: url('../../assets/fairy-fox-alchemist-keep-potion-bottle-illustration-generative-ai.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 600px; */
+    max-height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 35px;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.Cartoon:hover {
+    opacity: 0.9;
+}
+
+.Cartoon:hover p {
+    opacity: 1;
+}
+
+.Cartoon:hover h2 {
+    opacity: 1;
+}
+
+.Cartoon:hover hr {
+    opacity: 1;
+}
+
+.xyz {
+    background-image: url('../../assets/a.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 35px;
+    cursor: pointer;
+}
+
+
+.Cartoon p {
+    width: 70%;
+    color: white;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.Cartoon h2 {
+    color: white;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.Cartoon hr {
+    color: white;
+    opacity: 0;
+    transition: all 0.2s linear;
+}

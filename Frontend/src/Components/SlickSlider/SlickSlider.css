@@ -1,0 +1,131 @@
+/* SLIDERRR */
+
+.slick-slide.slick-center .Myclass {
+  transform: scale(1.1);
+  background-color: 'red';
+}
+
+.slick-dots li button:before {
+  font-size: 18px !important;
+}
+
+.Myclass {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 470px;
+  padding: 40px;
+}
+
+.Main {
+  background-image: url('../../assets/bg0.png');
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+/* .My-Card {
+  perspective: 1000px;
+  border-style: solid;
+  border: 2px solid green;
+  border-image: linear-gradient(#ba1432, #120c16, #236090) 1;
+  border-radius: 90px !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+} */
+
+.My-Card {
+  position: relative;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.My-Card .My-Card-Inner {
+  position: relative;
+  background-color: white;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 15px 25px;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.My-Card ::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 101%;
+  height: 101%;
+  z-index: -1;
+  border-radius: 15px;
+  margin: -6px;
+  background: linear-gradient(to right, #b91532, #9e3040, #9b3342, #8e4049, #755a56, #5f7061, #48876d, #3c9373, #1f8c8a, #207e8c, #226e8e, #236190, #245891, #273c95, #273b95);
+}
+
+@media screen and (max-width: 911px) {
+
+  .My-Card ::before {
+    background: none;
+  }
+}
+
+.custom-border-radius {
+  border-radius: 5px !important;
+}
+
+.red {
+  color: #ba1432;
+}
+
+.black {
+  color: black;
+}
+
+.black-title {
+  color: black;
+}
+
+.red-title {
+  color: #ba1432;
+}
+
+.slider-container {
+  overflow-x: hidden;
+}
+
+.heading {
+  font-size: 18px;
+}
+
+.description {
+  text-align: start;
+  width: 90%;
+}
+
+/* .slick-slide:not(.slick-current) {
+  opacity: 0.5;
+} */
+
+/* make center card more visible */
+.core-values .slick-slide.slick-center {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 280px) {
+
+  .My-Card ::before {
+    display: none;
+  }
+}
+
+/* .core-values .slick-center {
+  transform: scale(1.1);
+  margin-right: 20px;
+  margin-left: 20px;
+  z-index: 1;
+} */

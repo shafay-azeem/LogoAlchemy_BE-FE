@@ -1,0 +1,28 @@
+.blog-detail-header {
+    background-image: url('../../assets/bloddetailbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blod-detail-banner {
+    background-image: url('../../assets/blog\ inner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+    .blog-detail-header {
+        height: 400px;
+    }
+}
+
+.blog-detail-cards {
+    background-image: url('../../assets/blog.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

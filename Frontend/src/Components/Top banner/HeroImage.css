@@ -1,0 +1,312 @@
+/* Navbar */
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.navbar-bg {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Default styles for the nav-link class */
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../../assets/menuIconWhite.png") !important;
+}
+
+/* Media query for mobile and tablet screens */
+@media only screen and (max-width: 991px) {
+  .nav-link {
+    text-align: start;
+    margin-top: 10px;
+  }
+}
+
+/* Navbar */
+
+.myClass {
+  background-image: url("../../assets/Vector\ Smart\ Object.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.column1 {
+  padding-right: 50px;
+}
+
+.column1 h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.column1 p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.column1 button {
+  width: 150px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border-style: none;
+  color: blue;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.Child {
+  margin-top: -40px;
+}
+
+/* Header content responsive */
+@media screen and (max-width: 980px) {
+  .column2 img {
+    width: 350px;
+  }
+
+  .column1 h1 {
+    font-size: 40px;
+  }
+
+  .column1 p {
+    font-size: 17px;
+  }
+
+  .row {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column1 h1 {
+    font-size: 35px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .column1 {
+    padding: 30px;
+  }
+}
+
+/* -------------BANNER----------- */
+
+.title-image {
+  background-image: url("../../assets/line.png");
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+#title {
+  color: white;
+  font-size: 23px;
+}
+
+#description {
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.Upper p span {
+  color: #ba1432;
+}
+
+.Main-Banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .Main-Banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Main-Banner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.btn {
+  background: linear-gradient(32.0386deg, #b91432, #120c16, #207a8c, #23608f);
+  border-radius: 30px;
+  border-color: transparent;
+}
+
+.btn :hover {
+  border-color: transparent;
+}
+
+.second-btn {
+  background-image: url("../../assets/open\ button.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* BANNER TITLE*/
+.bannerTitle {
+  color: white;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerTitle {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bannerTitle {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+}
+
+/* AGENCY BUTTON */
+.my-custom-class {
+  /* default styles */
+  border-radius: 20px;
+  padding: 3px 15px 3px 15px;
+  font-size: 16px;
+
+  /* responsive styles */
+  @media (max-width: 767px) {
+    /* styles for devices with max width of 767px */
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* styles for devices with min width of 768px and max width of 991px */
+    font-size: 15px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* styles for devices with min width of 992px and max width of 1199px */
+    font-size: 16px;
+  }
+
+  @media (min-width: 1200px) {
+    /* styles for devices with min width of 1200px */
+    font-size: 18px;
+  }
+}
+
+/* CUSTOM BUTTON */
+/* Mobile devices */
+@media (max-width: 576px) {
+  .cusBtn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 992px) {
+  .cusBtn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Desktops and laptops */
+@media (min-width: 992px) {
+  .cusBtn {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+/* CustomButtonArrow */
+.CustomButtonArrow {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .CustomButtonArrow {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .CustomButtonArrow {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .CustomButtonArrow {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}
+
+/* GetQuickBtn */
+
+.GetQuickBtn {
+  border-radius: 40px;
+  padding: 8px 20px;
+  font-size: 15px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 991px) {
+  .GetQuickBtn {
+    border-radius: 30px;
+    padding: 6px 16px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .GetQuickBtn {
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 992px) {
+  .GetQuickBtn {
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
+
+/* GetQuickBtn */
+@media (min-width: 1024px) {
+  .child {
+    margin-top: -100px;
+    width: 500px;
+  }
+}

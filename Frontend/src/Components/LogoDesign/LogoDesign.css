@@ -1,0 +1,44 @@
+.logoDesignBanner {
+  background-image: url("../../assets/logoDesignBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logoDesignContainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .logoDesignContainer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logoDesignContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.logoDesignTitle {
+  color: white;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .logoDesignTitle {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logoDesignTitle {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+}

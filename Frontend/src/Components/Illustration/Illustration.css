@@ -1,0 +1,249 @@
+.illustrationBanner {
+  background-image: url("../../assets/illustrationHeader.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.illustrationContainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .illustrationContainer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .illustrationContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Illustration Img */
+.illustrationImg {
+  height: auto;
+  background-image: url("../../assets/illustrationText.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 500px;
+  text-align: center;
+}
+
+.illustrationChild {
+  animation: upndown 2s linear infinite alternate;
+}
+
+@media (min-width: 1024px) {
+  .illustrationImg {
+    background-size: 250px;
+    background-position: top 70px left 40px;
+  }
+
+  .illustrationChild {
+    margin-right: -230px;
+    width: 210px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .illustrationImg {
+    background-size: 260px;
+    background-position: left 15px bottom 1px;
+  }
+
+  .illustrationChild {
+    /* margin-right: -210px; */
+    margin-right: -120px;
+    width: 150px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .illustrationImg {
+    background-size: 260px;
+    background-position: left 15px bottom 1px;
+  }
+
+  .illustrationChild {
+    margin-right: -210px;
+    width: 150px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  .illustrationImg {
+    background-size: 450px;
+    background-position: left 22px bottom 15px;
+  }
+
+  .illustrationChild {
+    margin-right: -380px;
+    width: 270px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .illustrationImg {
+    background-size: 250px;
+    background-position: top 70px left 40px;
+  }
+
+  .illustrationChild {
+    margin-right: -230px;
+    width: 210px;
+  }
+}
+
+.illustrationTitle {
+  color: white;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .illustrationTitle {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .illustrationTitle {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+}
+
+/* SLIDER STYLING  */
+.Second-Slider {
+  background-image: url("../../assets/sliderbackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slick-slide:not(.slick-current) {
+  opacity: 1;
+}
+
+.slick-slide .illusCardDesign {
+  /* border: 2px solid red;
+  padding: 15px;
+  border-radius: 10px; */
+  position: relative;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.illu {
+  position: relative;
+  background-color: white;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  margin: auto;
+  padding: 35px;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+}
+
+
+.slick-slide .illusCardDesign::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 15px;
+  margin: -6px;
+  background: linear-gradient(to right, #b91532, #9e3040, #9b3342, #8e4049, #755a56, #5f7061, #48876d, #3c9373, #1f8c8a, #207e8c, #226e8e, #236190, #245891, #273c95, #273b95);
+}
+
+
+
+.slick-dots {
+  margin: 0;
+}
+
+.Second-Slider {
+  overflow-x: hidden;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+/* SLIDER STYLING  */
+
+/* ILLUSTRATION DESIGN CARD STYLING  */
+.illusCardDesign {
+  padding: 5px !important;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.illusCardDesign p {
+  width: 95%;
+  line-height: 1.2;
+}
+
+.illusSection {
+  overflow-y: hidden;
+}
+
+/* ILLUSTRATION DESIGN CARD STYLING  */
+
+/* ILLUSTRATION BUTTONS  */
+
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* --------HELP US SECTION-------- */
+
+.buttonParent {
+  display: flex;
+}
+
+.helpUsSection h5 {
+  text-align: end;
+  color: #c80228;
+}
+
+.helpUsSection h2 {
+  text-align: end;
+  color: black;
+}
+
+.helpUsSection h2 span {
+  color: #c80228;
+}
+
+.helpUsSection p {
+  line-height: 1.1;
+  text-align: end;
+}

@@ -1,0 +1,51 @@
+.CustomMultiCards {
+    background-image: url('../../assets/MultiCardbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: white; */
+}
+
+
+.MultiSection {
+    position: relative;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.MultiSection .Multi-inner {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.MultiSection::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 15px;
+    margin: -6px;
+    background: linear-gradient(to right, #b91532, #9e3040, #9b3342, #8e4049, #755a56, #5f7061, #48876d, #3c9373, #1f8c8a, #207e8c, #226e8e, #236190, #245891, #273c95, #273b95);
+}
+
+@media screen and (max-width: 375px) {
+    .title-red {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .MultiSection span {
+        font-size: 15px;
+    }
+}

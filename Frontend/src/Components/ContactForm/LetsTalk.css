@@ -1,0 +1,14 @@
+.MainInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 280px) {
+
+    .inner-Heading {
+        font-size: 15px;
+    }
+}

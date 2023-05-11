@@ -1,0 +1,49 @@
+.how-section1 h4 {
+  font-size: 40px;
+  color: red;
+}
+
+.how-section1 .subheading {
+  color: #3931af;
+  font-size: 20px;
+}
+
+.how-section1 .row {
+  margin-top: 8%;
+}
+
+.how-img {
+  text-align: center;
+}
+
+.how-img img {
+  width: 40%;
+}
+
+.digital-service {
+  background-image: url('../../assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+}
+
+.red {
+  color: #d40e2f;
+}
+
+.white {
+  color: white;
+}
+
+.Learn-More {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* =============MEDIA QUERY========== */
+
+@media screen and (max-width: 390px) {
+  .Shafay {
+    margin-bottom: 20px;
+  }
+}

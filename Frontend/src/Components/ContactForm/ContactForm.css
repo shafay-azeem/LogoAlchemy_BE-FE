@@ -1,0 +1,129 @@
+.fieldwrap.inputfield {
+  padding: 2.5px;
+  position: relative;
+}
+
+.fieldwrap.textarea {
+  position: relative;
+  padding: 2px 2px 4px;
+  border-radius: 25px;
+}
+
+.fieldwrap.textarea textarea {
+  position: relative;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 100%;
+  display: block;
+}
+
+.fieldwrap.inputfield input {
+  position: relative;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.fieldwrap textarea {
+  z-index: 2;
+  border-radius: 30px !important;
+}
+
+.fieldwrap.inputfield:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(to right,
+      #b91532,
+      #9e3040,
+      #9b3342,
+      #8e4049,
+      #755a56,
+      #5f7061,
+      #48876d,
+      #3c9373,
+      #1f8c8a,
+      #207e8c,
+      #226e8e,
+      #236190,
+      #245891,
+      #273c95,
+      #273b95);
+}
+
+.fieldwrap.textarea:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  border-radius: 30px;
+  background: linear-gradient(to right,
+      #b91532,
+      #9e3040,
+      #9b3342,
+      #8e4049,
+      #755a56,
+      #5f7061,
+      #48876d,
+      #3c9373,
+      #1f8c8a,
+      #207e8c,
+      #226e8e,
+      #236190,
+      #245891,
+      #273c95,
+      #273b95);
+}
+
+/* =========== yours start ----------- */
+#formtext {
+  border-radius: 30px;
+  border: 1.8px solid;
+  border-image: linear-gradient(to right,
+      #b91532,
+      #9e3040,
+      #9b3342,
+      #8e4049,
+      #755a56,
+      #5f7061,
+      #48876d,
+      #3c9373,
+      #1f8c8a,
+      #207e8c,
+      #226e8e,
+      #236190,
+      #245891,
+      #273c95,
+      #273b95);
+  border-image-slice: 1;
+}
+
+#formtext:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
+.red {
+  color: #ba1432;
+  font-weight: bold;
+}
+
+.black {
+  color: black;
+}
+
+.inner-Contact p {
+  font-size: 20px;
+}

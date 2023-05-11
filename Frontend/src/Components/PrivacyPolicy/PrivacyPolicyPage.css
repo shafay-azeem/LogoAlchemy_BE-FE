@@ -1,0 +1,26 @@
+.page-header {
+  background-image: url('../../assets/Vector\ Smart\ Object.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -100px; */
+
+}
+
+/* .page-heading  {
+  position: absolute;
+} */
+
+/* .page-header nav{
+  background-image: url('../../assets/Vector\ Smart\ Object.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.page-heading {
+  margin-top: 70px;
+}

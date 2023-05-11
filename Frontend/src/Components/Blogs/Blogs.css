@@ -1,0 +1,53 @@
+.Blog {
+    background-image: url('../../assets/BlogBanner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Blog-img {
+    border-radius: 20px;
+}
+
+.Icon-Box {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Icon-Box-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content-heading {
+    color: white;
+}
+
+.Content {
+    /* width: 99% !important; */
+    /* background-color: red; */
+}
+
+.noScroll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.slick-slide.slick-center {
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 280px) {
+
+    .my-title {
+        font-size: 12px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+}

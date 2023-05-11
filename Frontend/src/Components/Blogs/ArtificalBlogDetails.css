@@ -1,0 +1,10 @@
+.Artifical-blog-detail-header {
+    background-image: url('../../assets/image\ open\ ai.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

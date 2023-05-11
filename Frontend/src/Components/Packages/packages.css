@@ -1,0 +1,33 @@
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* overflow: hidden; */
+}
+
+.card-content {
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card-scrollable-content {
+    height: 100%;
+    /* overflow-y: scroll; */
+}
+
+.card-scrollable-content::-webkit-scrollbar {
+    width: 10px;
+    background-color: #be3f3f;
+}
+
+.card-scrollable-content::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.card-scrollable-content::-webkit-scrollbar-thumb:hover {
+    background-color: green;
+}

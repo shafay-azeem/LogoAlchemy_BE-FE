@@ -1,0 +1,10 @@
+.blog-identity-header {
+    background-image: url('../../assets/Untitled-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

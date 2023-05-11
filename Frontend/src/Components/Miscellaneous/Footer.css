@@ -1,0 +1,13 @@
+.Footer {
+    background-image: url("../../assets/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul {
+    color: white;
+}

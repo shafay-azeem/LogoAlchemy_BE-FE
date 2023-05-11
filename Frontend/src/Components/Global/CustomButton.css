@@ -1,0 +1,157 @@
+button.learn-more {
+  position: relative;
+  padding: 0 10px 0 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  line-height: 2.5;
+  z-index: 5;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+button.learn-more span {
+  position: relative;
+  z-index: 10;
+}
+
+button.learn-more:before {
+  content: "";
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: linear-gradient(to right,
+      #c9011b,
+      #d20522,
+      #be0825,
+      #91112a,
+      #76192f,
+      #542638,
+      #433040,
+      #373847,
+      #2a4857,
+      #205261,
+      #19606f,
+      #166885,
+      #1b688c,
+      #236090,
+      #235c8e);
+  border-radius: 1.625rem;
+  transition: all 0.45s linear;
+  z-index: 1;
+}
+
+button.learn-more:after {
+  content: " > ";
+  position: absolute;
+  left: 0;
+  font-size: 30px;
+  color: #fff;
+  z-index: 2;
+  line-height: 1.6;
+  text-align: center;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+button.learn-more:hover:before {
+  width: 100%;
+  padding: 0 5px 0 0;
+}
+
+
+
+/* -----GRADIENT BUTTON CSS ------- */
+
+.gradiantButton {
+  border: none;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(to right,
+      #c9011b,
+      #d20522,
+      #be0825,
+      #91112a,
+      #76192f,
+      #542638,
+      #433040,
+      #373847,
+      #2a4857,
+      #205261,
+      #19606f,
+      #166885,
+      #1b688c,
+      #236090,
+      #235c8e);
+  border-radius: 1.625rem;
+}
+
+.hoverBtn {
+  position: relative;
+  padding: 2px;
+  border: none;
+  background: none;
+}
+
+.hoverBtn span {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 40px;
+  border: none;
+  padding: 5px;
+}
+
+.hoverBtn:hover span {
+  background: linear-gradient(to right,
+      #b91532,
+      #9e3040,
+      #9b3342,
+      #8e4049,
+      #755a56,
+      #5f7061,
+      #48876d,
+      #3c9373,
+      #1f8c8a,
+      #207e8c,
+      #226e8e,
+      #236190,
+      #245891,
+      #273c95,
+      #273b95);
+  color: #fff;
+}
+
+.hoverBtn:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 102%;
+  height: 104%;
+  z-index: -1;
+  border-radius: 40px;
+  background: linear-gradient(to right,
+      #b91532,
+      #9e3040,
+      #9b3342,
+      #8e4049,
+      #755a56,
+      #5f7061,
+      #48876d,
+      #3c9373,
+      #1f8c8a,
+      #207e8c,
+      #226e8e,
+      #236190,
+      #245891,
+      #273c95,
+      #273b95);
+}
