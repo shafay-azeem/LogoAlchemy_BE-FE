@@ -40,42 +40,51 @@ const Portfolio = ({ heading2, buttonText }) => {
     const items = [
         {
             id: 1,
-            // imageUrl: require('../../assets/Layer 2.png'),
-            imageUrl: require('./assets/bloddetailbackground.jpg'),
-            title: 'The logo Alcehemy',
-            date: 'April 14, 2023',
-            route: 'BlogDetails',
-            heading: 'THE FUTURE OF ARTIFICIAL INTELLIGENCE',
-            description: 'AS WE ENTER A NEW ERA OF TECHNOLOGICAL INNOVATION, AI IS BECOMING MORE AND MORE PREVALENT IN OUR EVERYDAY LIVES. FROM VIRTUAL ASSISTANTS LIKE SIRI AND ALEXA TO SELF-DRIVING CARS AND PERSONALIZED RECOMMENDATIONS ON SOCIAL MEDIA',
-            buttonText: 'Continue Reading',
-            calendarIcon: require('./assets/user.png'),
-            userIcon: require('./assets/calendar.png'),
+
+            imageUrl: require('./assets/Logo/1.jpg'),
+
         },
         {
             id: 2,
-            // imageUrl: require('../../assets/Layer 2.png'),
-            imageUrl: require('./assets/image open ai.jpg'),
-            title: 'The logo Alcehemy',
-            route: 'ArtificalBlogDetails',
-            date: 'April 14, 2023',
-            heading: 'OPEN AI',
-            description: 'ARTIFICIAL INTELLIGENCE (AI) IS ONE OF THE MOST TRANSFORMATIVE TECHNOLOGIES OF OUR TIME, WITH THE POTENTIAL TO REVOLUTIONIZE ALMOST EVERY ASPECT OF OUR LIVES. OPENAI, A NON-PROFIT AI RESEARCH ORGANIZATION, IS AT THE FOREFRONT OF DEVELOPING CUTTING-EDGE',
-            buttonText: 'Continue Reading',
-            calendarIcon: require('./assets/user.png'),
-            userIcon: require('./assets/calendar.png'),
+
+            imageUrl: require('./assets/Logo/2.jpg'),
+
         },
         {
             id: 3,
-            // imageUrl: require('../../assets/Layer 2.png'),
-            imageUrl: require('./assets/Untitled-1.jpg'),
-            title: 'The logo Alcehemy',
-            date: 'April 14, 2023',
-            route: 'BrandsIdentity',
-            heading: 'BUILD A STRONG BRAND IDENTITY IN 2023: TIPS AND TRENDS',
-            description: 'IN 2023, CREATING A STRONG BRAND IDENTITY IS MORE IMPORTANT THAN EVER. WITH THE INCREASING COMPETITION IN THE MARKET, BUSINESSES NEED TO DIFFERENTIATE THEMSELVES AND CONNECT WITH THEIR TARGET AUDIENCE',
-            buttonText: 'Continue Reading',
-            calendarIcon: require('./assets/user.png'),
-            userIcon: require('./assets/calendar.png'),
+
+            imageUrl: require('./assets/Logo/3.jpg'),
+
+        },
+        {
+            id: 4,
+
+            imageUrl: require('./assets/Logo/4.jpg'),
+
+        },
+        {
+            id: 5,
+
+            imageUrl: require('./assets/Logo/5.jpg'),
+
+        },
+        {
+            id: 6,
+
+            imageUrl: require('./assets/Logo/6.jpg'),
+
+        },
+        {
+            id: 7,
+
+            imageUrl: require('./assets/Logo/7.jpg'),
+
+        },
+        {
+            id: 8,
+
+            imageUrl: require('./assets/Logo/8.jpg'),
+
         },
     ];
 
