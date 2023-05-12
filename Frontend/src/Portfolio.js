@@ -87,6 +87,51 @@ const Portfolio = ({ heading2, buttonText }) => {
 
         },
     ];
+    const branding = [
+        {
+            id: 1,
+
+            imageUrl: require('./assets/BrandingLogos/1.jpg'),
+
+        },
+        {
+            id: 2,
+
+            imageUrl: require('./assets/BrandingLogos/2.jpg'),
+
+        },
+        {
+            id: 3,
+
+            imageUrl: require('./assets/BrandingLogos/3.jpg'),
+
+        },
+        {
+            id: 4,
+
+            imageUrl: require('./assets/BrandingLogos/4.jpg'),
+
+        },
+        {
+            id: 5,
+
+            imageUrl: require('./assets/BrandingLogos/5.jpg'),
+
+        },
+        {
+            id: 6,
+
+            imageUrl: require('./assets/BrandingLogos/6.jpg'),
+
+        },
+        {
+            id: 7,
+
+            imageUrl: require('./assets/BrandingLogos/Untitled-1.jpg'),
+
+        },
+
+    ];
 
 
     const settings = {
@@ -254,12 +299,12 @@ const Portfolio = ({ heading2, buttonText }) => {
             </div >
 
 
+            {/* ----------BRANDING----------- */}
             <div className='PortfolioSecond py-5 container-fluid'>
                 <div className="row">
                     <div className="col-md-2"></div>
                     <div className="col-md-8">
-                        {/* <h3 className='red font-face-im text-center'>WE TALK ABOUT RECENT ADVANCEMENTS IN TECHNOLOGY </h3> */}
-                        <h2 className='red font-face-im text-center py-2'>OUR RECENT BLOGS & NEWS</h2>
+                        <h2 className='red font-face-im text-center py-2'>BRANDING</h2>
                     </div>
                     <div className="col-md-2"></div>
                 </div>
@@ -269,7 +314,7 @@ const Portfolio = ({ heading2, buttonText }) => {
                     <div class="row" style={{ maxWidth: '1024px', margin: '0 auto' }}>
                         <div class="col-lg-8 col-md-12">
                             <Slider {...settings}>
-                                {items.map((x, index) => {
+                                {branding.map((x, index) => {
                                     return (
                                         <div className="col-lg-8">
                                             <div className='px-3'>
