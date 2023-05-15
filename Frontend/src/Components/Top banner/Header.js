@@ -14,11 +14,6 @@ const Header = ({ buttonText, heading1, heading2, heading3 }) => {
   const [isButton1Hovered, setIsButton1Hovered] = useState(false);
   const [isButton2Hovered, setIsButton2Hovered] = useState(false);
 
-  // const handleButtonHover = () => {
-  //   setIsButtonHovered(true);
-
-  // };
-
   const handleButtonHover = (buttonNum) => {
     if (buttonNum === 1) {
       setIsButton1Hovered(true);
@@ -64,7 +59,7 @@ const Header = ({ buttonText, heading1, heading2, heading3 }) => {
       <div className="row">
         <div className="col-lg-6">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12" data-aos="fade-up" data-aos-duration="1000">
               <AgencyButton
                 title={buttonText}
                 borderRadius="20px"
@@ -74,34 +69,38 @@ const Header = ({ buttonText, heading1, heading2, heading3 }) => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-12">
+            <div
+              className="col-lg-12"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <p
                 className="bannerTitle font-face-im"
                 data-aos="fade-up"
                 data-aos-duration="800"
               >
-                {heading1}
+                {heading1}&nbsp;
                 <span className="font-face-gm" style={{ color: "#ba1432" }}>
-                  {heading2}
+                  {heading2}&nbsp;
                 </span>
                 {heading3}
               </p>
             </div>
           </div>
 
-
-          <div className="row">
+          <div className="row" data-aos="fade-up" data-aos-duration="1000">
             <div className="col-lg-6 col-md-12 col-sm-12">
-              <CustomButtonArrow title="Explore  Services" rf="Portfolio"
-                rn="yes" />
+              <CustomButtonArrow
+                title="Explore  Services"
+                rf="Portfolio"
+                rn="yes"
+              />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
               <CustomButtonArrow title="Get In Touch" rf="ContactForm" />
             </div>
           </div>
         </div>
-
-
 
         <div className="col-lg-6">
           <img className="img-fluid child" src={logo} />

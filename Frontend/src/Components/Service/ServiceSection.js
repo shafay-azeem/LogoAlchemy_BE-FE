@@ -39,9 +39,12 @@ const ServiceSection = () => {
             <div className="col-md-2"></div>
             <div className="col-md-8">
               <h3 className="title-red font-face-im text-center">
-                We create exceptional visual identities for brands in the US and other English-speaking countries</h3>
+                We create exceptional visual identities for brands
+              </h3>
               <h4 className="black font-face-im text-center">
-                Our team of creative professionals crafts customized design solutions that captivate audiences and elevate brands.</h4>
+                Our team crafts customized designs that captivate audiences and
+                elevate brands
+              </h4>
             </div>
             <div className="col-md-2"></div>
           </div>
@@ -66,7 +69,9 @@ const ServiceSection = () => {
                     Customized Solutions
                   </h4>
                   <h5 className="grey font-face-hm py-2">
-                    We offer bespoke design services tailored to your brand's specific needs and goals, ensuring that your visual identity truly reflects your brand's personality and values.
+                    We offer bespoke design services tailored to your brand's
+                    specific needs and goals, ensuring that your visual identity
+                    truly reflects your brand's personality and values.
                   </h5>
                 </div>
               </div>
@@ -86,11 +91,12 @@ const ServiceSection = () => {
                     <span className="red font-face-im">Our Branding</span>
                   </h4> */}
 
-                  <h4 className="red font-face-im py-3">
-                    Competitive Pricing
-                  </h4>
+                  <h4 className="red font-face-im py-3">Competitive Pricing</h4>
                   <h5 className="grey font-face-hm py-2">
-                    Our affordable rates make our high-quality design services accessible to clients of all sizes, helping you allocate resources effectively and maximize your return on investment.
+                    Our affordable rates make our high-quality design services
+                    accessible to clients of all sizes, helping you allocate
+                    resources effectively and maximize your return on
+                    investment.
                   </h5>
                 </div>
               </div>
@@ -115,10 +121,12 @@ const ServiceSection = () => {
                     Expertise & Experience
                   </h4>
                   <h5 className="grey font-face-hm py-2">
-                    Our decade of experience in the design industry has honed our skills in logo design, illustration, and branding, making us a reliable partner for your brand's visual identity needs.
+                    Our decade of experience in the design industry has honed
+                    our skills in logo design, illustration, and branding,
+                    making us a reliable partner for your brand's visual
+                    identity needs.
                   </h5>
                 </div>
-
               </div>
             </div>
 
@@ -138,19 +146,18 @@ const ServiceSection = () => {
               </span>
             </h3>
 
-            <div className="row">
-              <div className="col-lg-6 col-md-6 col-sm-12 text-lg-end text-center mb-2" >
+            <div className="row" data-aos="fade-up" data-aos-duration="1000">
+              <div className="col-lg-6 col-md-6 col-sm-12 text-lg-end text-center mb-2">
                 <CustomButton
                   title="Explore Services"
                   padding="10px 45px"
-
                   marginRight="20px"
                   fontSize="20px"
                   rf="Portfolio"
                   rn="yes"
                 />
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12 text-lg-start  text-center mb-2" >
+              <div className="col-lg-6 col-md-6 col-sm-12 text-lg-start  text-center mb-2">
                 <CustomButton
                   title="Lets Talk"
                   padding="10px 45px"
@@ -158,11 +165,10 @@ const ServiceSection = () => {
                   rf="ContactForm"
                 />
               </div>
-
             </div>
           </div>
         </div>
-      </div >
+      </div>
     </>
   );
 };

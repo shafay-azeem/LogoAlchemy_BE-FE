@@ -11,13 +11,26 @@ const CustomBrands = () => {
   return (
     <>
       <div className="Brands conatiner-fluid my-5 py-5">
-        <h3 className="text-center font-face-im" style={{ color: "#d40e2f" }}>
+        <h3
+          className="text-center font-face-im"
+          style={{ color: "#d40e2f" }}
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           OUR AGENCY'S RECENT DIGITAL PROJECTS
         </h3>
-        <h2 className="text-center font-face-im">
+        <h2
+          className="text-center font-face-im"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           We've Worked With & Built Brands Across The Globe
         </h2>
-        <p className="text-center mb-4">
+        <p
+          className="text-center mb-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           We take pride in displaying our customer-approved projects. <br></br>
           Browse through our portfolio below to have a creative design
           inspiration.
@@ -25,16 +38,23 @@ const CustomBrands = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div style={{ height: '275px' }} className="xyz">
-                <div style={{ marginLeft: "20px" }}>
-                </div>
+              <div style={{ height: "275px" }} className="xyz">
+                <div style={{ marginLeft: "20px" }}></div>
               </div>
               <div className="d-lg-flex">
                 <div className="col-lg-6 col-md-12 mb-1">
-                  <img className="shadow img-fluid pt-2" style={{ borderRadius: '10px' }} src={cartoon3} />
+                  <img
+                    className="shadow img-fluid pt-2"
+                    style={{ borderRadius: "10px" }}
+                    src={cartoon3}
+                  />
                 </div>
                 <div className="col-lg-6 col-md-12 mb-1">
-                  <img className="shadow img-fluid pt-2" style={{ borderRadius: '10px' }} src={cartoon2} />
+                  <img
+                    className="shadow img-fluid pt-2"
+                    style={{ borderRadius: "10px" }}
+                    src={cartoon2}
+                  />
                 </div>
               </div>
             </div>

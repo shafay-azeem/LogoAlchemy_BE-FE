@@ -5,7 +5,6 @@ import CustomButton from "../Global/CustomButton";
 import buttonLogo from "../../assets/circle.png";
 
 const Pricing = () => {
-
   const divStyle = {
     padding: "2px",
     borderRadius: "30px",
@@ -47,109 +46,29 @@ const Pricing = () => {
     <div className="container py-5">
       <div className="row">
         <div className="col-md-12">
-          <h3 className="text-center red font-face-im">
+          <h3
+            className="text-center red font-face-im"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             OUR TOP NOTCH POCKET FRIENDLY SERVICE PLANS
           </h3>
-          <h1 className="text-center black font-face-im ">
+          <h1
+            className="text-center black font-face-im "
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             BEST SELLING POCKET-FRIENDLY PRICING PLAN
           </h1>
         </div>
       </div>
 
-      {/* <div className="Box row py-5">
-        <div className="Column col-lg-4 col-md-6 col-sm-12">
-          <div className="inner">
-            <div className="Price-Heading">
-              <h3 className="text-center">
-                {" "}
-                <del className="font-face-ex text-center">$239.99</del>
-              </h3>
-              <h1 className="font-face-ex text-center">$119.99</h1>
-            </div>
-            <div className="Price-Box">
-              <div className="Package-Description">
-                <p className="Package-Description-inner text-center">
-                  2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                  only Format : JPEG only 24-48 Hours turnaround time 100%
-                  Ownership rights
-                  2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                  only Format : JPEG only 24-48 Hours turnaround time 100%
-                  Ownership rights
-                </p>
-              </div>
-            </div>
-
-
-          </div>
-          <div className="Purchase-Btn">
-            <p className="font-face-ex text-white text-center mt-4">Purchase Now!</p>
-          </div>
-        </div>
-
-        <div className="Column col-lg-4 col-md-6 col-sm-12">
-          <div className="inner2">
-            <div className="Price-Heading">
-              <h3 className="text-center">
-                {" "}
-                <del className="font-face-ex text-center">$239.99</del>
-              </h3>
-              <h1 className="font-face-ex text-center">$119.99</h1>
-            </div>
-            <div className="Price-Box">
-              <div className="Package-Description">
-                <p className="Package-Description-inner text-center">
-                  2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                  only Format : JPEG only 24-48 Hours turnaround time 100%
-                  Ownership rights
-                  2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                  only Format : JPEG only 24-48 Hours turnaround time 100%
-                  Ownership rights
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="Purchase-Btn">
-            <p className="font-face-ex text-white text-center mt-4">Purchase Now!</p>
-          </div>
-        </div>
-
-        <div className="Column col-lg-4 col-md-12 col-sm-12 text-md-center">
-          <div className="inner3">
-            <div className="Price-Heading">
-              <h3 className="text-center">
-                {" "}
-                <del className="font-face-ex text-center">$239.99</del>
-              </h3>
-              <h1 className="font-face-ex text-center">$119.99</h1>
-            </div>
-            <div className="Price-Box">
-              <div className="Package-Description">
-                <p className="Package-Description-inner text-center">
-                  2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                  only Format : JPEG only 24-48 Hours turnaround time 100%
-                  Ownership rights
-                  2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                  only Format : JPEG only 24-48 Hours turnaround time 100%
-                  Ownership rights
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="Purchase-Btn">
-            <p className="font-face-ex text-white text-center mt-4">Purchase Now!</p>
-          </div>
-        </div>
-      </div> */}
-
-
       {/* ---------- THIS IS NEW ONE----------- */}
       <div class="container py-5">
-        <div class="row" style={{ padding: '50px 0' }}>
+        <div class="row" style={{ padding: "50px 0" }}>
           <div class="glass col-md-8 col-sm-4 col-lg-4">
             <div class="twrap">
-              <div class="title">
-                BASIC
-              </div>
+              <div class="title">BASIC</div>
             </div>
             <div class="div1 mb-3">
               <div class="div2">
@@ -157,34 +76,35 @@ const Pricing = () => {
                   <h3 className="text-center">
                     <del className="font-face-ex text-center red">$239.99</del>
                   </h3>
-                  <h1 style={{ color: '#343b3e' }} className="font-face-ex text-center ">$119.99</h1>
+                  <h1
+                    style={{ color: "#343b3e" }}
+                    className="font-face-ex text-center "
+                  >
+                    $119.99
+                  </h1>
                   <div className="Package-Description">
-                    <p style={{ color: '#5c5d5f' }} className="Package-Description-inner text-center">
-                      2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                      only Format : JPEG only 24-48 Hours turnaround time 100%
-                      Ownership rights
-                      2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                      only Format : JPEG only 24-48 Hours turnaround time 100%
-                      Ownership rights
+                    <p
+                      style={{ color: "#5c5d5f" }}
+                      className="Package-Description-inner text-center"
+                    >
+                      2 Orignal logo concept 1 Dedicated logo designer 2
+                      Revisions only Format : JPEG only 24-48 Hours turnaround
+                      time 100% Ownership rights 2 Orignal logo concept 1
+                      Dedicated logo designer 2 Revisions only Format : JPEG
+                      only 24-48 Hours turnaround time 100% Ownership rights
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="bwrap">
-              <div class="purchase">
-                Purchase Now!
-              </div>
+              <div class="purchase">Purchase Now!</div>
             </div>
           </div>
 
-
-
           <div class="glass col-md-8 col-sm-4 col-lg-4">
             <div class="twrap">
-              <div class="title">
-                STANDARD
-              </div>
+              <div class="title">STANDARD</div>
             </div>
             <div class="div1 mb-3">
               <div class="div2">
@@ -192,33 +112,35 @@ const Pricing = () => {
                   <h3 className="text-center">
                     <del className="font-face-ex text-center red">$239.99</del>
                   </h3>
-                  <h1 style={{ color: '#343b3e' }} className="font-face-ex text-center ">$119.99</h1>
+                  <h1
+                    style={{ color: "#343b3e" }}
+                    className="font-face-ex text-center "
+                  >
+                    $119.99
+                  </h1>
                   <div className="Package-Description">
-                    <p style={{ color: '#5c5d5f' }} className="Package-Description-inner text-center">
-                      2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                      only Format : JPEG only 24-48 Hours turnaround time 100%
-                      Ownership rights
-                      2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                      only Format : JPEG only 24-48 Hours turnaround time 100%
-                      Ownership rights
+                    <p
+                      style={{ color: "#5c5d5f" }}
+                      className="Package-Description-inner text-center"
+                    >
+                      2 Orignal logo concept 1 Dedicated logo designer 2
+                      Revisions only Format : JPEG only 24-48 Hours turnaround
+                      time 100% Ownership rights 2 Orignal logo concept 1
+                      Dedicated logo designer 2 Revisions only Format : JPEG
+                      only 24-48 Hours turnaround time 100% Ownership rights
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="bwrap">
-              <div class="purchase">
-                Purchase Now!
-              </div>
+              <div class="purchase">Purchase Now!</div>
             </div>
           </div>
 
-
           <div class="glass col-md-8 col-sm-4 col-lg-4">
             <div class="twrap">
-              <div class="title">
-                PREMIUM
-              </div>
+              <div class="title">PREMIUM</div>
             </div>
             <div class="div1 mb-3">
               <div class="div2">
@@ -226,27 +148,31 @@ const Pricing = () => {
                   <h3 className="text-center">
                     <del className="font-face-ex text-center red">$239.99</del>
                   </h3>
-                  <h1 style={{ color: '#343b3e' }} className="font-face-ex text-center ">$119.99</h1>
+                  <h1
+                    style={{ color: "#343b3e" }}
+                    className="font-face-ex text-center "
+                  >
+                    $119.99
+                  </h1>
                   <div className="Package-Description">
-                    <p style={{ color: '#5c5d5f' }} className="Package-Description-inner text-center">
-                      2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                      only Format : JPEG only 24-48 Hours turnaround time 100%
-                      Ownership rights
-                      2 Orignal logo concept 1 Dedicated logo designer 2 Revisions
-                      only Format : JPEG only 24-48 Hours turnaround time 100%
-                      Ownership rights
+                    <p
+                      style={{ color: "#5c5d5f" }}
+                      className="Package-Description-inner text-center"
+                    >
+                      2 Orignal logo concept 1 Dedicated logo designer 2
+                      Revisions only Format : JPEG only 24-48 Hours turnaround
+                      time 100% Ownership rights 2 Orignal logo concept 1
+                      Dedicated logo designer 2 Revisions only Format : JPEG
+                      only 24-48 Hours turnaround time 100% Ownership rights
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="bwrap">
-              <div class="purchase">
-                Purchase Now!
-              </div>
+              <div class="purchase">Purchase Now!</div>
             </div>
           </div>
-
         </div>
       </div>
 
