@@ -14,6 +14,9 @@ import logo from "./assets/portfolioIcon.png";
 import Aos from "aos";
 import ContactForm from "./Components/ContactForm/ContactForm";
 import PortfolioGallery from "./PortfolioGallery";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+
 
 const Portfolio = ({ heading2, buttonText }) => {
   const navigate = useNavigate();
@@ -272,7 +275,7 @@ const Portfolio = ({ heading2, buttonText }) => {
           <div className="col-md-2"></div>
         </div>
 
-        <PortfolioGallery />
+        {/* <PortfolioGallery /> */}
       </div>
 
       {/* ----------BRANDING----------- */}
@@ -404,6 +407,26 @@ const Portfolio = ({ heading2, buttonText }) => {
                         </div> */}
         </div>
       </div>
+
+      <div className="container-fluid">
+        <Tabs
+          defaultActiveKey="profile"
+          id="justify-tab-example"
+          className="mb-3"
+          justify
+        >
+          <Tab eventKey="Branding" title="Logo">
+            <PortfolioGallery />
+          </Tab>
+          <Tab eventKey="Logo" title="Branding" className="bg-dark">
+            <PortfolioGallery />
+          </Tab>
+          <Tab eventKey="Illustration" title="Illustration">
+            <PortfolioGallery />
+          </Tab>
+        </Tabs>
+      </div>
+
 
       <div id="ContactForm">
         <ContactForm />

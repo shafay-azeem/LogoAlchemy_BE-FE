@@ -1,18 +1,19 @@
 import React from "react";
 import { useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import "../src/PortfolioGallery.css";
 
 const PortfolioGallery = () => {
     const [data, setData] = useState({ img: "", i: 0 });
     const images = [
-        require("./assets/Logo/1.jpg"),
-        require("./assets/Logo/2.jpg"),
-        require("./assets/Logo/3.jpg"),
-        require("./assets/Logo/4.jpg"),
-        require("./assets/Logo/5.jpg"),
-        require("./assets/Logo/6.jpg"),
-        require("./assets/Logo/7.jpg"),
-        require("./assets/Logo/8.jpg"),
+        require("./assets/Gallery/img1.jpg"),
+        require("./assets/Gallery/img2.jpg"),
+        require("./assets/Gallery/img3.jpg"),
+        require("./assets/Gallery/img4.jpg"),
+        require("./assets/Gallery/img5.jpg"),
+        require("./assets/Gallery/img6.jpg"),
+        require("./assets/Gallery/img7.jpg"),
+        require("./assets/Gallery/img8.jpg"),
     ];
 
     const viewImage = (img, i) => {
@@ -33,6 +34,8 @@ const PortfolioGallery = () => {
     };
     return (
         <>
+
+
             {data.img && (
                 <div
                     style={{
@@ -60,16 +63,22 @@ const PortfolioGallery = () => {
                     <button onClick={() => imageAction("next-img")}>Next</button>
                 </div>
             )}
-            <div style={{ padding: "10px" }}>
-                <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+            <div style={{ padding: "10px", backgroundColor: 'white' }}>
+                <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
                     <Masonry gutter="20px">
                         {images.map((image, i) => (
-                            <img
-                                key={i}
-                                src={image}
-                                style={{ width: "100%", display: "block", cursor: "pointer" }}
-                                onClick={() => viewImage(image, i)}
-                            />
+                            <div className="box">
+                                <div class="box-content">
+                                    <h3 >Williamson</h3>
+                                    <span >Web designer</span>
+                                </div>
+                                <img
+                                    key={i}
+                                    src={image}
+                                    style={{ width: "100%", display: "block", cursor: "pointer" }}
+                                    onClick={() => viewImage(image, i)}
+                                />
+                            </div>
                         ))}
                     </Masonry>
                 </ResponsiveMasonry>

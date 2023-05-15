@@ -27,3 +27,29 @@
         padding-bottom: 60px;
     }
 }
+
+/* ============ TABS CSS ========= */
+
+#justify-tab-example-tab-Logo {
+    background-color: white;
+}
+
+#justify-tab-example-tab-Branding {
+    background-color: white;
+}
+
+#justify-tab-example-tab-Illustration {
+    background-color: white;
+}
+
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+    width: 95% !important;
+    text-align: center !important;
+}
+
+
+.nav-item button {
+    color: black !important;
+}
+
