@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await fetch(
-      "http://localhost:7000/api/email/V1/contactInfoMail",
+      "https://thelogoalchemy.com/api/email/V1/contactInfoMail",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

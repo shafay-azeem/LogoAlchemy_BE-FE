@@ -27,9 +27,7 @@ exports.getCheckout = async (req, res, next) => {
       line_items: [lineItems],
       mode: "payment",
       // success_url: `${req.protocol}://localhost:3000/`,
-      success_url: `${req.protocol}://${req.get(
-        "host"
-      )}/api/email/V1/sendEmailFromServer?${queryParams}`,
+      success_url: `${req.protocol}://thelogoalchemy.com/api/email/V1/sendEmailFromServer?${queryParams}`,
       cancel_url: `${req.protocol}://${req.get("host")}/cancel`,
     });
     res.status(201).json({
