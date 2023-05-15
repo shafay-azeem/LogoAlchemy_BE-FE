@@ -224,3 +224,7 @@ button.learn-more:hover:before {
   }
 
 }
+
+.dropdown-menu.show a {
+  color: white;
+}

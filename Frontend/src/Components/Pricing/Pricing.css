@@ -54,6 +54,18 @@
   }
 }
 
+@media screen and (max-width: 820px) {
+  .glass {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .glass {
+    margin-bottom: 120px;
+  }
+}
+
 .div1 {
   background-image: url("../../Images/1.png");
   background-size: cover;
@@ -81,24 +93,22 @@
 .title {
   width: 250px;
   height: 90px;
-  background: linear-gradient(
-    to right,
-    #c9011b,
-    #d20522,
-    #be0825,
-    #91112a,
-    #76192f,
-    #542638,
-    #433040,
-    #373847,
-    #2a4857,
-    #205261,
-    #19606f,
-    #166885,
-    #1b688c,
-    #236090,
-    #235c8e
-  );
+  background: linear-gradient(to right,
+      #c9011b,
+      #d20522,
+      #be0825,
+      #91112a,
+      #76192f,
+      #542638,
+      #433040,
+      #373847,
+      #2a4857,
+      #205261,
+      #19606f,
+      #166885,
+      #1b688c,
+      #236090,
+      #235c8e);
   border-radius: 20px;
   z-index: 1;
   position: absolute;
