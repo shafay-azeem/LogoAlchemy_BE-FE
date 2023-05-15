@@ -44,12 +44,16 @@
 
 .nav-fill .nav-item .nav-link,
 .nav-justified .nav-item .nav-link {
-    width: 95% !important;
+    width: 100% !important;
     text-align: center !important;
 }
 
 
 .nav-item button {
     color: black !important;
+    font-weight: bold;
 }
 
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0px !important;
+}
