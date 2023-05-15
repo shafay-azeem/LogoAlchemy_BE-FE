@@ -1,32 +1,32 @@
 .Usp {
-    background-image: url('../../assets/Grdaient\ usp.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+  /* background-image: url('../../assets/Grdaient\ usp.png'); */
+  /* background-size: cover;
+    background-repeat: no-repeat; */
+  background-color: white;
 }
 
-
 @media screen and (max-width: 600px) {
-    .usp-btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .usp-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .usp-btn small {
-        margin-top: 15px;
-    }
+  .usp-btn small {
+    margin-top: 15px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .usp-btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
+  .usp-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
 
-    .usp-btn small {
-        margin-top: 15px;
-    }
+  .usp-btn small {
+    margin-top: 15px;
+  }
 }

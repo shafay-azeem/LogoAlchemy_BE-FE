@@ -14,11 +14,16 @@ const LogoDesignHeader = () => {
             borderRadius="20px"
             padding="3px 15px 3px 15px"
             buttonClass="font-face-gm"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           />
 
-
           <div className="row">
-            <div className="col-lg-12">
+            <div
+              className="col-lg-12"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <p className="logoDesignTitle font-face-im">
                 Connect With Your Customers , Not <br></br>
                 <span className="font-face-gm" style={{ color: "#ba1432" }}>
@@ -28,10 +33,13 @@ const LogoDesignHeader = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row" data-aos="fade-up" data-aos-duration="1000">
             <div className="col-lg-6 col-md-12  p-0">
-              <CustomButtonArrow title="Explore Services" rf="Portfolio"
-                rn="yes" />
+              <CustomButtonArrow
+                title="Explore Services"
+                rf="Portfolio"
+                rn="yes"
+              />
             </div>
             <div className="col-lg-6 col-md-12  p-0">
               <CustomButtonArrow title="Get In Touch" rf="ContactForm" />

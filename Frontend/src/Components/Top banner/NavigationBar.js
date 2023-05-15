@@ -6,7 +6,6 @@ import logo from "../../assets/logo (3).png";
 import { useNavigate } from "react-router-dom";
 
 const NavigationBar = () => {
-
   const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
   const handleToggle = (expanded) => {
@@ -38,7 +37,6 @@ const NavigationBar = () => {
       pathname: `/${routeId}`,
     });
   };
-
 
   const homeRoute = () => {
     navigate({
@@ -74,7 +72,6 @@ const NavigationBar = () => {
         onToggle={handleToggle}
         expanded={expanded}
         collapseOnSelect
-
       >
         <Container className="no-scroll">
           <Navbar.Brand onClick={homeRoute} style={{ cursor: "pointer" }}>
@@ -83,7 +80,7 @@ const NavigationBar = () => {
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto nav " >
+            <Nav className="mx-auto nav ">
               <Nav.Link
                 className="font-face-hm"
                 style={{ fontSize: "15px", paddingRight: "2rem" }}
@@ -121,16 +118,15 @@ const NavigationBar = () => {
                 Contact Us
               </Nav.Link>
             </Nav>
-            <a href="#ContactForm"
-            >
-              <button class="getAQuickButton" >
-                <span className="font-face-im" >Get a Quick Qoute!</span>
+            <a href="#ContactForm">
+              <button class="getAQuickButton">
+                <span className="font-face-im">Get a Quick Qoute!</span>
               </button>
             </a>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    )
+    );
   }
 
   const renderDropdownItems = () => {
@@ -138,57 +134,67 @@ const NavigationBar = () => {
       {
         name: "Logo",
         // description: "Logo Description",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero molestiae expedita cumque id doloribus, architecto corrupti hic! Nobis, consectetur!",
-        imageSrc: require('../../assets/logo.jpg'),
+        description:
+          "A captivating logo is the cornerstone of any successful brand.",
+        imageSrc: require("../../assets/logo.jpg"),
         href: "#action/3.1",
-        route: "LogoDesign"
+        route: "LogoDesign",
       },
       {
         name: "Illustration",
         // description: "Illustration Descripiton",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero molestiae expedita cumque id doloribus, architecto corrupti hic! Nobis, consectetur!",
-        imageSrc: require('../../assets/illustration.jpg'),
+        description:
+          "Vibrant and captivating illustrations that bring brands to life.",
+        imageSrc: require("../../assets/illustration.jpg"),
         href: "#action/3.2",
-        route: "Illustration"
+        route: "Illustration",
       },
       {
         name: "Branding",
         // description: "Branding Description",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero molestiae expedita cumque id doloribus, architecto corrupti hic! Nobis, consectetur!",
-        imageSrc: require('../../assets/branding.jpg'),
+        description:
+          "Strategic and compelling branding that breathes life into brands.",
+        imageSrc: require("../../assets/branding.jpg"),
         href: "#action/3.3",
-        route: "BrandingAgency"
+        route: "BrandingAgency",
       },
     ];
 
-    return <div className="my-dropdown row d-flex justify-content-center align-items-center">
-      {dropdownItems.map((item, index) => {
-        return (
-          <div className="col-lg-4 py-2">
-            <div className="dropdown-inner py-3">
-              <NavDropdown.Item onClick={() => logoRoute2(item.route)} key={index}>
-                <div className="dropdown-link">
-                  <div className="img py-2">
-                    <img
-                      src={item.imageSrc}
-                      alt={item.name}
-                      className="dropdown-image img-fluid"
-                    />
-                  </div>
+    return (
+      <div className="my-dropdown row d-flex justify-content-center align-items-center">
+        {dropdownItems.map((item, index) => {
+          return (
+            <div className="col-lg-4 py-2">
+              <div className="dropdown-inner py-3">
+                <NavDropdown.Item
+                  onClick={() => logoRoute2(item.route)}
+                  key={index}
+                >
+                  <div className="dropdown-link">
+                    <div className="img py-2">
+                      <img
+                        src={item.imageSrc}
+                        alt={item.name}
+                        className="dropdown-image img-fluid"
+                      />
+                    </div>
 
-                  <div className="dropdown-content">
-                    <h4 className="pt-2 text-white dropdown-name">{item.name}</h4>
-                    <p className="m-0 text-white dropdown-description">{item.description}</p>
+                    <div className="dropdown-content">
+                      <h4 className="pt-2 text-white dropdown-name">
+                        {item.name}
+                      </h4>
+                      <p className="m-0 text-white dropdown-description">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-
-                </div>
-              </NavDropdown.Item>
+                </NavDropdown.Item>
+              </div>
             </div>
-          </div>
-        )
-      })
-      }
-    </div>
+          );
+        })}
+      </div>
+    );
   };
 
   return (
@@ -198,7 +204,6 @@ const NavigationBar = () => {
       onToggle={handleToggle}
       expanded={expanded}
       collapseOnSelect
-
     >
       <Container className="no-scroll">
         <Navbar.Brand onClick={homeRoute} style={{ cursor: "pointer" }}>
@@ -207,7 +212,7 @@ const NavigationBar = () => {
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto nav " >
+          <Nav className="mx-auto nav ">
             <Nav.Link
               className="font-face-hm"
               style={{ fontSize: "15px", paddingRight: "2rem" }}
@@ -239,10 +244,9 @@ const NavigationBar = () => {
               Contact Us
             </Nav.Link>
           </Nav>
-          <a href="#ContactForm"
-          >
-            <button class="getAQuickButton" >
-              <span className="font-face-im" >Get a Quick Qoute!</span>
+          <a href="#ContactForm">
+            <button class="getAQuickButton">
+              <span className="font-face-im">Get a Quick Qoute!</span>
             </button>
           </a>
         </Navbar.Collapse>

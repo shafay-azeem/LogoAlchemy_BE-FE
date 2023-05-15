@@ -6,7 +6,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const ContactForm = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -16,7 +15,6 @@ const ContactForm = () => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   });
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -112,10 +110,14 @@ const ContactForm = () => {
             <div className="row">
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label className="font-face-sm" >Your Name</Form.Label>
+                  <Form.Label className="font-face-sm">Your Name</Form.Label>
 
                   <div className="fieldwrap inputfield">
-                    <input type="text" placeholder="Your Name" onChange={(e) => setName(e.target.value)} />
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      onChange={(e) => setName(e.target.value)}
+                    />
                   </div>
                 </Form.Group>
               </div>
@@ -154,7 +156,9 @@ const ContactForm = () => {
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label className="font-face-sm">Your Phone No</Form.Label>
+                  <Form.Label className="font-face-sm">
+                    Your Phone No
+                  </Form.Label>
 
                   <div className="fieldwrap inputfield">
                     <input
@@ -196,15 +200,14 @@ const ContactForm = () => {
                 title={"Make Magic Happen"}
                 borderRadius="40px"
                 padding="10px 15px"
-
                 fontSize={
                   rw <= 350
                     ? "10px"
                     : rw > 350 && rw <= 640
-                      ? "13px"
-                      : rw >= 641 && rw <= 1007
-                        ? "16px"
-                        : "20px"
+                    ? "13px"
+                    : rw >= 641 && rw <= 1007
+                    ? "16px"
+                    : "20px"
                 }
                 alignSelf="center"
               />

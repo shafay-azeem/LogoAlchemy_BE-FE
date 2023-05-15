@@ -1,62 +1,76 @@
-import React, { useState } from 'react';
-import CreativityImg from "../../assets/creativity.png";
-import ResearchImg from "../../assets/research.png";
-import StratergyImg from "../../assets/strategy.png";
+import React, { useState } from "react";
+
 import OneImg from "../../assets/01.png";
 import TwoImg from "../../assets/02.png";
 import ThreeImg from "../../assets/03.png";
-import "../Global/CustomMultiCards.css"
+import "../Global/CustomMultiCards.css";
 
 const CustomMultiCards = (props) => {
-    const [data, setData] = useState(props?.cardData);
-    console.log(data)
-    return (
-        <>
-            <div className="CustomMultiCards  container-fluid py-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-2"></div>
-                        <div className="col-md-8">
-                            <h3 className="title-red font-face-im text-center">
-                                WE’REAFULL-SERVICE BRANDING&MARKETINGAGENCY
-                            </h3>
-                            <h4 className="black font-face-im text-center">
-                                {props?.cardHeading}
-                            </h4>
-                        </div>
-                        <div className="col-md-2"></div>
+  const [data, setData] = useState(props?.cardData);
+  console.log(data);
+  return (
+    <>
+      <div className="CustomMultiCards  container-fluid py-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-2"></div>
+            <div className="col-md-8">
+              <h3
+                className="title-red font-face-im text-center"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                WE’REAFULL-SERVICE BRANDING & MARKETING AGENCY
+              </h3>
+              <h4
+                className="black font-face-im text-center"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                {props?.cardHeading}
+              </h4>
+            </div>
+            <div className="col-md-2"></div>
+          </div>
+          <div className="row py-4">
+            {data.map((x, index) => {
+              return (
+                <div
+                  className="Main-Section col-lg-4 col-md-8 col-sm-12 mb-2"
+                  data-aos="flip-right"
+                  data-aos-anchor-placement="top-center"
+                  data-aos-duration="800"
+                >
+                  <div className="MultiSection ">
+                    <div className="Multi-inner p-4">
+                      <div className="d-flex align-items-center justify-content-between">
+                        <img
+                          className="font-face-im py-3"
+                          src={x?.image1}
+                          alt="1"
+                        />
+                        <img
+                          className="font-face-im py-3"
+                          src={x.image2}
+                          alt="1"
+                        />
+                      </div>
+                      <h4 className="Heading font-face-im py-3">
+                        {x.heading}
+                        <span className="red font-face-im ms-2">
+                          {x.heading2}
+                        </span>
+                      </h4>
+                      <h5 className="grey font-face-hm py-2">
+                        {x.description}
+                      </h5>
                     </div>
-                    <div className="row py-4">
+                  </div>
+                </div>
+              );
+            })}
 
-                        {data.map((x, index) => {
-                            return (
-                                <div
-                                    className="Main-Section col-lg-4 col-md-8 col-sm-12 mb-2">
-                                    <div className="MultiSection ">
-                                        <div className="Multi-inner p-4">
-                                            <div className="d-flex align-items-center justify-content-between">
-                                                <img className="font-face-im py-3" src={x?.image1} alt="1" />
-                                                <img className="font-face-im py-3" src={x.image2} alt="1" />
-                                            </div>
-                                            <h4 className="Heading font-face-im py-3">
-                                               {x.heading}
-                                                <span className="red font-face-im ms-2">
-                                                    {x.heading2}
-                                                </span>
-                                            </h4>
-                                            <h5 className="grey font-face-hm py-2">
-                                                {x.description}
-                                            </h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            )
-                        })}
-
-
-
-                        {/* <div
+            {/* <div
                             className="Main-Section col-lg-4 col-md-8 col-sm-12 col-md-4 mb-2"
                         >
                             <div className="MultiSection ">
@@ -109,7 +123,7 @@ const CustomMultiCards = (props) => {
                             </div>
                         </div> */}
 
-                        {/* <h3
+            {/* <h3
                             style={{ color: "black", fontSize: "22.5px" }}
                             className="text-center font-face-im py-4"
                             data-aos="zoom-in"
@@ -124,14 +138,11 @@ const CustomMultiCards = (props) => {
                                 Delivery.
                             </span>
                         </h3> */}
-                    </div>
-                </div>
-
-            </div>
-
-
-        </>
-    )
-}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default CustomMultiCards;
