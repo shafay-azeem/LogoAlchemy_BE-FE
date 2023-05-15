@@ -13,6 +13,7 @@ import ArtificalBlogDetails from "./Components/Blogs/ArtificalBlogDetails";
 import BrandsIdentity from "./Components/Blogs/BrandsIdentity";
 import Portfolio from "./Portfolio.js";
 import Usp from "./Components/Usp/Usp";
+import PortfolioGallery from "./PortfolioGallery";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         />
         <Route path="/BrandsIdentity" element={<BrandsIdentity />} />
         <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/PortfolioGallery" element={<PortfolioGallery />} />
         <Route path="/Usp" element={<Usp />} />
       </Routes>
     </div>

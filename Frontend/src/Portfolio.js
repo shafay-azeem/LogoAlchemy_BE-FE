@@ -13,6 +13,7 @@ import AgencyButton from "./Components/Global/AgencyButton";
 import logo from "./assets/portfolioIcon.png";
 import Aos from "aos";
 import ContactForm from "./Components/ContactForm/ContactForm";
+import PortfolioGallery from "./PortfolioGallery";
 
 const Portfolio = ({ heading2, buttonText }) => {
   const navigate = useNavigate();
@@ -271,65 +272,7 @@ const Portfolio = ({ heading2, buttonText }) => {
           <div className="col-md-2"></div>
         </div>
 
-        <div className="noScroll">
-          <div class="row" style={{ maxWidth: "1024px", margin: "0 auto" }}>
-            <div class="col-lg-8 col-md-12">
-              <Slider {...settings}>
-                {items.map((x, index) => {
-                  return (
-                    <div className="col-lg-8">
-                      <div className="px-3">
-                        <img
-                          className="Blog-img img-fluid"
-                          src={x.imageUrl}
-                          alt="1"
-                        />
-                        <div className="row">
-                          <div className="Icon-Box py-3">
-                            {/* <div className='Icon-Box-inner'>
-                                                                <img src={icon1} alt='icon1' className='img-fluid' />
-                                                                <p className='my-title font-face-im text-black ms-2 m-0'>{x.title}</p>
-                                                            </div> */}
-                            {/* <div className='Icon-Box-inner ms-3'>
-                                                                <img src={icon2} alt='icon1' className='img-fluid' />
-                                                                <p className='date font-face-im text-blackms-2 mt-2'>{x.date}</p>
-                                                            </div> */}
-                          </div>
-                          {/* <h5 className='font-face-im text-black'>{x.heading}</h5>
-                                                        <p className='Content text-black'>{x.description}</p> */}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </Slider>
-            </div>
-          </div>
-
-          {/* <div className="row mt-5">
-                            <div className="col-lg-6 col-md-6 col-sm-12 text-lg-end  text-center mb-2" >
-
-                                <button
-                                    className="testiBtn"
-                                    onClick={blog}
-                                >
-                                    <span className="font-face-im" style={{ padding: "10px 45px" }} >See More Blogs</span>
-                                </button >
-                            </div>
-
-                            <div className="col-lg-6 col-md-6 col-sm-12 text-lg-start  text-center mb-2" >
-                                <a href='#ContactForm'>
-                                    <button
-                                        className="testiBtn"
-                                    >
-                                        <span className="font-face-im" style={{ padding: "10px 45px" }} >Lets Talk</span>
-                                    </button >
-                                </a>
-                            </div>
-
-
-                        </div> */}
-        </div>
+        <PortfolioGallery />
       </div>
 
       {/* ----------BRANDING----------- */}
