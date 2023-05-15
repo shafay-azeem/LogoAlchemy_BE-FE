@@ -42,8 +42,8 @@ const ServiceSection = () => {
                 We create exceptional visual identities for brands
               </h3>
               <h4 className="black font-face-im text-center">
-                Our team of creative professionals crafts customized design
-                solutions that captivate audiences and elevate brands.
+                Our team crafts customized designs that captivate audiences and
+                elevate brands
               </h4>
             </div>
             <div className="col-md-2"></div>

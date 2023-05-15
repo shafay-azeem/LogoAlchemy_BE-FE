@@ -79,7 +79,7 @@ const Branding = () => {
       heading: "Muller Insurance Agency",
       description1Heading: "Objective:",
       description1:
-        "Develop a professional and trustworthy brand identity that communicates reliability, expertise, and personalized service in the insurance industry.",
+        "Our brand embodies reliability, expertise, and personalized service in the insurance industry.",
 
       description2Heading: "Approach:",
       description2:
@@ -87,7 +87,7 @@ const Branding = () => {
 
       description3Heading: "Result:",
       description3:
-        "The refreshed branding of Muller Insurance Agency enhanced credibility, attracting new clients and reinforcing trust with existing customers.",
+        "Muller Insurance Agency's refreshed branding increased credibility, attracting new and loyal clients.",
       buttonText: "Check Portfolio",
     },
     {
@@ -117,7 +117,7 @@ const Branding = () => {
 
       description2Heading: "Approach:",
       description2:
-        "We designed a logo that combined sleek typography with a distinctive symbol representing connectivity and advancement. The color palette and graphics conveyed a sense of cutting-edge technology. The branding was applied consistently across various touchpoints, including website design and promotional materials.",
+        "We designed a logo that combined sleek typography with a distinctive symbol representing connectivity and advancement. The color palette and graphics conveyed a sense of cutting-edge technology. The branding was applied consistently across various touchpoints.",
 
       description3Heading: "Result:",
       description3:
@@ -130,7 +130,7 @@ const Branding = () => {
       heading: "Bold Gym and Fitness",
       description1Heading: "Objective:",
       description1:
-        "Create a dynamic and empowering brand identity that resonates with fitness enthusiasts and positions the gym as a premium fitness destination.",
+        "Create a dynamic and empowering brand identity that resonates with fitness enthusiasts and positions the gym as a premium fitness.",
 
       description2Heading: "Approach:",
       description2:
@@ -138,7 +138,7 @@ const Branding = () => {
 
       description3Heading: "Result:",
       description3:
-        "The distinctive branding of Bold Gym and Fitness captured the attention of fitness enthusiasts, leading to increased membership and brand recognition within the local community.",
+        "The branding of Bold Gym and Fitness captured attention, leading to increased membership and brand recognition within the community.",
       buttonText: "Check Portfolio",
     },
   ];
