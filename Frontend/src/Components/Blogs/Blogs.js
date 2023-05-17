@@ -40,7 +40,7 @@ const Blogs = () => {
     {
       id: 1,
       imageUrl: require("../../assets/bloddetailbackground.jpg"),
-      title: "The logo Alcehemy",
+      title: "The logo Alchemy",
       date: "April 12, 2023",
       route: "BlogDetails",
       heading: "THE FUTURE OF ARTIFICIAL INTELLIGENCE",
@@ -53,7 +53,7 @@ const Blogs = () => {
     {
       id: 2,
       imageUrl: require("../../assets/image open ai.jpg"),
-      title: "The logo Alcehemy",
+      title: "The logo Alchemy",
       route: "ArtificalBlogDetails",
       date: "April 21, 2023",
       heading: "OPEN AI",
@@ -66,7 +66,7 @@ const Blogs = () => {
     {
       id: 3,
       imageUrl: require("../../assets/Untitled-1.jpg"),
-      title: "The logo Alcehemy",
+      title: "The logo Alchemy",
       date: "April 29, 2023",
       route: "BrandsIdentity",
       heading: "BUILD A STRONG BRAND IDENTITY IN 2023: TIPS AND TRENDS",
@@ -79,7 +79,7 @@ const Blogs = () => {
     {
       id: 4,
       imageUrl: require("../../assets/real-engine.jpg"),
-      title: "The logo Alcehemy",
+      title: "The logo Alchemy",
       date: "May 1, 2023",
       route: "GameBlogDetails",
       heading: "A PARADIGM SHIFT IN GAME DEVELOPMENT",

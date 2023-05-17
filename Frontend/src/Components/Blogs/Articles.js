@@ -22,7 +22,7 @@ const Articles = () => {
     {
       id: 1,
       imageUrl: require("../../assets/bloddetailbackground.jpg"),
-      title: "The logo Alcehemy",
+      title: "The logo Alchemy",
       date: "April 14, 2023",
       route: "BlogDetails",
       heading: "THE FUTURE OF ARTIFICIAL INTELLIGENCE",
@@ -35,7 +35,7 @@ const Articles = () => {
     {
       id: 2,
       imageUrl: require("../../assets/image open ai.jpg"),
-      title: "The logo Alcehemy",
+      title: "The logo Alchemy",
       route: "ArtificalBlogDetails",
       date: "April 14, 2023",
       heading: "OPEN AI",
@@ -48,7 +48,7 @@ const Articles = () => {
     {
       id: 3,
       imageUrl: require("../../assets/Untitled-1.jpg"),
-      title: "The logo Alcehemy",
+      title: "The logo Alchemy",
       date: "April 14, 2023",
       route: "BrandsIdentity",
       heading: "BUILD A STRONG BRAND IDENTITY IN 2023: TIPS AND TRENDS",
@@ -92,7 +92,7 @@ const Articles = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
               >
-                We workes hard to create valuable content for you & your
+                We work hard to create valuable content for you & your
                 business. Explore it
               </p>
             </div>

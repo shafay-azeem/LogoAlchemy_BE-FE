@@ -142,10 +142,10 @@ const Portfolio = ({ heading2 }) => {
           <Tab eventKey="logo" title="Logo">
             <PortfolioGallery image={images} />
           </Tab>
-          <Tab eventKey="Logo" title="Branding">
+          <Tab eventKey="Logo" title="Illustration">
             <PortfolioGallery image={images1} />
           </Tab>
-          <Tab eventKey="Illustration" title="Illustration">
+          <Tab eventKey="Illustration" title="Branding">
             <PortfolioGallery image={images2} />
           </Tab>
         </Tabs>

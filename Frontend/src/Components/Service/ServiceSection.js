@@ -141,7 +141,7 @@ const ServiceSection = () => {
                 style={{ color: "#d40e2f", fontSize: "22.5px" }}
                 className=" text-center font-face-im py-4"
               >
-                We Build Long-Lasting Relationships That Don’t Stop at Project
+                &nbsp; We Build Long-Lasting Relationships That Don’t Stop at Project
                 Delivery.
               </span>
             </h3>

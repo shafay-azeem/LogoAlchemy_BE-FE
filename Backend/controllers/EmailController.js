@@ -7,7 +7,7 @@ const sendEmailFromServer = (req, res) => {
   let packagePrice = req.query.amount;
   let config = {
     service: "SMTP",
-    host: "test.lifoapp.co.uk",
+    host: "logoalchemy.com",
     port: 465,
     auth: {
       user: process.env.Email,
@@ -54,7 +54,7 @@ const sendEmailFromServer = (req, res) => {
   transporter
     .sendMail(message)
     .then(() => {
-      return res.redirect("http://thelogoalchemy/"); // replace with your success URL
+      return res.redirect("http://thelogoalchemy.com/"); // replace with your success URL
     })
     .catch((error) => {
       return res.status(500).json({ error });
@@ -120,6 +120,7 @@ const contactInfoMail = (req, res) => {
       });
     })
     .catch((error) => {
+      console.log("errr", error)
       return res.status(500).json({ error });
     });
 };

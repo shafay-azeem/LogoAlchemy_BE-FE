@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState();
   const [notes, setNotes] = useState("");
   const [help, setHelp] = useState("");
 
@@ -17,6 +17,8 @@ const ContactForm = () => {
   });
 
   const handleSubmit = async (event) => {
+
+    console.log(name, email, phoneNumber, notes, help)
     event.preventDefault();
     const response = await fetch(
       "http://thelogoalchemy.com/api/email/V1/contactInfoMail",
@@ -31,6 +33,7 @@ const ContactForm = () => {
           userHelp: help,
         }),
       }
+
     );
     const responseData = await response.json();
     console.log(responseData)
@@ -163,7 +166,7 @@ const ContactForm = () => {
 
                   <div className="fieldwrap inputfield">
                     <input
-                      type="number"
+                      type="keypad"
                       placeholder="Your Phone No"
                       style={inputStyle}
                       onChange={(e) => setPhoneNumber(e.target.value)}

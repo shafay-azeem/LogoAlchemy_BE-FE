@@ -4,8 +4,12 @@ const fs = require("fs");
 const app = express();
 
 app.use(express.json());
-
-app.use(cors());
+const corsOptions = {
+    origin: '*',
+    credentials: true,            //access-control-allow-credentials:true
+    optionSuccessStatus: 200,
+}
+app.use(cors(corsOptions));
 
 const product = require("./routes/ProductRoutes");
 const email = require("./routes/EmailRoutes");

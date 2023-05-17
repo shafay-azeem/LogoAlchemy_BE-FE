@@ -12,14 +12,14 @@ const Footer = () => {
                     <div class="row py-5">
                         <div class="col-lg-6 col-md-12 mb-4">
                             <h5 class="mb-3" style={{ letterSpacing: '2px', color: "white" }}>Drop Us An Email</h5>
-                            <p className="font-face-im mb-3" style={{ letterSpacing: '2px', color: "#d40e2f" }}>info@thelogoachelmy.com</p>
+                            <p className="font-face-im mb-3" style={{ letterSpacing: '2px', color: "#d40e2f" }}>info@thelogoalchemy.com</p>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <p className='text-white'>
                                         Los Angeles, United States
                                     </p>
                                     <p className='font-face-im text-white'>
-                                        811 Wilshire Blvd, 17th Floor <br /> Los Angeles, CA, 90017, <br /> United Stated.
+                                        811 Wilshire Blvd, 17th Floor <br /> Los Angeles, CA, 90017, <br /> United States.
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
@@ -27,7 +27,7 @@ const Footer = () => {
                                         Artrim ,United Kingdom
                                     </p>
                                     <p className='font-face-im text-white'>
-                                        Unit 19 The Hatchery Ni, Antrim Enterprise Park, Antrim, United Kingdom, BT41 1jz.
+                                        Unit 19 The Hatchery Ni, Antrim Enterprise Park, Antrim, United Kingdom, BT41 1JZ.
                                     </p>
                                 </div>
 
@@ -105,7 +105,7 @@ const Footer = () => {
                             marginTop: '35px'
                         }}>
                             <p style={{ color: "white", fontSize: '20px' }}>
-                                All Right Reserved <span className='font-face-im' style={{ color: "#d40e2f" }}>THE LOGO ALCHEMY </span>
+                                All Rights Reserved <span className='font-face-im' style={{ color: "#d40e2f" }}>THE LOGO ALCHEMY </span>
                                 2023
                             </p>
                         </div>
