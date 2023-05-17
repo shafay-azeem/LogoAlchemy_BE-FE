@@ -54,7 +54,7 @@ const sendEmailFromServer = (req, res) => {
   transporter
     .sendMail(message)
     .then(() => {
-      return res.redirect("https://thelogoalchemy/"); // replace with your success URL
+      return res.redirect("http://thelogoalchemy/"); // replace with your success URL
     })
     .catch((error) => {
       return res.status(500).json({ error });
@@ -81,7 +81,7 @@ const contactInfoMail = (req, res) => {
     theme: "default",
     product: {
       name: userName,
-      link: "https://thelogoalchemy.com/",
+      link: "http://thelogoalchemy.com/",
     },
   });
 
