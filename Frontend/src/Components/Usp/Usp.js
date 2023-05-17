@@ -49,6 +49,8 @@ const Usp = () => {
                 padding="10px 45px"
                 rf="DigitalService"
                 z="1"
+                rf="Portfolio"
+                rn="yes"
                 fontSize="20px"
               />
               <small className="ms-4">
