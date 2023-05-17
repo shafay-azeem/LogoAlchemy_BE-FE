@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavigationBar from "../Top banner/NavigationBar";
 import "../Blogs/Articles.css";
-import bannerLogo from "../../assets/2.png";
+import bannerLogo from "../../assets/real-engine.jpg";
 import userIcon from "../../assets/user.png";
 import calendarIcon from "../../assets/calendar.png";
 import layer3 from "../../assets/Layer 3.png";
@@ -108,28 +108,25 @@ const Articles = () => {
                   <div className="inner-user-calendar">
                     <div className="d-flex justify-content-center align-items-center">
                       <img src={userIcon} alt="user" />
-                      <p className="ms-2 mt-2">The Logo Alchemy</p>
+                      <p className="ms-2 m-0">The Logo Alchemy</p>
                     </div>
                     <div className="d-flex justify-content-center align-items-center ms-4">
                       <img src={calendarIcon} alt="calendar" />
-                      <p className="ms-2 mt-2">April 14, 2023</p>
+                      <p className="ms-2 m-0">April 14, 2023</p>
                     </div>
                   </div>
-                  <h3 className="pt-3">
-                    ACCELERATING UX MATURITY WITH A BREAKTHROUGH
+                  <h3 style={{ textTransform: 'uppercase' }} className="pt-3">
+                    A Paradigm Shift in Game Development
                   </h3>
                   <p className="Article-Para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde, hic veritatis eum iste sit debitis nesciunt corrupti
-                    amet, ducimus doloremque placeat laboriosam asperiores alias
-                    impedit accusamus similique beatae dolorem? Unde.
+                    The gaming industry is constantly evolving, pushing boundaries and seeking new ways to captivate players with immersive and visually stunning experiences. In this quest for innovation, one name stands out: Unreal Engine.
                   </p>
                 </div>
               </div>
 
               <div className="col-lg-6">
                 <div className="inner-image p-3">
-                  <img className="img-fluid" src={bannerLogo} alt="banner" />
+                  <img style={{ borderRadius: '15px' }} className="img-fluid" src={bannerLogo} alt="banner" />
                 </div>
               </div>
             </div>

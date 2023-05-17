@@ -14,6 +14,7 @@ import BrandsIdentity from "./Components/Blogs/BrandsIdentity";
 import Portfolio from "./Portfolio.js";
 import Usp from "./Components/Usp/Usp";
 import PortfolioGallery from "./PortfolioGallery";
+import GameBlogDetails from "./Components/Blogs/GameBlogDetails";
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
         <Route
           path="/ArtificalBlogDetails"
           element={<ArtificalBlogDetails />}
+        />
+        <Route
+          path="/GameBlogDetails"
+          element={<GameBlogDetails />}
         />
         <Route path="/BrandsIdentity" element={<BrandsIdentity />} />
         <Route path="/Portfolio" element={<Portfolio />} />

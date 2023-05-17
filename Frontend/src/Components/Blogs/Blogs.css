@@ -14,6 +14,7 @@
 }
 
 
+
 .Icon-Box-inner {
     display: flex;
     flex-direction: row;
@@ -23,11 +24,11 @@
 
 .Content-heading {
     color: white;
+    font-size: 18px
 }
 
 .Content {
-    /* width: 99% !important; */
-    /* background-color: red; */
+    font-size: 15px;
 }
 
 .noScroll {

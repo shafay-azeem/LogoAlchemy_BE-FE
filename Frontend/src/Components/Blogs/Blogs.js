@@ -39,79 +39,56 @@ const Blogs = () => {
   const items = [
     {
       id: 1,
-      // imageUrl: require('../../assets/Layer 2.png'),
       imageUrl: require("../../assets/bloddetailbackground.jpg"),
       title: "The logo Alcehemy",
-      date: "April 14, 2023",
+      date: "April 12, 2023",
       route: "BlogDetails",
       heading: "THE FUTURE OF ARTIFICIAL INTELLIGENCE",
       description:
-        "AS WE ENTER A NEW ERA OF TECHNOLOGICAL INNOVATION, AI IS BECOMING MORE AND MORE PREVALENT IN OUR EVERYDAY LIVES. FROM VIRTUAL ASSISTANTS LIKE SIRI AND ALEXA TO SELF-DRIVING CARS AND PERSONALIZED RECOMMENDATIONS ON SOCIAL MEDIA",
-      buttonText: "Continue Reading",
+        "As we enter a new era of technological innovation, ai is becoming more and more prevalent in our everyday lives. from virtual assistants like siri and alexa to self-driving cars and personalized recommendations on social media",
+      buttonText: "Read More",
       calendarIcon: require("../../assets/user.png"),
       userIcon: require("../../assets/calendar.png"),
     },
     {
       id: 2,
-      // imageUrl: require('../../assets/Layer 2.png'),
       imageUrl: require("../../assets/image open ai.jpg"),
       title: "The logo Alcehemy",
       route: "ArtificalBlogDetails",
-      date: "April 14, 2023",
+      date: "April 21, 2023",
       heading: "OPEN AI",
       description:
-        "ARTIFICIAL INTELLIGENCE (AI) IS ONE OF THE MOST TRANSFORMATIVE TECHNOLOGIES OF OUR TIME, WITH THE POTENTIAL TO REVOLUTIONIZE ALMOST EVERY ASPECT OF OUR LIVES. OPENAI, A NON-PROFIT AI RESEARCH ORGANIZATION, IS AT THE FOREFRONT OF DEVELOPING CUTTING-EDGE",
-      buttonText: "Continue Reading",
+        "Artificial intelligence (ai) is one of the most transformative technologies of our time, with the potential to revolutionize almost every aspect of our lives. openai, a non-profit ai research organization, is at the forefront of developing cutting-edge",
+      buttonText: "Read More",
       calendarIcon: require("../../assets/user.png"),
       userIcon: require("../../assets/calendar.png"),
     },
     {
       id: 3,
-      // imageUrl: require('../../assets/Layer 2.png'),
       imageUrl: require("../../assets/Untitled-1.jpg"),
       title: "The logo Alcehemy",
-      date: "April 14, 2023",
+      date: "April 29, 2023",
       route: "BrandsIdentity",
       heading: "BUILD A STRONG BRAND IDENTITY IN 2023: TIPS AND TRENDS",
       description:
-        "IN 2023, CREATING A STRONG BRAND IDENTITY IS MORE IMPORTANT THAN EVER. WITH THE INCREASING COMPETITION IN THE MARKET, BUSINESSES NEED TO DIFFERENTIATE THEMSELVES AND CONNECT WITH THEIR TARGET AUDIENCE",
-      buttonText: "Continue Reading",
+        "In 2023, creating a strong brand identity is more important than ever. with the increasing competition in the market, businesses need to differentiate themselves and connect with their target audience",
+      buttonText: "Read More",
       calendarIcon: require("../../assets/user.png"),
       userIcon: require("../../assets/calendar.png"),
     },
-    // {
-    //     id: 4,
-    //     imageUrl: require('../../assets/Layer 2.png'),
-    //     title: 'The logo Alcehemy',
-    //     date: 'April 14, 2023',
-    //     heading: 'ACCELERATING UX MATURITY WITH A BREAKTHROUGH',
-    //     description: 'RESEARCH BY AMERICAN MARKETING ASSOCIATION STATES THAT 60% OF MARKETERS INCLUDE WEBINARS IN THEIR MARKETING STATERGY. A SEUVER BY CURATA ALSO BACKS THE IMPORTANCE OF WEBINARS WHERE 79% OF BUYERS ARE READY TO SHARE THEIR CONTACT DETAILS IN EXCHANGE',
-    //     buttonText: 'Continue Reading',
-    //     calendarIcon: require('../../assets/user.png'),
-    //     userIcon: require('../../assets/calendar.png'),
-    // },
-    // {
-    //     id: 5,
-    //     imageUrl: require('../../assets/Layer 2.png'),
-    //     title: 'The logo Alcehemy',
-    //     date: 'April 14, 2023',
-    //     heading: 'ACCELERATING UX MATURITY WITH A BREAKTHROUGH',
-    //     description: 'RESEARCH BY AMERICAN MARKETING ASSOCIATION STATES THAT 60% OF MARKETERS INCLUDE WEBINARS IN THEIR MARKETING STATERGY. A SEUVER BY CURATA ALSO BACKS THE IMPORTANCE OF WEBINARS WHERE 79% OF BUYERS ARE READY TO SHARE THEIR CONTACT DETAILS IN EXCHANGE',
-    //     buttonText: 'Continue Reading',
-    //     calendarIcon: require('../../assets/user.png'),
-    //     userIcon: require('../../assets/calendar.png'),
-    // },
-    // {
-    //     id: 6,
-    //     imageUrl: require('../../assets/Layer 2.png'),
-    //     title: 'The logo Alcehemy',
-    //     date: 'April 14, 2023',
-    //     heading: 'ACCELERATING UX MATURITY WITH A BREAKTHROUGH',
-    //     description: 'RESEARCH BY AMERICAN MARKETING ASSOCIATION STATES THAT 60% OF MARKETERS INCLUDE WEBINARS IN THEIR MARKETING STATERGY. A SEUVER BY CURATA ALSO BACKS THE IMPORTANCE OF WEBINARS WHERE 79% OF BUYERS ARE READY TO SHARE THEIR CONTACT DETAILS IN EXCHANGE',
-    //     buttonText: 'Continue Reading',
-    //     calendarIcon: require('../../assets/user.png'),
-    //     userIcon: require('../../assets/calendar.png'),
-    // },
+    {
+      id: 4,
+      imageUrl: require("../../assets/real-engine.jpg"),
+      title: "The logo Alcehemy",
+      date: "May 1, 2023",
+      route: "GameBlogDetails",
+      heading: "A PARADIGM SHIFT IN GAME DEVELOPMENT",
+      description:
+        "The gaming industry is constantly evolving, pushing boundaries and seeking new ways to captivate players with immersive and visually stunning experiences. in this quest for innovation, one name stands out: unreal engine.",
+      buttonText: "Read More",
+      calendarIcon: require("../../assets/user.png"),
+      userIcon: require("../../assets/calendar.png"),
+    },
   ];
 
   const settings = {
@@ -188,21 +165,23 @@ const Blogs = () => {
                         <div className="Icon-Box py-3">
                           <div className="Icon-Box-inner">
                             <img
+                              style={{ width: '18px' }}
                               src={icon1}
                               alt="icon1"
                               className="img-fluid"
                             />
-                            <p className="my-title font-face-im text-white ms-2 mt-2">
+                            <p className="my-title text-white ms-2 m-0">
                               {x.title}
                             </p>
                           </div>
                           <div className="Icon-Box-inner ms-3">
                             <img
+                              style={{ width: '18px' }}
                               src={icon2}
                               alt="icon1"
                               className="img-fluid"
                             />
-                            <p className="date font-face-im text-white ms-2 mt-2">
+                            <p className="date text-white ms-2 m-0">
                               {x.date}
                             </p>
                           </div>
@@ -217,10 +196,10 @@ const Blogs = () => {
                               rw <= 350
                                 ? "10px"
                                 : rw > 350 && rw <= 640
-                                ? "13px"
-                                : rw >= 641 && rw <= 1007
-                                ? "16px"
-                                : "20px"
+                                  ? "13px"
+                                  : rw >= 641 && rw <= 1007
+                                    ? "16px"
+                                    : "20px"
                             }
                             title={x.buttonText}
                             rf={x.route}

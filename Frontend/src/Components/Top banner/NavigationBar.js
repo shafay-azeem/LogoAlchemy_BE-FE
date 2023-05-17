@@ -133,7 +133,6 @@ const NavigationBar = () => {
     const dropdownItems = [
       {
         name: "Logo",
-        // description: "Logo Description",
         description:
           "A captivating logo is the cornerstone of any successful brand.",
         imageSrc: require("../../assets/logo.jpg"),
@@ -142,7 +141,6 @@ const NavigationBar = () => {
       },
       {
         name: "Illustration",
-        // description: "Illustration Descripiton",
         description:
           "Vibrant and captivating illustrations that bring brands to life.",
         imageSrc: require("../../assets/illustration.jpg"),
@@ -151,7 +149,6 @@ const NavigationBar = () => {
       },
       {
         name: "Branding",
-        // description: "Branding Description",
         description:
           "Strategic and compelling branding that breathes life into brands.",
         imageSrc: require("../../assets/branding.jpg"),
