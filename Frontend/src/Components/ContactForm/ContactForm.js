@@ -33,6 +33,7 @@ const ContactForm = () => {
       }
     );
     const responseData = await response.json();
+    console.log(responseData)
     alert(responseData.msg);
     document.getElementById("myForm").reset();
   };

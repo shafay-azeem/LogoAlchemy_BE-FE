@@ -7,7 +7,6 @@ import IllustrationClient from "./Components/Illustration/IllustrationClient";
 import Pricing from "./Components/Pricing/Pricing";
 import ContactForm from "./Components/ContactForm/ContactForm";
 import Footer from "./Components/Miscellaneous/Footer";
-import image from "../src/assets/3d render.png";
 
 const Illustration = () => {
   let detail = [
@@ -166,6 +165,50 @@ const Illustration = () => {
     },
   ];
 
+  let price = [{
+    packageName: "BASIC",
+    orignalPrice: 600.00,
+    discountedPrice: 300.00,
+    description: "1 custom simple illustration based on the provided brief",
+    features1: "1 round of revisions on the chosen concept",
+    features2: "24-48 Hours Turn Around Time",
+    features3: "Formats JPEG & PNG",
+    features4: "100% Owner Ship Rights"
+  }, {
+    packageName: "STANDARD",
+    orignalPrice: 1000.00,
+    discountedPrice: 500.00,
+    description: "1 custom simple illustration based on the provided brief",
+    features1: "2 rounds of revisions on the chosen concept",
+    features2: "Final delivery of the illustration in high-resolution digital format",
+    features3: "24-48 Hours Turn Around Time",
+    features4: "Formats JPEG, PNG, AI",
+    features5: "Commercial usage rights for the illustration (non-exclusive)"
+  }, {
+    packageName: "PREMIUM",
+    orignalPrice: 1600.00,
+    discountedPrice: 800.00,
+    description: "Creation of one complex and highly detailed illustration based on the provided brief",
+    features1: "Unlimited rounds of revisions on the chosen concept",
+    features2: "Final delivery of the illustration in high-resolution digital format",
+    features3: "24-48 Hours Turn Around Time",
+    features4: "Formats JPEG, PNG, EPS, PDF, AI",
+    features5: "Commercial usage rights for the illustration (non-exclusive)"
+  }]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -189,7 +232,7 @@ const Illustration = () => {
         <IllustrationClient items={items} />
       </div>
       <div>
-        <Pricing />
+        <Pricing price={price} />
       </div>
       <div id="ContactForm">
         <ContactForm />

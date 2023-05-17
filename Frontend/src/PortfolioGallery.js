@@ -1,20 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "../src/PortfolioGallery.css";
 
-const PortfolioGallery = () => {
+const PortfolioGallery = ({ image }) => {
     const [data, setData] = useState({ img: "", i: 0 });
-    const images = [
-        require("./assets/Gallery/img1.jpg"),
-        require("./assets/Gallery/img2.jpg"),
-        require("./assets/Gallery/img3.jpg"),
-        require("./assets/Gallery/img4.jpg"),
-        require("./assets/Gallery/img5.jpg"),
-        require("./assets/Gallery/img6.jpg"),
-        require("./assets/Gallery/img7.jpg"),
-        require("./assets/Gallery/img8.jpg"),
-    ];
+
+    const images = image
 
     const viewImage = (img, i) => {
         setData({ img, i });
@@ -32,6 +24,8 @@ const PortfolioGallery = () => {
             setData({ img: "", i: 0 });
         }
     };
+
+
     return (
         <>
 
@@ -69,8 +63,7 @@ const PortfolioGallery = () => {
                         {images.map((image, i) => (
                             <div className="box">
                                 <div class="box-content">
-                                    <h3 >Williamson</h3>
-                                    <span >Web designer</span>
+                                    <span >The Logo Alchemy</span>
                                 </div>
                                 <img
                                     key={i}

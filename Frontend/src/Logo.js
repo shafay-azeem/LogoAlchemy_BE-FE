@@ -168,6 +168,43 @@ const Logo = () => {
     },
   ];
 
+  let price = [{
+    packageName: "BASIC",
+    orignalPrice: 160.00,
+    discountedPrice: 80.00,
+    description: "Initial consultation",
+    features1: "2 initial logo concepts",
+    features2: "2 rounds of revisions on the chosen concept",
+    features3: "24-48 Hours Turn Around Time",
+    features4: "Formats JPEG & AI",
+    features5: "100% Owner Ship Rights"
+  }, {
+    packageName: "STANDARD",
+    orignalPrice: 300.00,
+    discountedPrice: 150.00,
+    description: "Initial consultation",
+    features1: "3 initial logo concepts",
+    features2: "3 rounds of revisions on the chosen concept",
+    features3: "Design of one social media post incorporating the finalized logo",
+    features4: "24-48 Hours Turn Around Time",
+    features5: "Formats JPEG, PNG, EPS, PDF, AI",
+    features6: "100% Owner Ship Rights"
+  }, {
+    packageName: "PREMIUM",
+    orignalPrice: 600.00,
+    discountedPrice: 300.00,
+    description: "Comprehensive consultation",
+    features1: "5 initial logo concepts",
+    features2: "Unlimited rounds of revisions on the chosen concept",
+    features3: "Custom landing page design with the finalized logo",
+    features4: "Stationery design(business card, letterhead) using the finalized logo",
+    features5: "24-48 Hours Turn Around Time",
+    features6: "Formats JPEG, PNG, EPS, PDF, AI",
+    features7: "High-resolution logo files suitable for both print and digital use",
+    features8: "100% Owner Ship Rights"
+  }]
+
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -189,7 +226,7 @@ const Logo = () => {
         <IllustrationClient items={items} />
       </div>
       <div>
-        <Pricing />
+        <Pricing price={price} />
       </div>
       <div id="ContactForm">
         <ContactForm />
