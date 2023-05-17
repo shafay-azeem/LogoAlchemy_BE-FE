@@ -20,7 +20,7 @@ const CustomMultiCards = (props) => {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
               >
-                WE’REAFULL-SERVICE BRANDING & MARKETING AGENCY
+                WE’RE A FULL-SERVICE BRANDING & MARKETING AGENCY
               </h3>
               <h4
                 className="black font-face-im text-center"
