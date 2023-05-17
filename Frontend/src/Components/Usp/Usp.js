@@ -47,7 +47,6 @@ const Usp = () => {
               <CustomButton
                 title="View Past Projects"
                 padding="10px 45px"
-                rf="DigitalService"
                 z="1"
                 rf="Portfolio"
                 rn="yes"
