@@ -24,7 +24,7 @@ const ContactForm = () => {
     console.log(name, email, phoneNumber, notes, help)
     event.preventDefault();
     const response = await fetch(
-      "http://localhost:7000/api/email/V1/contactInfoMail",
+      "http://thelogoalchemy.com/api/email/V1/contactInfoMail",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
