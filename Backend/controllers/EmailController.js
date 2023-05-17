@@ -7,7 +7,7 @@ const sendEmailFromServer = (req, res) => {
   let packagePrice = req.query.amount;
   let config = {
     service: "SMTP",
-    host: "logoalchemy.com",
+    host: "test.lifoapp.co.uk",
     port: 465,
     auth: {
       user: process.env.Email,
@@ -21,7 +21,7 @@ const sendEmailFromServer = (req, res) => {
     theme: "default",
     product: {
       name: "Order Arrived",
-      link: "https://mailgen.js/",
+      link: "http://thelogoalchemy.com/",
     },
   });
 
@@ -67,7 +67,7 @@ const contactInfoMail = (req, res) => {
 
   let config = {
     service: "SMTP",
-    host: "thelogoalchemy.com",
+    host: "test.lifoapp.co.uk",
     port: 465,
     auth: {
       user: process.env.Email,
@@ -106,8 +106,8 @@ const contactInfoMail = (req, res) => {
   let mail = MailGenerator.generate(response);
 
   let message = {
-    from: "info@thelogoalchemy.com",
-    to: "info@thelogoalchemy.com",
+    from: process.env.Email,
+    to: process.env.Email,
     subject: "Client Contact",
     html: mail,
   };
@@ -120,7 +120,6 @@ const contactInfoMail = (req, res) => {
       });
     })
     .catch((error) => {
-      console.log("errr", error)
       return res.status(500).json({ error });
     });
 };

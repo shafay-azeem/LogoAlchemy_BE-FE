@@ -6,6 +6,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const ContactForm = () => {
+
+
+  const currentProtocol = window.location.protocol;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState();
@@ -21,7 +24,7 @@ const ContactForm = () => {
     console.log(name, email, phoneNumber, notes, help)
     event.preventDefault();
     const response = await fetch(
-      "http://thelogoalchemy.com/api/email/V1/contactInfoMail",
+      "http://localhost:7000/api/email/V1/contactInfoMail",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

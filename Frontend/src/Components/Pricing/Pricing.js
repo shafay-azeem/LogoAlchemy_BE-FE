@@ -51,7 +51,7 @@ const Pricing = (props) => {
   }
 
   function testStripe(packageName, packagePrice) {
-    fetch("http://localhost:7000/api/product/V1/checkout", {
+    fetch("http://thelogoalchemy.com/api/product/V1/checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
