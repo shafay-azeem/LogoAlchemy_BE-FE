@@ -107,11 +107,11 @@ const Articles = () => {
                 <div className="inner-items p-5">
                   <div className="inner-user-calendar">
                     <div className="d-flex justify-content-center align-items-center">
-                      <img src={userIcon} alt="user" />
+                      <img style={{ width: '18px', height: 'auto' }} src={userIcon} alt="user" />
                       <p className="ms-2 m-0">The Logo Alchemy</p>
                     </div>
                     <div className="d-flex justify-content-center align-items-center ms-4">
-                      <img src={calendarIcon} alt="calendar" />
+                      <img style={{ width: '18px', height: 'auto' }} src={calendarIcon} alt="calendar" />
                       <p className="ms-2 m-0">April 14, 2023</p>
                     </div>
                   </div>
@@ -153,6 +153,7 @@ const Articles = () => {
                       <div className="d-flex py-3">
                         <div className="d-flex justify-content-start align-items-start">
                           <img
+                            style={{ width: '18px', height: 'auto' }}
                             className="img-fluid"
                             src={userIcon}
                             alt="user"
@@ -161,6 +162,7 @@ const Articles = () => {
                         </div>
                         <div className="d-flex justify-content-start align-items-start ms-3">
                           <img
+                            style={{ width: '18px', height: 'auto' }}
                             className="img-fluid"
                             src={x.calendarIcon}
                             alt="calendar"
