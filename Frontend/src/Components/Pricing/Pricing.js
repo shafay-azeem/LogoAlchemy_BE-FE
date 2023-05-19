@@ -108,21 +108,27 @@ const Pricing = (props) => {
                       <div className="Package-Description">
                         <p
                           style={{ color: "#5c5d5f" }}
-                          className="Package-Description-inner text-center"
+                          className="Package-Description-inner text-start"
                         >
-                          {x?.description}
+                          {x?.description ? "• " + x?.description : null}
                           <br />
-                          {x?.features1}
+
+                          {x?.features1 ? "• " + x?.features1 : null}
                           <br />
-                          {x?.features2}
+
+                          {x?.features2 ? "• " + x?.features2 : null}
                           <br />
-                          {x?.features3}
+
+                          {x?.features3 ? "• " + x?.features3 : null}
                           <br />
-                          {x?.features4}
+
+                          {x?.features4 ? "• " + x?.features4 : null}
                           <br />
-                          {x?.features5}
+
+                          {x?.features5 ? "• " + x?.features5 : null}
                           <br />
-                          {x?.features6}
+
+                          {x?.features6 ? "• " + x?.features6 : null}
                         </p>
                       </div>
                     </div>

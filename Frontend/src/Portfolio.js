@@ -59,6 +59,15 @@ const Portfolio = ({ heading2 }) => {
     require("./assets/Logo/6.jpg"),
     require("./assets/Logo/7.jpg"),
     require("./assets/Logo/8.jpg"),
+
+    require("./assets/Logo/9.jpg"),
+    require("./assets/Logo/10.jpg"),
+    require("./assets/Logo/11.jpg"),
+    require("./assets/Logo/12.jpg"),
+    require("./assets/Logo/13.jpg"),
+    require("./assets/Logo/14.jpg"),
+    require("./assets/Logo/15.jpg"),
+    require("./assets/Logo/16.jpg"),
   ];
 
   const images1 = [
