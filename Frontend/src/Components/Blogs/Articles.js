@@ -6,7 +6,7 @@ import userIcon from "../../assets/user.png";
 import calendarIcon from "../../assets/calendar.png";
 import layer3 from "../../assets/Layer 3.png";
 import CustomButtonArror from "../Global/CustomButtonArror";
-import CustomButton from "../Global/CustomButton";
+
 import Footer from "../Miscellaneous/Footer";
 import { useNavigate } from "react-router-dom";
 import ContactForm from "../ContactForm/ContactForm";
@@ -27,7 +27,7 @@ const Articles = () => {
       route: "BlogDetails",
       heading: "THE FUTURE OF ARTIFICIAL INTELLIGENCE",
       description:
-        "AS WE ENTER A NEW ERA OF TECHNOLOGICAL INNOVATION, AI IS BECOMING MORE AND MORE PREVALENT IN OUR EVERYDAY LIVES. FROM VIRTUAL ASSISTANTS LIKE SIRI AND ALEXA TO SELF-DRIVING CARS AND PERSONALIZED RECOMMENDATIONS ON SOCIAL MEDIA",
+        "As we enter a new era of technological innovation, ai is becoming more and more prevalent in our everyday lives. From virtual assistants like siri and alexa to self-driving cars and personalized recommendations on social media.",
       buttonText: "Continue Reading",
       userIcon: require("../../assets/user.png"),
       calendarIcon: require("../../assets/calendar.png"),
@@ -40,7 +40,7 @@ const Articles = () => {
       date: "April 14, 2023",
       heading: "OPEN AI",
       description:
-        "ARTIFICIAL INTELLIGENCE (AI) IS ONE OF THE MOST TRANSFORMATIVE TECHNOLOGIES OF OUR TIME, WITH THE POTENTIAL TO REVOLUTIONIZE ALMOST EVERY ASPECT OF OUR LIVES. OPENAI, A NON-PROFIT AI RESEARCH ORGANIZATION, IS AT THE FOREFRONT OF DEVELOPING CUTTING-EDGE",
+        "Artificial intelligence (ai) is one of the most transformative technologies of our time, with the potential to revolutionize almost every aspect of our lives. Openai, a non-profit ai research organization, is at the forefront of developing cutting-edge.",
       buttonText: "Continue Reading",
       userIcon: require("../../assets/user.png"),
       calendarIcon: require("../../assets/calendar.png"),
@@ -53,7 +53,7 @@ const Articles = () => {
       route: "BrandsIdentity",
       heading: "BUILD A STRONG BRAND IDENTITY IN 2023: TIPS AND TRENDS",
       description:
-        "IN 2023, CREATING A STRONG BRAND IDENTITY IS MORE IMPORTANT THAN EVER. WITH THE INCREASING COMPETITION IN THE MARKET, BUSINESSES NEED TO DIFFERENTIATE THEMSELVES AND CONNECT WITH THEIR TARGET AUDIENCE",
+        "In 2023, creating a strong brand identity is more important than ever. With the increasing competition in the market, businesses need to differentiate themselves and connect with their target audience.",
       buttonText: "Continue Reading",
       userIcon: require("../../assets/user.png"),
       calendarIcon: require("../../assets/calendar.png"),
@@ -92,8 +92,8 @@ const Articles = () => {
                 data-aos="zoom-in"
                 data-aos-duration="1000"
               >
-                We work hard to create valuable content for you & your
-                business. Explore it
+                We work hard to create valuable content for you & your business.
+                Explore it
               </p>
             </div>
             <div className="col-md-3"></div>
@@ -107,26 +107,47 @@ const Articles = () => {
                 <div className="inner-items p-5">
                   <div className="inner-user-calendar">
                     <div className="d-flex justify-content-center align-items-center">
-                      <img style={{ width: '18px', height: 'auto' }} src={userIcon} alt="user" />
+                      <img
+                        style={{ width: "18px", height: "auto" }}
+                        src={userIcon}
+                        alt="user"
+                      />
                       <p className="ms-2 m-0">The Logo Alchemy</p>
                     </div>
                     <div className="d-flex justify-content-center align-items-center ms-4">
-                      <img style={{ width: '18px', height: 'auto' }} src={calendarIcon} alt="calendar" />
+                      <img
+                        style={{ width: "18px", height: "auto" }}
+                        src={calendarIcon}
+                        alt="calendar"
+                      />
                       <p className="ms-2 m-0">April 14, 2023</p>
                     </div>
                   </div>
-                  <h3 style={{ textTransform: 'uppercase' }} className="pt-3">
+                  <h3 style={{ textTransform: "uppercase" }} className="pt-3">
                     A Paradigm Shift in Game Development
                   </h3>
                   <p className="Article-Para">
-                    The gaming industry is constantly evolving, pushing boundaries and seeking new ways to captivate players with immersive and visually stunning experiences. In this quest for innovation, one name stands out: Unreal Engine.
+                    The gaming industry is constantly evolving, pushing
+                    boundaries and seeking new ways to captivate players with
+                    immersive and visually stunning experiences. In this quest
+                    for innovation, one name stands out: Unreal Engine.
                   </p>
+                  <CustomButtonArror
+                    rf="GameBlogDetails"
+                    rn="yes"
+                    title="Continue Reading"
+                  />
                 </div>
               </div>
 
               <div className="col-lg-6">
                 <div className="inner-image p-3">
-                  <img style={{ borderRadius: '15px' }} className="img-fluid" src={bannerLogo} alt="banner" />
+                  <img
+                    style={{ borderRadius: "15px" }}
+                    className="img-fluid"
+                    src={bannerLogo}
+                    alt="banner"
+                  />
                 </div>
               </div>
             </div>
@@ -153,7 +174,7 @@ const Articles = () => {
                       <div className="d-flex py-3">
                         <div className="d-flex justify-content-start align-items-start">
                           <img
-                            style={{ width: '18px', height: 'auto' }}
+                            style={{ width: "18px", height: "auto" }}
                             className="img-fluid"
                             src={userIcon}
                             alt="user"
@@ -162,7 +183,7 @@ const Articles = () => {
                         </div>
                         <div className="d-flex justify-content-start align-items-start ms-3">
                           <img
-                            style={{ width: '18px', height: 'auto' }}
+                            style={{ width: "18px", height: "auto" }}
                             className="img-fluid"
                             src={x.calendarIcon}
                             alt="calendar"

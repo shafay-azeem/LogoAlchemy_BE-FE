@@ -73,14 +73,14 @@ const Pricing = (props) => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            OUR TOP NOTCH POCKET FRIENDLY SERVICE PLANS
+            OUR POCKET FRIENDLY SERVICE PLANS
           </h3>
           <h1
             className="text-center black font-face-im "
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            BEST SELLING POCKET-FRIENDLY PRICING PLAN
+            Budget and requirement prioritized with tailored packages.
           </h1>
         </div>
       </div>
@@ -97,7 +97,9 @@ const Pricing = (props) => {
                   <div class="div2">
                     <div class="div3">
                       <h3 className="text-center">
-                        <del className="font-face-ex text-center red">$ {x?.orignalPrice}.00</del>
+                        <del className="font-face-ex text-center red">
+                          $ {x?.orignalPrice}.00
+                        </del>
                       </h3>
                       <h1
                         style={{ color: "#343b3e" }}
@@ -135,10 +137,17 @@ const Pricing = (props) => {
                   </div>
                 </div>
                 <div class="bwrap">
-                  <div onClick={() => testStripe(x.packageName, x?.discountedPrice)} class="purchase">Purchase Now!</div>
+                  <div
+                    onClick={() =>
+                      testStripe(x.packageName, x?.discountedPrice)
+                    }
+                    class="purchase"
+                  >
+                    Purchase Now!
+                  </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>

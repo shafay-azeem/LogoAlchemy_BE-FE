@@ -42,7 +42,7 @@ const ServiceSection = () => {
                 We create exceptional visual identities for brands
               </h3>
               <h4 className="black font-face-im text-center">
-                Our team crafts customized designs that captivate audiences and
+                Our team crafts customized designs that captivate audience and
                 elevate brands
               </h4>
             </div>
@@ -141,8 +141,8 @@ const ServiceSection = () => {
                 style={{ color: "#d40e2f", fontSize: "22.5px" }}
                 className=" text-center font-face-im py-4"
               >
-                &nbsp; We Build Long-Lasting Relationships That Don’t Stop at Project
-                Delivery.
+                &nbsp; Building enduring relationships beyond project
+                completion.
               </span>
             </h3>
 

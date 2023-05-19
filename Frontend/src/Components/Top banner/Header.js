@@ -59,14 +59,14 @@ const Header = ({ buttonText, heading1, heading2, heading3 }) => {
       <div className="row">
         <div className="col-lg-6">
           <div className="row">
-            <div className="col-12" data-aos="fade-up" data-aos-duration="1000">
+            {/* <div className="col-12" data-aos="fade-up" data-aos-duration="1000">
               <AgencyButton
                 title={buttonText}
                 borderRadius="20px"
                 padding="3px 15px 3px 15px"
                 buttonClass="my-custom-class font-face-gm"
               />
-            </div>
+            </div> */}
           </div>
           <div className="row">
             <div

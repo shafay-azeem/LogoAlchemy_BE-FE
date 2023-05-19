@@ -8,12 +8,12 @@ const BrandingHeader = () => {
     <div className="brandingContainer container">
       <div className="row">
         <div className="col-lg-7 " data-aos="fade-up" data-aos-duration="1000">
-          <AgencyButton
+          {/* <AgencyButton
             title={"Branding Agency"}
             borderRadius="20px"
             padding="3px 15px 3px 15px"
             buttonClass="font-face-gm"
-          />
+          /> */}
 
           <div className="row">
             <div

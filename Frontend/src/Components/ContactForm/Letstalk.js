@@ -48,11 +48,11 @@ const Letstalk = () => {
         {/* <div className="col-md-8 col-sm-4"> */}
         <div className="col-lg-8 col-md-12 col-sm-12">
           <h4
-            className="font-face-im text-center red"
+            className="font-face-im text-center red text-uppercase"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            WE SERVED YOU AS YOU HAVE NEVER SERVED BEFORE
+            We provide service like never before experienced by you.
           </h4>
           <p
             className="inner-Heading font-face-im text-center black"

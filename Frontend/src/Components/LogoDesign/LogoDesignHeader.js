@@ -9,14 +9,14 @@ const LogoDesignHeader = () => {
     <div className="logoDesignContainer container">
       <div className="row">
         <div className="col-lg-7 ">
-          <AgencyButton
+          {/* <AgencyButton
             title={"Logo Design"}
             borderRadius="20px"
             padding="3px 15px 3px 15px"
             buttonClass="font-face-gm"
             data-aos="fade-up"
             data-aos-duration="1000"
-          />
+          /> */}
 
           <div className="row">
             <div
@@ -25,7 +25,7 @@ const LogoDesignHeader = () => {
               data-aos-duration="1000"
             >
               <p className="logoDesignTitle font-face-im">
-                Connect With Your Customers , Not <br></br>
+                Connect With Your Customers, Not <br></br>
                 <span className="font-face-gm" style={{ color: "#ba1432" }}>
                   Just Your Business
                 </span>
