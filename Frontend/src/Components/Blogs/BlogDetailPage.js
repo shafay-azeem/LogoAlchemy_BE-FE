@@ -1,91 +1,159 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import "../Blogs/BlogDetailPage.css";
 import NavigationBar from "../../Components/Top banner/NavigationBar";
 import Footer from "../Miscellaneous/Footer";
 import fbLogo from "../../assets/001-facebook.png";
 import linkdinLogo from "../../assets/003-linkedin.png";
-import twitterLogo from "../../assets/002-twitter.png"
+import twitterLogo from "../../assets/002-twitter.png";
 import ContactForm from "../../Components/ContactForm/ContactForm";
-import CustomButton from '../Global/CustomButton';
+import CustomButton from "../Global/CustomButton";
 import userIcon from "../../assets/user.png";
 import calendarIcon from "../../assets/calendar.png";
 import layer3 from "../../assets/Layer 3.png";
 import CustomButtonArror from "../Global/CustomButtonArror";
+import FloatingBtn from "../Global/FloatingBtn";
 
 const BlogDetailPage = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-    return (
-        <>
-            <div className="blog-detail-header">
-                <div className="container-fluid">
-                    <NavigationBar />
-                </div>
-                <div className="container">
-                    <div className="row py-5">
-                        <div className="col-md-12 text-center">
-                            <p className='font-face-ex text-white'>April 14, 2023</p>
-                            <h1 className='font-face-ex text-white'>The Future of AI</h1>
-                            <p className='font-face-im text-white'>The Logo Alchemy</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="container">
-                </div>
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <>
+      <div className="blog-detail-header">
+        <div className="container-fluid">
+          <NavigationBar />
+        </div>
+
+        <div
+          style={{
+            position: "fixed",
+            bottom: "40px",
+            right: "-10px",
+            zIndex: "9999",
+          }}
+        >
+          <FloatingBtn />
+        </div>
+        <div className="container">
+          <div className="row py-5">
+            <div className="col-md-12 text-center">
+              <p className="font-face-ex text-white">April 14, 2023</p>
+              <h1 className="font-face-ex text-white">The Future of AI</h1>
+              <p className="font-face-im text-white">The Logo Alchemy</p>
             </div>
+          </div>
+        </div>
+        <div className="container"></div>
+      </div>
 
-            <div className='blod-detail-banner'>
-                <div className="container py-5">
-                    <div className="row">
-                        <div style={{ borderRadius: '20px' }} className="bg-white shadow col-lg-12">
-                            <div className="blog-detail-inner p-5">
-                                <p>
-                                    As we enter a new era of technological innovation, AI is becoming more and more prevalent in our everyday lives. From virtual assistants like Siri and Alexa to self-driving cars and personalized recommendations on social media, AI is rapidly changing the way we interact with technology. In this blog post, we'll explore the top AI trends to watch in 2023, from machine learning and natural language processing to cybersecurity and edge computing.
-                                </p>
-                                <h4 className='font-face-im'>Machine Learning</h4>
-                                <p>Machine learning is a subset of AI that uses statistical techniques to enable computer systems to improve performance on a specific task without being explicitly programmed. In 2023, we'll see continued growth in machine learning applications, particularly in areas like predictive analytics, fraud detection, and personalized marketing.
-                                </p>
-                                <h4 className='font-face-im'>Natural Language Processing</h4>
-                                <p>Natural language processing (NLP) is the branch of AI that focuses on the interaction between computers and human language. With the rise of virtual assistants and chatbots, NLP is becoming increasingly important in the development of conversational AI. In 2023, we can expect to see significant advancements in NLP, particularly in areas like sentiment analysis and language translation.
-                                </p>
-                                <h4 className='font-face-im'>Computer Vision</h4>
-                                <p>Computer vision is the ability of computers to interpret and understand visual information from the world around us. In 2023, we'll see continued growth in computer vision applications, particularly in areas like autonomous vehicles, facial recognition, and object detection.</p>
-                                <h4 className='font-face-im'>Automation</h4>
-                                <p>Automation is the use of technology to perform tasks without human intervention. In 2023, we can expect to see more industries and businesses adopting automation technologies, particularly in areas like manufacturing, logistics, and healthcare.</p>
-                                <h4 className='font-face-im'>Deep Learning and Neural Networks</h4>
-                                <p>Deep learning is a subset of machine learning that uses artificial neural networks to simulate the way the human brain works. In 2023, we'll see continued growth in deep learning applications, particularly in areas like image and speech recognition.</p>
-                                <h4 className='font-face-im'>Big Data</h4>
-                                <p>Big data refers to the massive amounts of structured and unstructured data generated by businesses and individuals every day. In 2023, we can expect to see more businesses investing in big data technologies and analytics to gain valuable insights into customer behavior and market trends.
-                                </p>
-                                <h4 className='font-face-im'>Edge Computing</h4>
-                                <p>Edge computing is the processing of data at the edge of the network, closer to the source of the data. In 2023, we'll see continued growth in edge computing applications, particularly in areas like autonomous vehicles and IoT devices.
-                                </p>
-                                <h4 className='font-face-im'>Cybersecurity</h4>
-                                <p>With the increasing use of AI in business and everyday life, cybersecurity will become more important than ever. In 2023, we can expect to see more businesses and governments investing in cybersecurity technologies to protect their networks and data from cyber attacks.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div className="row py-5 pb-0">
-                        <div className="col-12 text-end d-flex align-items-center justify-content-end">
-                            <p className='font-face-im align-items-center justify-content-center m-0'>Share : </p>
-                            <img className='img-fluid ms-2' src={fbLogo} alt="fb" />
-                            <img className='img-fluid ms-2' src={linkdinLogo} alt="fb" />
-                            <img className='img-fluid ms-2' src={twitterLogo} alt="fb" />
-                        </div>
-                    </div>
-
-                </div>
+      <div className="blod-detail-banner">
+        <div className="container py-5">
+          <div className="row">
+            <div
+              style={{ borderRadius: "20px" }}
+              className="bg-white shadow col-lg-12"
+            >
+              <div className="blog-detail-inner p-5">
+                <p>
+                  As we enter a new era of technological innovation, AI is
+                  becoming more and more prevalent in our everyday lives. From
+                  virtual assistants like Siri and Alexa to self-driving cars
+                  and personalized recommendations on social media, AI is
+                  rapidly changing the way we interact with technology. In this
+                  blog post, we'll explore the top AI trends to watch in 2023,
+                  from machine learning and natural language processing to
+                  cybersecurity and edge computing.
+                </p>
+                <h4 className="font-face-im">Machine Learning</h4>
+                <p>
+                  Machine learning is a subset of AI that uses statistical
+                  techniques to enable computer systems to improve performance
+                  on a specific task without being explicitly programmed. In
+                  2023, we'll see continued growth in machine learning
+                  applications, particularly in areas like predictive analytics,
+                  fraud detection, and personalized marketing.
+                </p>
+                <h4 className="font-face-im">Natural Language Processing</h4>
+                <p>
+                  Natural language processing (NLP) is the branch of AI that
+                  focuses on the interaction between computers and human
+                  language. With the rise of virtual assistants and chatbots,
+                  NLP is becoming increasingly important in the development of
+                  conversational AI. In 2023, we can expect to see significant
+                  advancements in NLP, particularly in areas like sentiment
+                  analysis and language translation.
+                </p>
+                <h4 className="font-face-im">Computer Vision</h4>
+                <p>
+                  Computer vision is the ability of computers to interpret and
+                  understand visual information from the world around us. In
+                  2023, we'll see continued growth in computer vision
+                  applications, particularly in areas like autonomous vehicles,
+                  facial recognition, and object detection.
+                </p>
+                <h4 className="font-face-im">Automation</h4>
+                <p>
+                  Automation is the use of technology to perform tasks without
+                  human intervention. In 2023, we can expect to see more
+                  industries and businesses adopting automation technologies,
+                  particularly in areas like manufacturing, logistics, and
+                  healthcare.
+                </p>
+                <h4 className="font-face-im">
+                  Deep Learning and Neural Networks
+                </h4>
+                <p>
+                  Deep learning is a subset of machine learning that uses
+                  artificial neural networks to simulate the way the human brain
+                  works. In 2023, we'll see continued growth in deep learning
+                  applications, particularly in areas like image and speech
+                  recognition.
+                </p>
+                <h4 className="font-face-im">Big Data</h4>
+                <p>
+                  Big data refers to the massive amounts of structured and
+                  unstructured data generated by businesses and individuals
+                  every day. In 2023, we can expect to see more businesses
+                  investing in big data technologies and analytics to gain
+                  valuable insights into customer behavior and market trends.
+                </p>
+                <h4 className="font-face-im">Edge Computing</h4>
+                <p>
+                  Edge computing is the processing of data at the edge of the
+                  network, closer to the source of the data. In 2023, we'll see
+                  continued growth in edge computing applications, particularly
+                  in areas like autonomous vehicles and IoT devices.
+                </p>
+                <h4 className="font-face-im">Cybersecurity</h4>
+                <p>
+                  With the increasing use of AI in business and everyday life,
+                  cybersecurity will become more important than ever. In 2023,
+                  we can expect to see more businesses and governments investing
+                  in cybersecurity technologies to protect their networks and
+                  data from cyber attacks.
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div className="container" id="ContactForm">
-                <ContactForm />
+          <div className="row py-5 pb-0">
+            <div className="col-12 text-end d-flex align-items-center justify-content-end">
+              <p className="font-face-im align-items-center justify-content-center m-0">
+                Share :{" "}
+              </p>
+              <img className="img-fluid ms-2" src={fbLogo} alt="fb" />
+              <img className="img-fluid ms-2" src={linkdinLogo} alt="fb" />
+              <img className="img-fluid ms-2" src={twitterLogo} alt="fb" />
             </div>
+          </div>
+        </div>
+      </div>
 
-            {/* <div className="blog-detail-cards py-5">
+      <div className="container" id="ContactForm">
+        <ContactForm />
+      </div>
+
+      {/* <div className="blog-detail-cards py-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3"></div>
@@ -170,9 +238,9 @@ const BlogDetailPage = () => {
                 </div>
             </div> */}
 
-            <Footer />
-        </>
-    )
-}
+      <Footer />
+    </>
+  );
+};
 
 export default BlogDetailPage;

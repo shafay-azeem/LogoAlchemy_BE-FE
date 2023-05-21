@@ -3,11 +3,22 @@ import "../TermAndConditions/TermAndConditionPage.css";
 import NavigationBar from "../Top banner/NavigationBar";
 import Footer from "../Miscellaneous/Footer";
 import ContactForm from "../ContactForm/ContactForm";
+import FloatingBtn from "../Global/FloatingBtn";
 const TermAndConditionPage = () => {
   return (
     <>
       <section className="ConditionBanner container-fluid">
         <NavigationBar />
+        <div
+          style={{
+            position: "fixed",
+            bottom: "100px",
+            right: "-10px",
+            zIndex: "9999",
+          }}
+        >
+          <FloatingBtn />
+        </div>
         <div className="row">
           <div className="col-lg-12">
             <h2 className="termsHeading text-white text-center">

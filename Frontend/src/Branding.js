@@ -7,6 +7,7 @@ import IllustrationClient from "./Components/Illustration/IllustrationClient";
 import Pricing from "./Components/Pricing/Pricing";
 import ContactForm from "./Components/ContactForm/ContactForm";
 import Footer from "./Components/Miscellaneous/Footer";
+import FloatingBtn from "./Components/Global/FloatingBtn";
 
 const Branding = () => {
   let detail = [
@@ -192,6 +193,16 @@ const Branding = () => {
     <>
       <div id="BrandingHeroImg">
         <BrandingHeroImg />
+      </div>
+      <div
+        style={{
+          position: "fixed",
+          bottom: "40px",
+          right: "-10px",
+          zIndex: "9999",
+        }}
+      >
+        <FloatingBtn />
       </div>
       <div id="CustomMultiCards">
         <CustomMultiCards cardData={cardData} cardHeading={cardHeading} />

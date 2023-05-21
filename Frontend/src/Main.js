@@ -12,6 +12,7 @@ import Blogs from "./Components/Blogs/Blogs";
 import Letstalk from "./Components/ContactForm/Letstalk";
 
 import Usp from "./Components/Usp/Usp";
+import FloatingBtn from "./Components/Global/FloatingBtn";
 // import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Main = () => {
@@ -53,6 +54,16 @@ const Main = () => {
       <div id="home">
         <HeroImage />
       </div>
+      <div
+        style={{
+          position: "fixed",
+          bottom: "40px",
+          right: "-10px",
+          zIndex: "9999",
+        }}
+      >
+        <FloatingBtn />
+      </div>
 
       {/* <FloatingWhatsApp
         phoneNumber="+1 901 546-4595"
@@ -91,6 +102,7 @@ const Main = () => {
       <div id="Letstalk">
         <Letstalk />
       </div>
+
       <div id="Footer">
         <Footer />
       </div>

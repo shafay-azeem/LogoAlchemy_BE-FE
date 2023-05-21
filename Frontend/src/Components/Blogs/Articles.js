@@ -6,6 +6,7 @@ import userIcon from "../../assets/user.png";
 import calendarIcon from "../../assets/calendar.png";
 import layer3 from "../../assets/Layer 3.png";
 import CustomButtonArror from "../Global/CustomButtonArror";
+import FloatingBtn from "../Global/FloatingBtn";
 
 import Footer from "../Miscellaneous/Footer";
 import { useNavigate } from "react-router-dom";
@@ -64,6 +65,16 @@ const Articles = () => {
     <>
       <div className="bgNav">
         <NavigationBar />
+      </div>
+      <div
+        style={{
+          position: "fixed",
+          bottom: "40px",
+          right: "-10px",
+          zIndex: "9999",
+        }}
+      >
+        <FloatingBtn />
       </div>
       <div className="blog-background">
         <div className="Atricles container-fluid"></div>

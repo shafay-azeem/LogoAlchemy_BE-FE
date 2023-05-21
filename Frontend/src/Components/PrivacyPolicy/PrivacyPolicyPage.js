@@ -4,11 +4,23 @@ import NavigationBar from "../Top banner/NavigationBar";
 import Footer from "../Miscellaneous/Footer";
 import ContactForm from "../ContactForm/ContactForm";
 
+import FloatingBtn from "../Global/FloatingBtn";
+
 const PrivacyPolicyPage = () => {
   return (
     <>
       <section className="page-header container-fluid">
         <NavigationBar />
+        <div
+          style={{
+            position: "fixed",
+            bottom: "100px",
+            right: "-10px",
+            zIndex: "9999",
+          }}
+        >
+          <FloatingBtn />
+        </div>
         <div className="row">
           <div className="col-lg-12">
             <h2 className="page-heading text-white text-center">

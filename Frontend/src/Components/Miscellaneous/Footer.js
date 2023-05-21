@@ -41,8 +41,14 @@ const Footer = () => {
                 <div class="col-lg-6">
                   <p className="text-white">Artrim ,United Kingdom</p>
                   <p className="font-face-im text-white">
-                    Unit 19 The Hatchery Ni, Antrim Enterprise Park, Antrim,
-                    United Kingdom, BT41 1JZ.
+                    <a
+                      href="https://goo.gl/maps/CWGPLS7ifdBxsGve6"
+                      style={{ textDecoration: "none", color: "white" }}
+                      target="_blank"
+                    >
+                      Unit 19 The Hatchery Ni, Antrim Enterprise Park, Antrim,
+                      United Kingdom, BT41 1JZ.
+                    </a>
                   </p>
                 </div>
               </div>

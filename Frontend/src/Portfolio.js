@@ -12,6 +12,7 @@ import ContactForm from "./Components/ContactForm/ContactForm";
 import PortfolioGallery from "./PortfolioGallery";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import FloatingBtn from "./Components/Global/FloatingBtn";
 
 const Portfolio = ({ heading2 }) => {
   const navigate = useNavigate();
@@ -91,6 +92,16 @@ const Portfolio = ({ heading2 }) => {
     <>
       <div className="Portfolio-Page">
         <NavigationBar />
+        <div
+          style={{
+            position: "fixed",
+            bottom: "40px",
+            right: "-10px",
+            zIndex: "9999",
+          }}
+        >
+          <FloatingBtn />
+        </div>
 
         <div className="Main-Banner container">
           <div className="row">
