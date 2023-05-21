@@ -205,7 +205,7 @@ const NavigationBar = ({ history }) => {
       expanded={expanded}
       collapseOnSelect
     >
-      <Container className="no-scroll">
+      <Container className="no-scroll mt-3">
         <Navbar.Brand onClick={homeRoute} style={{ cursor: "pointer" }}>
           <img className="logo img-fluid" src={logo} />
         </Navbar.Brand>

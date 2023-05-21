@@ -24,7 +24,7 @@ const AgencyButton = (props) => {
           cursor: "pointer",
           boxShadow: "1px 1px 3p",
           marginLeft: marginLeft,
-          cursor: "none",
+          // cursor: "none",
         }}
       >
         {props.title}
