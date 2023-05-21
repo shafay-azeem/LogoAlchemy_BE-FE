@@ -10,13 +10,9 @@ import Footer from "./Components/Miscellaneous/Footer";
 import ContactForm from "./Components/ContactForm/ContactForm";
 import Blogs from "./Components/Blogs/Blogs";
 import Letstalk from "./Components/ContactForm/Letstalk";
-import Packages from "./Components/Packages/Packages";
-import Pricing from "./Components/Pricing/Pricing";
-import IllustrationHeroImg from "./Components/Illustration/IllustrationHeroImg";
-import IllustrationHelpUs from "./Components/Illustration/IllustrationHelpUs";
-import IllustrationClient from "./Components/Illustration/IllustrationClient";
-import LogoDesignHeroImage from "./Components/LogoDesign/LogoDesignHeroImage";
+
 import Usp from "./Components/Usp/Usp";
+// import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Main = () => {
   let detail = [
@@ -51,11 +47,22 @@ const Main = () => {
   ];
 
   let detailHeading = "Frequently Asked Questions";
+
   return (
     <>
       <div id="home">
         <HeroImage />
       </div>
+
+      {/* <FloatingWhatsApp
+        phoneNumber="+1 901 546-4595"
+        accountName=""
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+        chatMessage="Demo message"
+      /> */}
 
       <div id="ServiceSection">
         <ServiceSection />

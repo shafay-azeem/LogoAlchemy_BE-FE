@@ -7,7 +7,7 @@ import "../Global/CustomMultiCards.css";
 
 const CustomMultiCards = (props) => {
   const [data, setData] = useState(props?.cardData);
-  console.log(data);
+
   return (
     <>
       <div className="CustomMultiCards  container-fluid py-5">

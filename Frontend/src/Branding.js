@@ -143,42 +143,46 @@ const Branding = () => {
     },
   ];
 
-  let price = [{
-    packageName: "BASIC",
-    orignalPrice: 600.00,
-    discountedPrice: 300.00,
-    description: "Initial consultation",
-    features1: "Creation of a logo design with 2 initial concepts",
-    features2: "Selection of primary brand colors and typography recommendations",
-    features3: "1 rounds of revisions on the chosen concept",
-    features4: "Design of business card (single-sided or double-sided)",
-    feature5: "Formats JPEG, PNG",
-  }, {
-    packageName: "STANDARD",
-    orignalPrice: 1200.00,
-    discountedPrice: 600.00,
-    description: "Initial consultation",
-    features1: "Creation of a logo design with 3 initial concepts",
-    features2: "Selection of primary and secondary brand colors, typography recommendations, and graphic elements",
-    features3: "2 rounds of revisions on the chosen concept",
-    features4: "Design of business card (single-sided or double-sided)",
-    features5: "Design of letterhead and envelope",
-    features6: "Formats: JPEG, PNG, EPS"
-  }, {
-    packageName: "PREMIUM",
-    orignalPrice: 2400.00,
-    discountedPrice: 1200.00,
-    description: "Comprehensive consultation",
-    features1: "Creation of a logo design with 4 initial concepts",
-    features2: "Selection of primary, secondary, and tertiary brand colors, typography recommendations, and graphic elements",
-    features3: "Unlimited rounds of revisions on the chosen concept",
-    features4: "Design of business card (single-sided or double-sided)",
-    features5: "Design of letterhead and envelope",
-    features6: "Design of other stationery items (e.g., notepad, folder)",
-    features7: "Customized and unique brand identity development",
-    features8: "Formats: JPEG, PNG, EPS"
-  }]
-
+  let price = [
+    {
+      packageName: "BASIC",
+      orignalPrice: 600.0,
+      //discountedPrice: 300.00,
+      description: "Initial consultation",
+      features1: "2 initial logo design concepts",
+      features2:
+        "Selection of primary brand colors and typography recommendations",
+      features3: "1 rounds of revisions on the chosen concept",
+      features4: "Design of business card (single-sided or double-sided)",
+      // feature5: "Formats JPEG, PNG",
+    },
+    {
+      packageName: "STANDARD",
+      orignalPrice: 1200.0,
+      //discountedPrice: 600.00,
+      description: "Initial consultation",
+      features1: "3 initial logo design concepts",
+      features2:
+        "Selection of primary and secondary brand colors, typography recommendations, and graphic elements",
+      features3: "2 rounds of revisions on the chosen concept",
+      features4: "Design of business card ",
+      features5: "Design of letterhead and envelope",
+      features6: "Formats: JPEG, PNG, EPS",
+    },
+    {
+      packageName: "PREMIUM",
+      orignalPrice: 2400.0,
+      //discountedPrice: 1200.00,
+      description: "Comprehensive consultation",
+      features1: "4 initial logo design concepts",
+      features2:
+        "Selection of primary, secondary, and tertiary brand colors, typography recommendations, and graphic elements",
+      features3: "Unlimited rounds of revisions on the chosen concept",
+      features4: "Design of business card ",
+      features5: "Design of letterhead and envelope",
+      features6: "Design of other stationery items (e.g., notepad, folder)",
+    },
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);

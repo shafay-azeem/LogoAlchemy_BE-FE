@@ -84,13 +84,10 @@ const Illustration = () => {
       "Elevate Your Brand's Visuals with Our Illustration Services: Drive Results and Boost ROI,",
 
     description:
-      "As a leading expert in illustration services for over a decade, we understand the power of compelling visuals in elevating your brand's message and connecting with your target audience.",
+      "With over a decade of experience as leading experts in illustration services, we specialize in creating compelling visuals that deeply resonate with your target audience and amplify your brand's message. Our team of skilled illustrators seamlessly blends artistic talent with a profound understanding of marketing dynamics, resulting in engaging and memorable illustrations. We fully immerse ourselves in your brand, ensuring that every detail aligns with your identity and objectives. ",
     description2:
-      "Serving both individuals and companies across the United States and other English-speaking countries, our illustration process is designed to create engaging and memorable visuals that drive results and enhance your brand's ROI.",
-    description3:
-      "Our team of skilled illustrators combines artistic talent with a deep understanding of marketing and storytelling. We take the time to immerse ourselves in your brand, allowing us to create illustrations that authentically represent your vision and resonate with your audience. From concept development to final execution, we work closely with you to ensure every detail aligns with your brand identity and objectives.",
-    description4:
-      "Whether you need illustrations for marketing materials, book covers, websites, or social media, our expertise in creating captivating visuals will help you stand out from the competition and make a lasting impact on your target audience. Trust us to bring your ideas to life through our exceptional illustration services.",
+      "From initial concept development to final execution, we collaborate closely with you to bring your ideas to life, leaving a lasting impact. Whether it's for marketing materials, book covers, websites, or social media platforms, you can trust us to provide exceptional illustration services that elevate your brand and set you apart from the competition.",
+
     image: require("../src/assets/IllustrationHelpUs.png"),
   };
 
@@ -169,9 +166,9 @@ const Illustration = () => {
     {
       packageName: "BASIC",
       orignalPrice: 600.0,
-      discountedPrice: 300.0,
-      description: "1 custom simple illustration based on the provided brief",
-      features1: "1 round of revisions on the chosen concept",
+      //discountedPrice: 300.0,
+      description: "1 custom simple illustration ",
+      features1: "1 round of revision on the chosen concept",
       features2: "24-48 Hours Turn Around Time",
       features3: "Formats JPEG & PNG",
       features4: "100% Owner Ship Rights",
@@ -179,24 +176,21 @@ const Illustration = () => {
     {
       packageName: "STANDARD",
       orignalPrice: 1000.0,
-      discountedPrice: 500.0,
-      description: "1 custom simple illustration based on the provided brief",
+      //discountedPrice: 500.0,
+      description: "1 custom simple illustration ",
       features1: "2 rounds of revisions on the chosen concept",
-      features2:
-        "Final delivery of the illustration in high-resolution digital format",
+      features2: "Final delivery of the illustration ",
       features3: "24-48 Hours Turn Around Time",
       features4: "Formats JPEG, PNG, AI",
-      features5: "Commercial usage rights for the illustration (non-exclusive)",
+      features5: "100% Owner Ship Rights",
     },
     {
       packageName: "PREMIUM",
       orignalPrice: 1600.0,
-      discountedPrice: 800.0,
-      description:
-        "Creation of one complex and highly detailed illustration based on the provided brief",
+      //discountedPrice: 800.0,
+      description: "Creation of one highly detailed illustration ",
       features1: "Unlimited rounds of revisions on the chosen concept",
-      features2:
-        "Final delivery of the illustration in high-resolution digital format",
+      features2: "Final delivery of the illustration ",
       features3: "24-48 Hours Turn Around Time",
       features4: "Formats JPEG, PNG, EPS, PDF, AI",
       features5: "Commercial usage rights for the illustration (non-exclusive)",

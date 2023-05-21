@@ -96,16 +96,16 @@ const Pricing = (props) => {
                 <div class="div1 mb-3">
                   <div class="div2">
                     <div class="div3">
-                      <h3 className="text-center">
+                      {/* <h3 className="text-center">
                         <del className="font-face-ex text-center red">
                           $ {x?.orignalPrice}.00
                         </del>
-                      </h3>
+                      </h3> */}
                       <h1
                         style={{ color: "#343b3e" }}
                         className="font-face-ex text-center "
                       >
-                        $ {x?.discountedPrice}.00
+                        $ {x?.orignalPrice}.00
                       </h1>
                       <div className="Package-Description">
                         <p

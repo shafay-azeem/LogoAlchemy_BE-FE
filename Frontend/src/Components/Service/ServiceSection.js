@@ -29,8 +29,7 @@ const ServiceSection = () => {
 
   let rh = screenDimensions.height;
   let rw = screenDimensions.width;
-  console.log(rh);
-  console.log(rw);
+
   return (
     <>
       <div className="container-fluid py-5">

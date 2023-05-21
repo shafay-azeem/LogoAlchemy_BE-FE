@@ -10,9 +10,8 @@ import logo from "./assets/portfolioIcon.png";
 import Aos from "aos";
 import ContactForm from "./Components/ContactForm/ContactForm";
 import PortfolioGallery from "./PortfolioGallery";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
-
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 const Portfolio = ({ heading2 }) => {
   const navigate = useNavigate();
@@ -38,12 +37,8 @@ const Portfolio = ({ heading2 }) => {
     };
   }, []);
 
-
   let rh = screenDimensions.height;
   let rw = screenDimensions.width;
-  console.log(rh);
-  console.log(rw);
-
 
   const blog = () => {
     navigate({
@@ -101,8 +96,7 @@ const Portfolio = ({ heading2 }) => {
           <div className="row">
             <div className="col-lg-6">
               <div className="row">
-                <div className="col-12">
-                </div>
+                <div className="col-12"></div>
               </div>
               <div className="row">
                 <div

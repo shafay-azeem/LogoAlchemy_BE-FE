@@ -17,6 +17,7 @@ const IllustrationHelpUs = (props) => {
             className="font-face-sm"
             data-aos="zoom-in"
             data-aos-duration="1000"
+            style={{ textAlign: "left" }}
           >
             TOP NOTCH BRANDING & MARKETING AGENCY
           </h5>
@@ -24,6 +25,7 @@ const IllustrationHelpUs = (props) => {
             className="font-face-im"
             data-aos="zoom-in"
             data-aos-duration="1000"
+            style={{ textAlign: "left" }}
           >
             {helpData.heading}
             <span
@@ -35,33 +37,20 @@ const IllustrationHelpUs = (props) => {
               Let Us Help You
             </span>
           </h2>
-          <p data-aos="zoom-in" data-aos-duration="1000">
+          <p
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            style={{ textAlign: "left", fontSize: "16.5px" }}
+          >
             {helpData.description}
           </p>
-          <p data-aos="zoom-in" data-aos-duration="1000">
+          <p
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            style={{ textAlign: "left", fontSize: "16.5px" }}
+          >
             {helpData.description2}
           </p>
-          <p data-aos="zoom-in" data-aos-duration="1000">
-            {helpData.description3}
-          </p>
-          <p data-aos="zoom-in" data-aos-duration="1000">
-            {helpData.description4}
-          </p>
-          {/* <div className="buttonParent d-lg-flex ">
-            <CustomButton
-              title="Explore Services"
-              padding="10px 15px"
-              width="50%"
-              marginRight="20px"
-            fontSize="20px"
-            />
-            <CustomButton
-              title="Lets Talk"
-              padding="10px 15px"
-            width="50%"
-            fontSize="20px"
-            />
-          </div> */}
 
           <div className="row" data-aos="fade-up" data-aos-duration="1000">
             <div className="col-lg-6 col-md-6 col-sm-12 text-lg-end  text-center mb-2">

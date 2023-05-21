@@ -3,9 +3,9 @@ import "../Top banner/NavigationBar.css";
 import CustomButton from "../Global/CustomButton";
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import logo from "../../assets/logo (3).png";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const NavigationBar = () => {
+const NavigationBar = ({ history }) => {
   const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
   const handleToggle = (expanded) => {
@@ -106,7 +106,10 @@ const NavigationBar = () => {
               <Nav.Link
                 onClick={portfolio}
                 className="font-face-hm"
-                style={{ fontSize: "15px", paddingRight: "2rem" }}
+                style={{
+                  fontSize: "15px",
+                  paddingRight: "2rem",
+                }}
               >
                 Portfolio
               </Nav.Link>

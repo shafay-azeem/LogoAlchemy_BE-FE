@@ -27,8 +27,7 @@ const DigitalService = () => {
 
   let rh = screenDimensions.height;
   let rw = screenDimensions.width;
-  console.log(rh);
-  console.log(rw);
+
   return (
     <>
       <div className="digital-service  py-5">
@@ -53,8 +52,8 @@ const DigitalService = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          We providing a seamless and cohesive brand image that drives results
-          and fosters brand growth.
+          We are providing a seamless and cohesive brand image that drives
+          results and fosters brand growth.
         </p>
         <div class="how-section1">
           <div className="container">

@@ -34,8 +34,7 @@ const Blogs = () => {
 
   let rh = screenDimensions.height;
   let rw = screenDimensions.width;
-  console.log(rh);
-  console.log(rw);
+
   const items = [
     {
       id: 1,
@@ -165,7 +164,7 @@ const Blogs = () => {
                         <div className="Icon-Box py-3">
                           <div className="Icon-Box-inner">
                             <img
-                              style={{ width: '18px' }}
+                              style={{ width: "18px" }}
                               src={icon1}
                               alt="icon1"
                               className="img-fluid"
@@ -176,14 +175,12 @@ const Blogs = () => {
                           </div>
                           <div className="Icon-Box-inner ms-3">
                             <img
-                              style={{ width: '18px' }}
+                              style={{ width: "18px" }}
                               src={icon2}
                               alt="icon1"
                               className="img-fluid"
                             />
-                            <p className="date text-white ms-2 m-0">
-                              {x.date}
-                            </p>
+                            <p className="date text-white ms-2 m-0">{x.date}</p>
                           </div>
                         </div>
                         <h5 className="font-face-im Content-heading">
@@ -196,10 +193,10 @@ const Blogs = () => {
                               rw <= 350
                                 ? "10px"
                                 : rw > 350 && rw <= 640
-                                  ? "13px"
-                                  : rw >= 641 && rw <= 1007
-                                    ? "16px"
-                                    : "20px"
+                                ? "13px"
+                                : rw >= 641 && rw <= 1007
+                                ? "16px"
+                                : "20px"
                             }
                             title={x.buttonText}
                             rf={x.route}

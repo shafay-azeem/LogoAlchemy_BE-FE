@@ -21,8 +21,6 @@ const Letstalk = () => {
 
   let rh = screenDimensions.height;
   let rw = screenDimensions.width;
-  console.log(rh);
-  console.log(rw);
 
   const divStyle = {
     padding: "3px",

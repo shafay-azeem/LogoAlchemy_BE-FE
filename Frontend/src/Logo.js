@@ -87,13 +87,10 @@ const Logo = () => {
       "Crafting Unique and Memorable Logos: Why Logo Alchemy is Your Top Choice",
 
     description:
-      "A captivating logo is the cornerstone of any successful brand. At The Logo Alchemy, we understand the importance of a compelling logo design that resonates with your target audience. With over a decade of experience, our team of creative professionals is dedicated to crafting unique, memorable, and high-quality logos that capture the essence of your brand.",
+      "At The Logo Alchemy, we specialize in creating captivating logos that serve as the foundation for successful brands. With over a decade of experience, our team of creative professionals is dedicated to crafting unique, memorable, and high-quality designs that resonate with your target audience. Our customized logo design services cater to businesses and individuals across the United States and other English-speaking countries, ensuring that your brand stands out from the competition. ",
     description2:
-      "Catering to businesses and individuals across the United States and other English-speaking countries, we offer customized logo design services that set you apart from the competition. Read on to discover the unique selling points that make our agency the top choice for your logo design needs.",
-    description3:
-      "In addition to our expertise in logo design, we prioritize seamless collaboration and exceptional customer service. We believe in fostering strong relationships with our clients, listening to their ideas, and providing expert guidance throughout the design process. ",
-    description4:
-      "With our personalized approach and commitment to delivering outstanding results, we are confident in our ability to exceed your expectations and create a captivating logo that elevates your brand.",
+      "We pride ourselves on seamless collaboration and exceptional customer service, building strong relationships with our clients, and providing expert guidance throughout the design process. With our personalized approach and commitment to delivering outstanding results, we are confident in our ability to exceed your expectations and create a captivating logo that truly elevates your brand.",
+
     image: require("../src/assets/LogoHelpUs.png"),
   };
 
@@ -168,42 +165,46 @@ const Logo = () => {
     },
   ];
 
-  let price = [{
-    packageName: "BASIC",
-    orignalPrice: 160.00,
-    discountedPrice: 80.00,
-    description: "Initial consultation",
-    features1: "2 initial logo concepts",
-    features2: "2 rounds of revisions on the chosen concept",
-    features3: "24-48 Hours Turn Around Time",
-    features4: "Formats JPEG & AI",
-    features5: "100% Owner Ship Rights"
-  }, {
-    packageName: "STANDARD",
-    orignalPrice: 300.00,
-    discountedPrice: 150.00,
-    description: "Initial consultation",
-    features1: "3 initial logo concepts",
-    features2: "3 rounds of revisions on the chosen concept",
-    features3: "Design of one social media post incorporating the finalized logo",
-    features4: "24-48 Hours Turn Around Time",
-    features5: "Formats JPEG, PNG, EPS, PDF, AI",
-    features6: "100% Owner Ship Rights"
-  }, {
-    packageName: "PREMIUM",
-    orignalPrice: 600.00,
-    discountedPrice: 300.00,
-    description: "Comprehensive consultation",
-    features1: "5 initial logo concepts",
-    features2: "Unlimited rounds of revisions on the chosen concept",
-    features3: "Custom landing page design with the finalized logo",
-    features4: "Stationery design(business card, letterhead) using the finalized logo",
-    features5: "24-48 Hours Turn Around Time",
-    features6: "Formats JPEG, PNG, EPS, PDF, AI",
-    features7: "High-resolution logo files suitable for both print and digital use",
-    features8: "100% Owner Ship Rights"
-  }]
-
+  let price = [
+    {
+      packageName: "BASIC",
+      orignalPrice: 160.0,
+      //discountedPrice: 80.0,
+      description: "Initial consultation",
+      features1: "2 initial logo concepts",
+      features2: "2 rounds of revisions on the chosen concept",
+      features3: "24-48 Hours Turn Around Time",
+      features4: "Formats JPEG & AI",
+      features5: "100% Owner Ship Rights",
+    },
+    {
+      packageName: "STANDARD",
+      orignalPrice: 300.0,
+      //discountedPrice: 150.0,
+      description: "Initial consultation",
+      features1: "3 initial logo concepts",
+      features2: "3 rounds of revisions on the chosen concept",
+      features3: "Design of one social media post",
+      features4: "24-48 Hours Turn Around Time",
+      features5: "Formats JPEG, PNG, EPS, PDF, AI",
+      features6: "100% Owner Ship Rights",
+    },
+    {
+      packageName: "PREMIUM",
+      orignalPrice: 600.0,
+      //discountedPrice: 300.0,
+      description: "Comprehensive consultation",
+      features1: "4 initial logo concepts",
+      features2: "Unlimited rounds of revisions on the chosen concept",
+      features3: "Custom landing page design",
+      features4: "Stationery design(business card, letterhead ",
+      features5: "24-48 Hours Turn Around Time",
+      features6: "Formats JPEG, PNG, EPS, PDF, AI",
+      // features7:
+      //   "High-resolution logo files suitable for both print and digital use",
+      // features8: "100% Owner Ship Rights",
+    },
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);

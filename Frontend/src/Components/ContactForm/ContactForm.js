@@ -6,8 +6,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const ContactForm = () => {
-
-
   const currentProtocol = window.location.protocol;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -20,8 +18,6 @@ const ContactForm = () => {
   });
 
   const handleSubmit = async (event) => {
-
-    console.log(name, email, phoneNumber, notes, help)
     event.preventDefault();
     const response = await fetch(
       "http://thelogoalchemy.com/api/email/V1/contactInfoMail",
@@ -36,10 +32,9 @@ const ContactForm = () => {
           userHelp: help,
         }),
       }
-
     );
     const responseData = await response.json();
-    console.log(responseData)
+
     alert(responseData.msg);
     document.getElementById("myForm").reset();
   };
@@ -90,8 +85,7 @@ const ContactForm = () => {
 
   let rh = screenDimensions.height;
   let rw = screenDimensions.width;
-  console.log(rh);
-  console.log(rw);
+
   return (
     <div
       style={{ marginTop: "80px" }}
@@ -211,10 +205,10 @@ const ContactForm = () => {
                   rw <= 350
                     ? "10px"
                     : rw > 350 && rw <= 640
-                      ? "13px"
-                      : rw >= 641 && rw <= 1007
-                        ? "16px"
-                        : "20px"
+                    ? "13px"
+                    : rw >= 641 && rw <= 1007
+                    ? "16px"
+                    : "20px"
                 }
                 alignSelf="center"
               />

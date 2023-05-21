@@ -13,11 +13,10 @@ const CustomButton = (props) => {
   let marginRight = props.marginRight;
   let marginBottom = props.marginBottom;
   let marginTop = props.marginTop;
-  let z = props.z
-  console.log(z, "zz")
-  let routeId = props.rf
-  let rn = props?.rn
+  let z = props.z;
 
+  let routeId = props.rf;
+  let rn = props?.rn;
 
   function handleButtonClick(routeId) {
     if (rn === "yes") {
@@ -32,10 +31,8 @@ const CustomButton = (props) => {
     }
   }
 
-
   return (
     <>
-
       <button
         onClick={() => handleButtonClick(routeId)}
         type={props?.type}
@@ -47,17 +44,19 @@ const CustomButton = (props) => {
           marginBottom: marginBottom,
           marginTop: marginTop,
           zIndex: 0,
-
-
-
         }}
       >
-        <span className="font-face-im" style={{
-          padding: props.padding,
-          backgroundColor: props.bg === "black" ? "black" : "white",
-          // color: props.rung === "white" ? "white" : 'black'
-        }}>{title}</span>
-      </button >
+        <span
+          className="font-face-im"
+          style={{
+            padding: props.padding,
+            backgroundColor: props.bg === "black" ? "black" : "white",
+            // color: props.rung === "white" ? "white" : 'black'
+          }}
+        >
+          {title}
+        </span>
+      </button>
     </>
   );
 };

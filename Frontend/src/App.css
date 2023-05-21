@@ -39,15 +39,15 @@
 }
 
 .font-face-gm {
-  font-family: 'PoetsenOneRegular';
+  font-family: "PoetsenOneRegular";
 }
 
 .font-face-hm {
-  font-family: 'Inter-Light';
+  font-family: "Inter-Light";
 }
 
 .font-face-im {
-  font-family: 'Inter-Bold';
+  font-family: "Inter-Bold";
 }
 
 .font-face-sm {
@@ -58,14 +58,11 @@
   font-family: "Inter-ExtraBold";
 }
 
-
 /* -----------ALL MEDIA QUERIES========= */
 
 /* ---------------FOR HEADER=========== */
 
-
-@media screen and (max-width: 375px),
-screen and (max-height: 667px) {
+@media screen and (max-width: 375px), screen and (max-height: 667px) {
   .custom-btn {
     height: 110px;
     width: 320px;
@@ -73,8 +70,7 @@ screen and (max-height: 667px) {
   }
 }
 
-@media screen and (max-width: 375px),
-screen and (max-height: 667px) {
+@media screen and (max-width: 375px), screen and (max-height: 667px) {
   .mainButton {
     flex-direction: column;
     justify-content: space-around;
@@ -106,8 +102,6 @@ screen and (max-height: 667px) {
   }
 }
 
-
-
 @keyframes upndown {
   from {
     transform: translateY(5px);
@@ -116,4 +110,8 @@ screen and (max-height: 667px) {
   to {
     transform: translateY(-70px);
   }
+}
+
+.active {
+  color: red; /* Change the color to your desired value */
 }

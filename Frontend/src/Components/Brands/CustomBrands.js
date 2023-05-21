@@ -70,7 +70,9 @@ const CustomBrands = () => {
                 />
                 <h2 className="font-face-im text-white">For The Chemist</h2>
                 <p>
-                  The sly fox, with a mischievous grin, tinkers with vials and beakers, brewing whimsical concoctions that dazzle the woodland creatures with their enchanting effects.
+                  The sly fox, with a mischievous grin, tinkers with vials and
+                  beakers, brewing whimsical concoctions that dazzle the
+                  woodland creatures with their enchanting effects.
                 </p>
               </div>
               <AgencyButton title={"View More"} padding="8px 15px" />
