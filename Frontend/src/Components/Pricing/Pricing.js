@@ -138,9 +138,7 @@ const Pricing = (props) => {
                 </div>
                 <div class="bwrap">
                   <div
-                    onClick={() =>
-                      testStripe(x.packageName, x?.discountedPrice)
-                    }
+                    onClick={() => testStripe(x.packageName, x?.orignalPrice)}
                     class="purchase"
                   >
                     Purchase Now!
