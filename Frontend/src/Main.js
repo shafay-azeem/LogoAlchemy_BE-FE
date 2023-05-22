@@ -54,11 +54,12 @@ const Main = () => {
       <div id="home">
         <HeroImage />
       </div>
+
       <div
         style={{
           position: "fixed",
           bottom: "40px",
-          right: "-10px",
+          right: "-40px",
           zIndex: "9999",
         }}
       >

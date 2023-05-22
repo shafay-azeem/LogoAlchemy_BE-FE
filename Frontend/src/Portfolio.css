@@ -1,59 +1,61 @@
 .PortfolioSecond {
-    background-color: black;
+  background-color: black;
 }
 
 .Portfolio-Page {
-    background-image: url('./assets/header.png');
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
+  background-image: url("./assets/header.png");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 }
 
-
 .Portfolio-Banner {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
-    .Portfolio-Banner {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+  .Portfolio-Banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .Portfolio-Banner {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+  .Portfolio-Banner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 /* ============ TABS CSS ========= */
 
 #justify-tab-example-tab-Logo {
-    background-color: white;
+  background-color: white;
 }
 
 #justify-tab-example-tab-Branding {
-    background-color: white;
+  background-color: white;
 }
 
 #justify-tab-example-tab-Illustration {
-    background-color: white;
+  background-color: white;
 }
 
 .nav-fill .nav-item .nav-link,
 .nav-justified .nav-item .nav-link {
-    width: 100% !important;
-    text-align: center !important;
+  width: 100% !important;
+  text-align: center !important;
 }
 
-
 .nav-item button {
-    color: black !important;
-    font-weight: bold;
+  color: black !important;
+  font-weight: bold;
+}
+.nav-item button.active {
+  color: red !important;
+  font-weight: bold;
 }
 
 .nav-tabs {
-    --bs-nav-tabs-border-width: 0px !important;
+  --bs-nav-tabs-border-width: 0px !important;
 }

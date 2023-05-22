@@ -149,7 +149,12 @@ const Footer = () => {
             <div className="col-lg-6">
               <p className="font-face-sm text-white">Contact Us</p>
               <p className="font-face-im text-white">+1 (323) 551 9240</p>
-              <p className="font-face-im text-white">+1 (901) 546 4595</p>
+              <a
+                href="tel:+19015464595"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <p className="font-face-im text-white">+1 (901) 546 4595</p>
+              </a>
             </div>
 
             <div

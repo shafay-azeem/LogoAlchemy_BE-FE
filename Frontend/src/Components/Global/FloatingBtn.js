@@ -13,22 +13,17 @@ const FloatingBtn = () => {
     var url = "https://wa.me/+19015464595";
     window.open(url);
   };
-
   const navigateContact = () => {
-    const element = document.getElementById("ContactForm");
-    element.scrollIntoView({ behavior: "smooth" });
+    var url = "tel:+19015464595";
+    window.location.href = url;
   };
 
   return (
     <>
-      <FloatingGroup
-        size={Size.REGULAR}
-        direction={Direction.TOP}
-        spacing={100}
-      >
+      <FloatingGroup size={Size.SMALL} direction={Direction.TOP} spacing={100}>
         <FloatMenuItemButton
           icon={<Whatsapp size="50%" />}
-          buttonColor="green"
+          buttonColor="#25D366"
           onClick={handleButton}
         />
         <FloatMenuItemButton
