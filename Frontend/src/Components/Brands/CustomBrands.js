@@ -75,7 +75,11 @@ const CustomBrands = () => {
                   woodland creatures with their enchanting effects.
                 </p>
               </div>
-              <AgencyButton title={"View More"} padding="8px 15px" />
+              <AgencyButton
+                title={"View More"}
+                padding="8px 15px"
+                rf="Portfolio"
+              />
             </div>
           </div>
         </div>

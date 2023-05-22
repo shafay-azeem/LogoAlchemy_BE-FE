@@ -1,15 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const AgencyButton = (props) => {
+  const navigate = useNavigate();
   let borderRadius = props.borderRadius;
   let padding = props.padding;
   let width = props.width;
   let fontSize = props.fontSize;
   let marginLeft = props.marginLeft;
+  let routeId = props.rf;
+
+  function handleButtonClick(routeId) {
+    navigate({
+      pathname: `/${routeId}`,
+    });
+  }
 
   return (
     <>
       <button
+        onClick={() => handleButtonClick(routeId)}
         className="font-face-gm"
         style={{
           background:

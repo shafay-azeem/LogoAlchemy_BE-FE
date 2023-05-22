@@ -127,12 +127,12 @@ const Portfolio = ({ heading2 }) => {
               </div>
 
               <div className="row" data-aos="fade-up" data-aos-duration="1000">
-                <div className="col-lg-6 col-md-12 col-sm-12">
+                {/* <div className="col-lg-6 col-md-12 col-sm-12">
                   <CustomButtonArrow
                     title="Explore  Services"
                     rf="DigitalService"
                   />
-                </div>
+                </div> */}
                 <div className="col-lg-6 col-md-12 col-sm-12">
                   <CustomButtonArrow title="Get In Touch" rf="ContactForm" />
                 </div>

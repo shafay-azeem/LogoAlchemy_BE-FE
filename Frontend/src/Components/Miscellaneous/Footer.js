@@ -37,6 +37,12 @@ const Footer = () => {
                       <br /> United States.
                     </a>
                   </p>
+                  <a
+                    href="tel:+13235519240"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <p className="font-face-im text-white">+1 (323) 551 9240</p>
+                  </a>
                 </div>
                 <div class="col-lg-6">
                   <p className="text-white">Artrim ,United Kingdom</p>
@@ -50,6 +56,12 @@ const Footer = () => {
                       United Kingdom, BT41 1JZ.
                     </a>
                   </p>
+                  <a
+                    href="tel:+19015464595"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <p className="font-face-im text-white">+1 (901) 546 4595</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -71,12 +83,12 @@ const Footer = () => {
                     </li>
                     <li className="font-face-sm mb-1">
                       <a href="Illustration" style={{ color: "white" }}>
-                        Illustration Design
+                        Illustration
                       </a>
                     </li>
                     <li className="font-face-sm mb-1">
                       <a href="BrandingAgency" style={{ color: "white" }}>
-                        Branding Agency{" "}
+                        Branding
                       </a>
                     </li>
                   </ul>
@@ -147,14 +159,19 @@ const Footer = () => {
 
           <div className="row">
             <div className="col-lg-6">
-              <p className="font-face-sm text-white">Contact Us</p>
-              <p className="font-face-im text-white">+1 (323) 551 9240</p>
+              {/* <p className="font-face-sm text-white">Contact Us</p>
+              <a
+                href="tel:+13235519240"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <p className="font-face-im text-white">+1 (323) 551 9240</p>
+              </a>
               <a
                 href="tel:+19015464595"
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <p className="font-face-im text-white">+1 (901) 546 4595</p>
-              </a>
+              </a> */}
             </div>
 
             <div
@@ -165,14 +182,16 @@ const Footer = () => {
             >
               <p style={{ color: "white", fontSize: "13px" }}>
                 Copyright &nbsp; ©
-                <span className="font-face-im" style={{ color: "#d40e2f" }}>
-                  &nbsp; THE LOGO ALCHEMY &nbsp;
-                </span>
+                <a href="/" style={{ textDecoration: "none" }}>
+                  <span className="font-face-im" style={{ color: "#d40e2f" }}>
+                    &nbsp; THE LOGO ALCHEMY &nbsp;
+                  </span>
+                </a>
                 All Rights Reserved 2023. Design Studio by <br></br>
                 <a
                   href="https://media-one-group.com"
                   target="blank"
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: "underline", color: "white" }}
                 >
                   Media One Group
                 </a>
