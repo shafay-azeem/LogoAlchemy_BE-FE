@@ -108,10 +108,7 @@ const Pricing = (props) => {
                         $ {x?.orignalPrice}.00
                       </h1>
                       <div className="Package-Description">
-                        <p
-                          style={{ color: "#5c5d5f" }}
-                          className="Package-Description-inner text-start"
-                        >
+                        <p className="Package-Description-inner text-start">
                           {x?.description ? "• " + x?.description : null}
                           <br />
 

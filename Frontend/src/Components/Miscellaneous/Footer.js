@@ -45,7 +45,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <div class="col-lg-6">
-                  <p className="text-white">Artrim ,United Kingdom</p>
+                  <p className="text-white">Artrim, United Kingdom</p>
                   <p className="font-face-im text-white">
                     <a
                       href="https://goo.gl/maps/CWGPLS7ifdBxsGve6"

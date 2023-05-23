@@ -7,8 +7,10 @@
 
 .Package-Description-inner {
   padding: 25px;
-  line-height: 35px;
+  line-height: 32px;
   height: 200px;
+  color: #5c5d5f;
+  font-size: 14.5px;
 }
 
 .View-More-Packages {
@@ -93,22 +95,24 @@
 .title {
   width: 250px;
   height: 90px;
-  background: linear-gradient(to right,
-      #c9011b,
-      #d20522,
-      #be0825,
-      #91112a,
-      #76192f,
-      #542638,
-      #433040,
-      #373847,
-      #2a4857,
-      #205261,
-      #19606f,
-      #166885,
-      #1b688c,
-      #236090,
-      #235c8e);
+  background: linear-gradient(
+    to right,
+    #c9011b,
+    #d20522,
+    #be0825,
+    #91112a,
+    #76192f,
+    #542638,
+    #433040,
+    #373847,
+    #2a4857,
+    #205261,
+    #19606f,
+    #166885,
+    #1b688c,
+    #236090,
+    #235c8e
+  );
   border-radius: 20px;
   z-index: 1;
   position: absolute;
