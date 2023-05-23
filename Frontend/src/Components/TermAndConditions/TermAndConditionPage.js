@@ -3,8 +3,18 @@ import "../TermAndConditions/TermAndConditionPage.css";
 import NavigationBar from "../Top banner/NavigationBar";
 import Footer from "../Miscellaneous/Footer";
 import ContactForm from "../ContactForm/ContactForm";
-import FloatingBtn from "../Global/FloatingBtn";
+import whatsappimg from "../../assets/whatsapp.png";
+import phoneimg from "../../assets/phone.png";
+
 const TermAndConditionPage = () => {
+  const handleButton = () => {
+    var url = "https://wa.me/+19015464595";
+    window.open(url);
+  };
+  const navigateContact = () => {
+    var url = "tel:+19015464595";
+    window.location.href = url;
+  };
   return (
     <>
       <section className="ConditionBanner container-fluid">
@@ -12,12 +22,45 @@ const TermAndConditionPage = () => {
         <div
           style={{
             position: "fixed",
-            bottom: "100px",
-            right: "-10px",
+            bottom: "280px",
+            right: "-1px",
             zIndex: "9999",
+            height: "50px",
+            width: "50px",
           }}
         >
-          <FloatingBtn />
+          <img
+            src={phoneimg}
+            style={{
+              height: "50px",
+              width: "50px",
+
+              cursor: "pointer",
+            }}
+            onClick={navigateContact}
+          />
+        </div>
+
+        <div
+          style={{
+            position: "fixed",
+            bottom: "10px",
+            right: "20px",
+            zIndex: "9999",
+            height: "50px",
+            width: "50px",
+          }}
+        >
+          <img
+            src={whatsappimg}
+            style={{
+              height: "50px",
+              width: "50px",
+              borderRadius: "50px",
+              cursor: "pointer",
+            }}
+            onClick={handleButton}
+          />
         </div>
         <div className="row">
           <div className="col-lg-12">

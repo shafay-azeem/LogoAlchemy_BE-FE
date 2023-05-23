@@ -6,11 +6,12 @@ import userIcon from "../../assets/user.png";
 import calendarIcon from "../../assets/calendar.png";
 import layer3 from "../../assets/Layer 3.png";
 import CustomButtonArror from "../Global/CustomButtonArror";
-import FloatingBtn from "../Global/FloatingBtn";
 
 import Footer from "../Miscellaneous/Footer";
 import { useNavigate } from "react-router-dom";
 import ContactForm from "../ContactForm/ContactForm";
+import whatsappimg from "../../assets/whatsapp.png";
+import phoneimg from "../../assets/phone.png";
 
 const Articles = () => {
   useEffect(() => {
@@ -18,6 +19,15 @@ const Articles = () => {
   }, []);
 
   const navigate = useNavigate();
+
+  const handleButton = () => {
+    var url = "https://wa.me/+19015464595";
+    window.open(url);
+  };
+  const navigateContact = () => {
+    var url = "tel:+19015464595";
+    window.location.href = url;
+  };
 
   const [articleData, setArticleData] = useState([
     {
@@ -69,12 +79,45 @@ const Articles = () => {
       <div
         style={{
           position: "fixed",
-          bottom: "40px",
-          right: "-10px",
+          bottom: "280px",
+          right: "-1px",
           zIndex: "9999",
+          height: "50px",
+          width: "50px",
         }}
       >
-        <FloatingBtn />
+        <img
+          src={phoneimg}
+          style={{
+            height: "50px",
+            width: "50px",
+
+            cursor: "pointer",
+          }}
+          onClick={navigateContact}
+        />
+      </div>
+
+      <div
+        style={{
+          position: "fixed",
+          bottom: "10px",
+          right: "20px",
+          zIndex: "9999",
+          height: "50px",
+          width: "50px",
+        }}
+      >
+        <img
+          src={whatsappimg}
+          style={{
+            height: "50px",
+            width: "50px",
+            borderRadius: "50px",
+            cursor: "pointer",
+          }}
+          onClick={handleButton}
+        />
       </div>
       <div className="blog-background">
         <div className="Atricles container-fluid"></div>

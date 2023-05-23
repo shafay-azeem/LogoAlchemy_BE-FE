@@ -10,12 +10,23 @@ import userIcon from "../../assets/user.png";
 import calendarIcon from "../../assets/calendar.png";
 import layer3 from "../../assets/Layer 3.png";
 import "../Blogs/ArtificalBlogDetails.css";
-import FloatingBtn from "../Global/FloatingBtn";
+import whatsappimg from "../../assets/whatsapp.png";
+import phoneimg from "../../assets/phone.png";
 
 const ArtificalBlogDetails = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleButton = () => {
+    var url = "https://wa.me/+19015464595";
+    window.open(url);
+  };
+  const navigateContact = () => {
+    var url = "tel:+19015464595";
+    window.location.href = url;
+  };
+
   return (
     <>
       <div className="Artifical-blog-detail-header">
@@ -25,12 +36,45 @@ const ArtificalBlogDetails = () => {
         <div
           style={{
             position: "fixed",
-            bottom: "40px",
-            right: "-10px",
+            bottom: "280px",
+            right: "-1px",
             zIndex: "9999",
+            height: "50px",
+            width: "50px",
           }}
         >
-          <FloatingBtn />
+          <img
+            src={phoneimg}
+            style={{
+              height: "50px",
+              width: "50px",
+
+              cursor: "pointer",
+            }}
+            onClick={navigateContact}
+          />
+        </div>
+
+        <div
+          style={{
+            position: "fixed",
+            bottom: "10px",
+            right: "20px",
+            zIndex: "9999",
+            height: "50px",
+            width: "50px",
+          }}
+        >
+          <img
+            src={whatsappimg}
+            style={{
+              height: "50px",
+              width: "50px",
+              borderRadius: "50px",
+              cursor: "pointer",
+            }}
+            onClick={handleButton}
+          />
         </div>
         <div className="container">
           <div className="row py-5">

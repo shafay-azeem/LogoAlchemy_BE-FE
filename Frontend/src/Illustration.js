@@ -7,9 +7,18 @@ import IllustrationClient from "./Components/Illustration/IllustrationClient";
 import Pricing from "./Components/Pricing/Pricing";
 import ContactForm from "./Components/ContactForm/ContactForm";
 import Footer from "./Components/Miscellaneous/Footer";
-import FloatingBtn from "./Components/Global/FloatingBtn";
+import whatsappimg from "./assets/whatsapp.png";
+import phoneimg from "./assets/phone.png";
 
 const Illustration = () => {
+  const handleButton = () => {
+    var url = "https://wa.me/+19015464595";
+    window.open(url);
+  };
+  const navigateContact = () => {
+    var url = "tel:+19015464595";
+    window.location.href = url;
+  };
   let detail = [
     {
       id: 1,
@@ -210,12 +219,45 @@ const Illustration = () => {
       <div
         style={{
           position: "fixed",
-          bottom: "40px",
-          right: "-10px",
+          bottom: "280px",
+          right: "-1px",
           zIndex: "9999",
+          height: "50px",
+          width: "50px",
         }}
       >
-        <FloatingBtn />
+        <img
+          src={phoneimg}
+          style={{
+            height: "50px",
+            width: "50px",
+
+            cursor: "pointer",
+          }}
+          onClick={navigateContact}
+        />
+      </div>
+
+      <div
+        style={{
+          position: "fixed",
+          bottom: "10px",
+          right: "20px",
+          zIndex: "9999",
+          height: "50px",
+          width: "50px",
+        }}
+      >
+        <img
+          src={whatsappimg}
+          style={{
+            height: "50px",
+            width: "50px",
+            borderRadius: "50px",
+            cursor: "pointer",
+          }}
+          onClick={handleButton}
+        />
       </div>
       <div>
         <CustomMultiCards cardData={cardData} cardHeading={cardHeading} />

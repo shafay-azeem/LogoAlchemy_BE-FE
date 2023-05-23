@@ -12,10 +12,18 @@ import Blogs from "./Components/Blogs/Blogs";
 import Letstalk from "./Components/ContactForm/Letstalk";
 
 import Usp from "./Components/Usp/Usp";
-import FloatingBtn from "./Components/Global/FloatingBtn";
-// import { FloatingWhatsApp } from "react-floating-whatsapp";
+import whatsappimg from "./assets/whatsapp.png";
+import phoneimg from "./assets/phone.png";
 
 const Main = () => {
+  const handleButton = () => {
+    var url = "https://wa.me/+19015464595";
+    window.open(url);
+  };
+  const navigateContact = () => {
+    var url = "tel:+19015464595";
+    window.location.href = url;
+  };
   let detail = [
     {
       id: 1,
@@ -58,13 +66,57 @@ const Main = () => {
       <div
         style={{
           position: "fixed",
+          bottom: "280px",
+          right: "-1px",
+          zIndex: "9999",
+          height: "50px",
+          width: "50px",
+        }}
+      >
+        <img
+          src={phoneimg}
+          style={{
+            height: "50px",
+            width: "50px",
+
+            cursor: "pointer",
+          }}
+          onClick={navigateContact}
+        />
+      </div>
+
+      <div
+        style={{
+          position: "fixed",
+          bottom: "10px",
+          right: "20px",
+          zIndex: "9999",
+          height: "50px",
+          width: "50px",
+        }}
+      >
+        <img
+          src={whatsappimg}
+          style={{
+            height: "50px",
+            width: "50px",
+            borderRadius: "50px",
+            cursor: "pointer",
+          }}
+          onClick={handleButton}
+        />
+      </div>
+
+      {/* <div
+        style={{
+          position: "fixed",
           bottom: "40px",
           right: "-40px",
           zIndex: "9999",
         }}
       >
         <FloatingBtn />
-      </div>
+      </div> */}
 
       {/* <FloatingWhatsApp
         phoneNumber="+1 901 546-4595"
