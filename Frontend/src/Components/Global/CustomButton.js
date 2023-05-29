@@ -17,6 +17,7 @@ const CustomButton = (props) => {
 
   let routeId = props.rf;
   let rn = props?.rn;
+  let disabled = props.disabled;
 
   function handleButtonClick(routeId) {
     if (rn === "yes") {
@@ -36,6 +37,7 @@ const CustomButton = (props) => {
       <button
         onClick={() => handleButtonClick(routeId)}
         type={props?.type}
+        disabled={props?.disabled}
         className="hoverBtn "
         style={{
           width: width,

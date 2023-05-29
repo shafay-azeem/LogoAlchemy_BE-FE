@@ -6,6 +6,7 @@ import logo from "../../assets/logo (3).png";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const NavigationBar = ({ history }) => {
+  const location = useLocation();
   const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
   const handleToggle = (expanded) => {
@@ -13,6 +14,8 @@ const NavigationBar = ({ history }) => {
   };
   const [isMobileScreen, setIsMobileScreen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const [isActiveForHome, setIsActiveForHome] = useState(false);
 
   const illustration = () => {
     navigate({
@@ -30,7 +33,16 @@ const NavigationBar = ({ history }) => {
     navigate({
       pathname: `/Portfolio`,
     });
+    setIsActive(true);
   };
+
+  useEffect(() => {
+    if (location.pathname === "/Portfolio") {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  }, [location.pathname]);
 
   const logoRoute2 = (routeId) => {
     navigate({
@@ -43,11 +55,21 @@ const NavigationBar = ({ history }) => {
       pathname: "/",
     });
   };
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setIsActiveForHome(true);
+    } else {
+      setIsActiveForHome(false);
+    }
+  }, [location.pathname]);
+
   const branding = () => {
     navigate({
       pathname: "/BrandingAgency",
     });
   };
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobileScreen(window.innerWidth <= 991);
@@ -163,6 +185,12 @@ const NavigationBar = ({ history }) => {
     return (
       <div className="my-dropdown row d-flex justify-content-center align-items-center">
         {dropdownItems.map((item, index) => {
+          const isActiveService = item.route === location.pathname.substring(1);
+          console.log(isActiveService);
+          const nameClassName = isActiveService
+            ? "pt-2 dropdown-name active"
+            : "pt-2 text-white dropdown-name";
+
           return (
             <div className="col-lg-4 py-2">
               <div className="dropdown-inner py-3">
@@ -180,9 +208,7 @@ const NavigationBar = ({ history }) => {
                     </div>
 
                     <div className="dropdown-content">
-                      <h4 className="pt-2 text-white dropdown-name">
-                        {item.name}
-                      </h4>
+                      <h4 className={nameClassName}>{item.name}</h4>
                       <p className="m-0 text-white dropdown-description">
                         {item.description}
                       </p>
@@ -214,7 +240,7 @@ const NavigationBar = ({ history }) => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto nav ">
             <Nav.Link
-              className="font-face-hm"
+              className={`font-face-hm ${isActiveForHome ? "active" : ""}`}
               style={{ fontSize: "15px", paddingRight: "2rem" }}
               onClick={homeRoute}
             >
@@ -224,14 +250,14 @@ const NavigationBar = ({ history }) => {
             <NavDropdown
               title="Service"
               id="collasible-nav-dropdown"
-              className="li font-face-hm"
+              className="font-face-hm"
               style={{ fontSize: "15px", paddingRight: "2rem" }}
             >
               {renderDropdownItems()}
             </NavDropdown>
             <Nav.Link
               onClick={portfolio}
-              className="font-face-hm"
+              className={`font-face-hm ${isActive ? "active" : ""}`}
               style={{ fontSize: "15px", paddingRight: "2rem" }}
             >
               Portfolio

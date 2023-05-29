@@ -15,6 +15,9 @@
   color: white !important;
   text-transform: uppercase;
 }
+.active {
+  color: #ba1432 !important;
+}
 
 .navbar-toggler-icon {
   background-image: url("../../assets/menuIconWhite.png") !important;
@@ -26,6 +29,10 @@
     text-align: start;
     margin-top: 10px;
   }
+}
+
+.active {
+  color: #ba1432 !important;
 }
 
 .no-scroll {

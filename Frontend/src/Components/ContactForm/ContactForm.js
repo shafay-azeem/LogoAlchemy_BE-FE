@@ -4,6 +4,7 @@ import "../ContactForm/ContactForm.css";
 import CustomButton from "../Global/CustomButton";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
   const currentProtocol = window.location.protocol;
@@ -13,9 +14,16 @@ const ContactForm = () => {
   const [notes, setNotes] = useState("");
   const [help, setHelp] = useState("");
 
+  const [verified, setVerified] = useState(false);
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
   });
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerified(true);
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -111,20 +119,25 @@ const ContactForm = () => {
             <div className="row">
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label className="font-face-sm">Your Name</Form.Label>
+                  <Form.Label className="font-face-sm">
+                    Your Name<span className="required">*</span>
+                  </Form.Label>
 
                   <div className="fieldwrap inputfield">
                     <input
                       type="text"
                       placeholder="Your Name"
                       onChange={(e) => setName(e.target.value)}
+                      required
                     />
                   </div>
                 </Form.Group>
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label className="font-face-sm">Email</Form.Label>
+                  <Form.Label className="font-face-sm">
+                    Email<span className="required">*</span>
+                  </Form.Label>
 
                   <div className="fieldwrap inputfield">
                     <input
@@ -132,6 +145,7 @@ const ContactForm = () => {
                       placeholder="Your Email"
                       style={inputStyle}
                       onChange={(e) => setEmail(e.target.value)}
+                      required
                     />
                   </div>
                 </Form.Group>
@@ -158,7 +172,7 @@ const ContactForm = () => {
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Label className="font-face-sm">
-                    Your Phone No
+                    Your Phone No.
                   </Form.Label>
 
                   <div className="fieldwrap inputfield">
@@ -195,8 +209,15 @@ const ContactForm = () => {
               </div>
             </div>
 
+            <ReCAPTCHA
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              onChange={onChange}
+              className="mb-4"
+            />
+
             <div className="d-flex align-items-center justify-content-center">
               <CustomButton
+                disabled={!verified}
                 type={"submit"}
                 title={"Make Magic Happen"}
                 borderRadius="40px"
