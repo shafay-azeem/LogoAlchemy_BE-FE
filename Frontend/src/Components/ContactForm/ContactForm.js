@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 import "../ContactForm/ContactForm.css";
 import CustomButton from "../Global/CustomButton";
@@ -15,6 +15,8 @@ const ContactForm = () => {
   const [help, setHelp] = useState("");
 
   const [verified, setVerified] = useState(false);
+
+  const recaptchaRef = useRef();
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
@@ -45,6 +47,7 @@ const ContactForm = () => {
 
     alert(responseData.msg);
     document.getElementById("myForm").reset();
+    recaptchaRef.current.reset();
   };
   const divStyle = {};
   const inputStyle = {
@@ -210,6 +213,7 @@ const ContactForm = () => {
             </div>
 
             <ReCAPTCHA
+              ref={recaptchaRef}
               sitekey="6Lc8w08mAAAAALIVMBY9Fug7zfc6Se4MIq0seudB"
               onChange={onChange}
               className="mb-4"
@@ -226,10 +230,10 @@ const ContactForm = () => {
                   rw <= 350
                     ? "10px"
                     : rw > 350 && rw <= 640
-                      ? "13px"
-                      : rw >= 641 && rw <= 1007
-                        ? "16px"
-                        : "20px"
+                    ? "13px"
+                    : rw >= 641 && rw <= 1007
+                    ? "16px"
+                    : "20px"
                 }
                 alignSelf="center"
               />

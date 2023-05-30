@@ -182,7 +182,7 @@ const Illustration = () => {
       features2: "24-48 Hours Turn Around Time",
       features3: "Formats JPEG & PNG",
       features4: "100% Owner Ship Rights",
-      route: "BrandingAgency"
+      route: "Illustration",
     },
     {
       packageName: "STANDARD",
@@ -194,7 +194,7 @@ const Illustration = () => {
       features3: "24-48 Hours Turn Around Time",
       features4: "Formats JPEG, PNG, AI",
       features5: "100% Owner Ship Rights",
-      route: "BrandingAgency"
+      route: "Illustration",
     },
     {
       packageName: "PREMIUM",
@@ -206,7 +206,7 @@ const Illustration = () => {
       features3: "24-48 Hours Turn Around Time",
       features4: "Formats JPEG, PNG, EPS, PDF, AI",
       features5: "Commercial usage rights for the illustration (non-exclusive)",
-      route: "BrandingAgency"
+      route: "Illustration",
     },
   ];
 
