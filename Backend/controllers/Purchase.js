@@ -1,5 +1,5 @@
 const stripe = require("stripe")(
-  "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"
+  "sk_test_51MbQxgIpk2q02uGFo9Dvoo0iN9GILgrxYwYuA0P4dJGiHuTQY8qgXKoLCRnM5xXWVAM8Yl33RJp8ARbfreC5SY3m00xn9XYUrg"
 );
 
 const mongoose = require("mongoose");

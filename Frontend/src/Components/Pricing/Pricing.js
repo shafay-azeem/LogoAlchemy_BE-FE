@@ -43,7 +43,7 @@ const Pricing = (props) => {
 
   async function handleCheckout(sessionId) {
     const stripe = await window.Stripe(
-      "pk_live_51Lo4vSK2JoN1TlrtlsLVgTkQ3bkJi5o0RSCR7MgjAlcvsdLd30k1Wwr9h0mwvbAAvNhC5oQhlsb4oCVljyjpHgWg00qUYVBIwr"
+      "pk_test_51MbQxgIpk2q02uGFw8n1203C8RXnBHdnA1L4N1bMJr6sp91hSrt8XlbO2yKrjW7LPBlvfphQkCm5MbGdkw00imAJ00vRlmUGQl"
     );
     await stripe.redirectToCheckout({
       sessionId,
