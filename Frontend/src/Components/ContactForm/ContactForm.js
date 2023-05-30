@@ -210,7 +210,7 @@ const ContactForm = () => {
             </div>
 
             <ReCAPTCHA
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              sitekey="6Lc8w08mAAAAALIVMBY9Fug7zfc6Se4MIq0seudB"
               onChange={onChange}
               className="mb-4"
             />
