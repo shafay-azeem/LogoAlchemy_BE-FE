@@ -165,6 +165,7 @@ const Branding = () => {
       features3: "1 rounds of revisions on the chosen concept",
       features4: "Design of business card (single-sided or double-sided)",
       // feature5: "Formats JPEG, PNG",
+      route: "BrandingAgency"
     },
     {
       packageName: "STANDARD",
@@ -178,6 +179,7 @@ const Branding = () => {
       features4: "Design of business card ",
       features5: "Design of letterhead and envelope",
       features6: "Formats: JPEG, PNG, EPS",
+      route: "BrandingAgency"
     },
     {
       packageName: "PREMIUM",
@@ -191,6 +193,7 @@ const Branding = () => {
       features4: "Design of business card ",
       features5: "Design of letterhead and envelope",
       features6: "Design of other stationery items (e.g., notepad, folder)",
+      route: "BrandingAgency"
     },
   ];
 

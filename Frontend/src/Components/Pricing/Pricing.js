@@ -43,21 +43,22 @@ const Pricing = (props) => {
 
   async function handleCheckout(sessionId) {
     const stripe = await window.Stripe(
-      "pk_test_51MbQxgIpk2q02uGFw8n1203C8RXnBHdnA1L4N1bMJr6sp91hSrt8XlbO2yKrjW7LPBlvfphQkCm5MbGdkw00imAJ00vRlmUGQl"
+      "pk_live_51Lo4vSK2JoN1TlrtlsLVgTkQ3bkJi5o0RSCR7MgjAlcvsdLd30k1Wwr9h0mwvbAAvNhC5oQhlsb4oCVljyjpHgWg00qUYVBIwr"
     );
     await stripe.redirectToCheckout({
       sessionId,
     });
   }
 
-  function testStripe(packageName, packagePrice) {
-    fetch("http://thelogoalchemy.com/api/product/V1/checkout", {
+  function testStripe(packageName, packagePrice, route) {
+    fetch("https://thelogoalchemy.com/api/product/V1/checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         amount: packagePrice,
         product: packageName,
         quantity: 1,
+        route: route
       }),
     })
       .then((response) => response.json())
@@ -135,7 +136,7 @@ const Pricing = (props) => {
                 </div>
                 <div class="bwrap">
                   <div
-                    onClick={() => testStripe(x.packageName, x?.orignalPrice)}
+                    onClick={() => testStripe(x.packageName, x?.orignalPrice, x?.route)}
                     class="purchase"
                   >
                     Purchase Now!

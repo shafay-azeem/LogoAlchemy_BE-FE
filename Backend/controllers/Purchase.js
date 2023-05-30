@@ -1,5 +1,5 @@
 const stripe = require("stripe")(
-  "sk_test_51MbQxgIpk2q02uGFo9Dvoo0iN9GILgrxYwYuA0P4dJGiHuTQY8qgXKoLCRnM5xXWVAM8Yl33RJp8ARbfreC5SY3m00xn9XYUrg"
+  "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"
 );
 
 const mongoose = require("mongoose");
@@ -8,7 +8,8 @@ const querystring = require("querystring");
 
 exports.getCheckout = async (req, res, next) => {
   try {
-    const { amount, product, quantity } = req.body;
+    const { amount, product, quantity, route } = req.body;
+    console.log(route, "route")
     const queryParams = querystring.stringify({ product, amount });
 
     const lineItems = {
@@ -31,7 +32,7 @@ exports.getCheckout = async (req, res, next) => {
       success_url: `${req.protocol}://${req.get(
         "host"
       )}/api/email/V1/sendEmailFromServer?${queryParams}`,
-      cancel_url: `${req.protocol}://${req.get("host")}/cancel`,
+      cancel_url: `https://thelogoalchemy.com/${route}`,
     });
     res.status(201).json({
       success: true,

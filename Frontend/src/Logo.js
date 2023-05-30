@@ -186,6 +186,7 @@ const Logo = () => {
       features3: "24-48 Hours Turn Around Time",
       features4: "Formats JPEG & AI",
       features5: "100% Owner Ship Rights",
+      route: "LogoDesign"
     },
     {
       packageName: "STANDARD",
@@ -198,6 +199,7 @@ const Logo = () => {
       features4: "24-48 Hours Turn Around Time",
       features5: "Formats JPEG, PNG, EPS, PDF, AI",
       features6: "100% Owner Ship Rights",
+      route: "LogoDesign"
     },
     {
       packageName: "PREMIUM",
@@ -210,6 +212,7 @@ const Logo = () => {
       features4: "Stationery design(business card, letterhead ",
       features5: "24-48 Hours Turn Around Time",
       features6: "Formats JPEG, PNG, EPS, PDF, AI",
+      route: "LogoDesign"
       // features7:
       //   "High-resolution logo files suitable for both print and digital use",
       // features8: "100% Owner Ship Rights",

@@ -21,7 +21,7 @@ const sendEmailFromServer = (req, res) => {
     theme: "default",
     product: {
       name: "Order Arrived",
-      link: "http://thelogoalchemy.com/",
+      link: "https://thelogoalchemy.com/",
     },
   });
 
@@ -54,7 +54,7 @@ const sendEmailFromServer = (req, res) => {
   transporter
     .sendMail(message)
     .then(() => {
-      return res.redirect("http://thelogoalchemy.com/"); // replace with your success URL
+      return res.redirect("https://thelogoalchemy.com/"); // replace with your success URL
     })
     .catch((error) => {
       return res.status(500).json({ error });
@@ -81,7 +81,7 @@ const contactInfoMail = (req, res) => {
     theme: "default",
     product: {
       name: userName,
-      link: "http://thelogoalchemy.com/",
+      link: "https://thelogoalchemy.com/",
     },
   });
 

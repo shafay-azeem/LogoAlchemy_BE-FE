@@ -28,7 +28,7 @@ const ContactForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await fetch(
-      "http://thelogoalchemy.com/api/email/V1/contactInfoMail",
+      "https://thelogoalchemy.com/api/email/V1/contactInfoMail",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -226,10 +226,10 @@ const ContactForm = () => {
                   rw <= 350
                     ? "10px"
                     : rw > 350 && rw <= 640
-                    ? "13px"
-                    : rw >= 641 && rw <= 1007
-                    ? "16px"
-                    : "20px"
+                      ? "13px"
+                      : rw >= 641 && rw <= 1007
+                        ? "16px"
+                        : "20px"
                 }
                 alignSelf="center"
               />
