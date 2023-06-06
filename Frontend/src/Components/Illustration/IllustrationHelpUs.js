@@ -13,14 +13,14 @@ const IllustrationHelpUs = (props) => {
         </div>
 
         <div className="col-lg-6">
-          <h5
+          {/* <h5
             className="font-face-sm"
             data-aos="zoom-in"
             data-aos-duration="1000"
             style={{ textAlign: "left" }}
           >
             TOP NOTCH BRANDING & MARKETING AGENCY
-          </h5>
+          </h5> */}
           <h2
             className="font-face-im"
             data-aos="zoom-in"

@@ -108,12 +108,11 @@ const ContactForm = () => {
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div style={{ paddingBottom: "80px" }} className="inner-Contact">
             <h4 className="red font-face-im">CONTACT OUR TEAM</h4>
-            <h2 className="black font-face-im">WHAT ARE YOU WAITING FOR?</h2>
-            <h2 className="red font-face-im">LET'S MAKE SOME MAGIC</h2>
-            <h2 className="black font-face-im">TOGETHER.</h2>
+            <h2 className="black font-face-im">LET'S COLLABORATE AND</h2>
+            <h2 className="red font-face-im">CONJURE UP SOME</h2>
+            <h2 className="black font-face-im">EXTRAORDINARY MAGIC!</h2>
             <p className="font-face-sm">
-              Fill in our short contact form for a no-obligation consultation
-              with a member of our team.
+              Fill out form to schedule a consultation with our team today.
             </p>
           </div>
         </div>

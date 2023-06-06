@@ -90,7 +90,7 @@ const SlickSlider = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          Let's journey together and go the distance.
+          Let's unite and conquer every milestone together.
         </h3>
 
         <div class="row">

@@ -31,28 +31,28 @@ const Illustration = () => {
       id: 2,
       summary: "How long does the illustration process take? ",
       content:
-        "The timeline for the illustration process depends on the project's complexity and the number of illustrations required. Generally, it takes between 2-4 weeks for a complete project. However, we can provide a more accurate timeline once we understand the specific requirements of your project.",
+        "The timeline for the illustration process depends on the project's complexity and the number of illustrations required. Generally, it takes between 2-4 days for a complete project. However, we can provide a more accurate timeline once we understand the specific requirements of your project.",
       isOpen: false,
     },
+    // {
+    //   id: 3,
+    //   summary: "How much do your illustration services cost? ",
+    //   content:
+    //     "Our agency excels in logo design, illustration, and branding solutions for clients in the US and other English-speaking countries, catering to individuals and companies alike.",
+    //   isOpen: false,
+    // },
     {
       id: 3,
-      summary: "How much do your illustration services cost? ",
+      summary: "Can I request revisions during the illustration process? ",
       content:
-        "Our agency excels in logo design, illustration, and branding solutions for clients in the US and other English-speaking countries, catering to individuals and companies alike.",
+        "Yes, we believe in working collaboratively with our clients to ensure their satisfaction. We encourage feedback during the sketching and concept presentation stages, allowing us to make the necessary adjustments to meet your vision.",
       isOpen: false,
     },
     {
       id: 4,
-      summary: "Can I request revisions during the illustration process? ",
+      summary: "What is your refund policy?",
       content:
-        "The cost of our illustration services varies depending on the project's scope, complexity, and desired style. To provide an accurate quote, we encourage you to contact us with your project details, and our team will be happy to discuss pricing options with you. ",
-      isOpen: false,
-    },
-    {
-      id: 5,
-      summary: "Do you retain the copyrights to the illustrations you create? ",
-      content:
-        "Yes, we believe in working collaboratively with our clients to ensure their satisfaction. We encourage feedback during the sketching and concept presentation stages, allowing us to make the necessary adjustments to meet your vision.",
+        "We will provide you with initial concepts, and if you approve them, we will proceed with revisions. However, please note that in the event you do not like the designs after approval and revision, we will not be able to offer a refund.",
       isOpen: false,
     },
   ];
@@ -90,8 +90,7 @@ const Illustration = () => {
 
   let helpUsData = {
     id: 1,
-    heading:
-      "Elevate Your Brand's Visuals with Our Illustration Services: Drive Results and Boost ROI,",
+    heading: "Elevate Your Brand's Visuals with Our Illustration Services:",
 
     description:
       "With over a decade of experience as leading experts in illustration services, we specialize in creating compelling visuals that deeply resonate with your target audience and amplify your brand's message. Our team of skilled illustrators seamlessly blends artistic talent with a profound understanding of marketing dynamics, resulting in engaging and memorable illustrations. We fully immerse ourselves in your brand, ensuring that every detail aligns with your identity and objectives. ",

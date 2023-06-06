@@ -31,19 +31,19 @@ const DigitalService = () => {
   return (
     <>
       <div className="digital-service  py-5">
-        <h4
+        {/* <h4
           className="red text-center font-face-im"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
           OUR AGENCY'S DIGITAL SERVICES
-        </h4>
+        </h4> */}
         <h1
           className="white text-center font-face-im"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          Our Most Popular Service
+          OUR AGENCY'S DIGITAL SERVICES
         </h1>
         {/* <p className='white text-center font-face-hm py-2'
                 >we are one of the US-based top-notch companies doing our best to enable quality solutions.</p> */}

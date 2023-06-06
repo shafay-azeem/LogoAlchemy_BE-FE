@@ -25,9 +25,9 @@ const LogoDesignHeader = () => {
               data-aos-duration="1000"
             >
               <p className="logoDesignTitle font-face-im">
-                Connect With Your Customers, Not <br></br>
+                Ignite your brand's visual story with <br></br>
                 <span className="font-face-gm" style={{ color: "#ba1432" }}>
-                  Just Your Business
+                  Exceptional Logos
                 </span>
               </p>
             </div>

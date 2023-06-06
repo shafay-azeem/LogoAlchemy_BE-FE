@@ -22,37 +22,37 @@ const Logo = () => {
   let detail = [
     {
       id: 1,
-      summary: "How do you ensure a customized logo design?",
+      summary: "How long does it take to create a logo?",
       content:
-        "Our skilled designers collaborate closely with clients to understand their unique needs, vision, and brand personality, enabling us to deliver tailored logo designs that effectively represent their brand.",
+        "The time required varies depending on the project's complexity and client's feedback. However, we deliver initial concepts in 24-48 hours.",
       isOpen: false,
     },
     {
       id: 2,
-      summary: "How long does it take to create a logo?",
-      content:
-        "The time required varies depending on the project's complexity and client's feedback. However, we strive to deliver high-quality, custom logo designs in a timely manner.",
-      isOpen: false,
-    },
-    {
-      id: 3,
       summary: "Do you provide multiple design concepts?",
       content:
         "Yes, we offer multiple design concepts to choose from, allowing clients to select the one that best resonates with their brand and target audience.",
       isOpen: false,
     },
     {
-      id: 4,
+      id: 3,
       summary: "What file formats do you deliver?",
       content:
         "We provide logo designs in various file formats such as JPG, PNG, EPS, PDF, and SVG, ensuring compatibility with different platforms and applications.",
       isOpen: false,
     },
     {
-      id: 5,
+      id: 4,
       summary: " What is your refund policy?",
       content:
-        "We stand by the quality of our work and strive for customer satisfaction. If you're not satisfied with the initial concepts, we offer a refund policy. Specific terms and conditions may apply.",
+        "We will provide you with initial concepts, and if you approve them, we will proceed with revisions. However, please note that in the event you do not like the designs after approval and revision, we will not be able to offer a refund.",
+      isOpen: false,
+    },
+    {
+      id: 5,
+      summary: "How many revisions would you provide?",
+      content:
+        "The number of revisions depends on the package you have purchased.",
       isOpen: false,
     },
   ];
@@ -60,7 +60,8 @@ const Logo = () => {
   let detailHeading =
     "Frequently Asked Questions About Our Logo Design Services";
 
-  let cardHeading = "We’re More Than Just a Branding Agency";
+  let cardHeading =
+    "We ignite brand inspiration and artfully shape their distinctive identities.";
   let cardData = [
     {
       id: 1,
@@ -93,8 +94,7 @@ const Logo = () => {
 
   let helpUsData = {
     id: 1,
-    heading:
-      "Crafting Unique and Memorable Logos: Why Logo Alchemy is Your Top Choice",
+    heading: "Crafting Unique and Memorable Logos:",
 
     description:
       "At The Logo Alchemy, we specialize in creating captivating logos that serve as the foundation for successful brands. With over a decade of experience, our team of creative professionals is dedicated to crafting unique, memorable, and high-quality designs that resonate with your target audience. Our customized logo design services cater to businesses and individuals across the United States and other English-speaking countries, ensuring that your brand stands out from the competition. ",
@@ -186,7 +186,7 @@ const Logo = () => {
       features3: "24-48 Hours Turn Around Time",
       features4: "Formats JPEG & AI",
       features5: "100% Owner Ship Rights",
-      route: "LogoDesign"
+      route: "LogoDesign",
     },
     {
       packageName: "STANDARD",
@@ -199,7 +199,7 @@ const Logo = () => {
       features4: "24-48 Hours Turn Around Time",
       features5: "Formats JPEG, PNG, EPS, PDF, AI",
       features6: "100% Owner Ship Rights",
-      route: "LogoDesign"
+      route: "LogoDesign",
     },
     {
       packageName: "PREMIUM",
@@ -212,7 +212,7 @@ const Logo = () => {
       features4: "Stationery design(business card, letterhead ",
       features5: "24-48 Hours Turn Around Time",
       features6: "Formats JPEG, PNG, EPS, PDF, AI",
-      route: "LogoDesign"
+      route: "LogoDesign",
       // features7:
       //   "High-resolution logo files suitable for both print and digital use",
       // features8: "100% Owner Ship Rights",

@@ -50,7 +50,13 @@ const Main = () => {
       id: 4,
       summary: "What's your refund policy?",
       content:
-        "We aim for complete client satisfaction. If you're unhappy with our work, we'll make every effort to address your concerns. In the unlikely event that a solution isn't reached, we'll discuss refund options on a case-by-case basis.",
+        "We will provide you with initial concepts, and if you approve them, we will proceed with revisions. However, please note that in the event you do not like the designs after approval and revision, we will not be able to offer a refund.",
+      isOpen: false,
+    },
+    {
+      id: 5,
+      summary: "What payment methods do you accept?",
+      content: "Paypal, Wise, Stripe, Credit card.",
       isOpen: false,
     },
   ];

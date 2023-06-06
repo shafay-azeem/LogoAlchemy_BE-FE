@@ -8,21 +8,21 @@ const BrandingAgenHelpUs = () => {
     <div className="BrandinghelpUsSection bg-white container py-5">
       <div className="row">
         <div className="col-lg-6">
-          <h5
+          {/* <h5
             className="font-face-sm"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
             TOP NOTCH BRANDING & MARKETING AGENCY
-          </h5>
+          </h5> */}
           <h2
             className="font-face-im"
             data-aos="zoom-in"
             data-aos-duration="1000"
             style={{ textAlign: "left" }}
           >
-            Creating a Strong Brand Identity: How Our Comprehensive Branding
-            Process Helps Your Business Stand Out
+            How Our Comprehensive Branding Process Helps Your Business Stand
+            Out,
             <span className="font-face-im"> Let Us Help You</span>
           </h2>
           <p

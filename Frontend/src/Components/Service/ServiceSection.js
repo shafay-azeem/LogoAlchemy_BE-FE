@@ -37,12 +37,12 @@ const ServiceSection = () => {
           <div className="row" data-aos="zoom-in" data-aos-duration="1000">
             <div className="col-md-2"></div>
             <div className="col-md-8">
-              <h3 className="title-red font-face-im text-center">
+              {/* <h3 className="title-red font-face-im text-center">
                 We create exceptional visual identities for brands
-              </h3>
+              </h3> */}
               <h4 className="black font-face-im text-center">
-                Our team crafts customized designs that captivate audience and
-                elevate brands
+                Crafting bespoke experiences that captivate, elevate, and
+                enchant your brand.
               </h4>
             </div>
             <div className="col-md-2"></div>
@@ -135,14 +135,14 @@ const ServiceSection = () => {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              Think We’re Done & Dusted?
+              {/* Think We’re Done & Dusted?
               <span
                 style={{ color: "#d40e2f", fontSize: "22.5px" }}
                 className=" text-center font-face-im py-4"
               >
                 &nbsp; Building enduring relationships beyond project
                 completion.
-              </span>
+              </span> */}
             </h3>
 
             <div className="row" data-aos="fade-up" data-aos-duration="1000">
@@ -158,7 +158,7 @@ const ServiceSection = () => {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 text-lg-start  text-center mb-2">
                 <CustomButton
-                  title="Lets Talk"
+                  title="Let's Talk"
                   padding="10px 45px"
                   fontSize="20px"
                   rf="ContactForm"

@@ -158,10 +158,9 @@ const Portfolio = ({ heading2 }) => {
                   data-aos-duration="1000"
                 >
                   <p className="bannerTitle font-face-im">
-                    Our Recent
-                    <br />
+                    Showcasing our impressive&nbsp;
                     <span className="font-face-gm" style={{ color: "#09b37d" }}>
-                      WorkFolio
+                      work and achievements.
                     </span>
                     {heading2}
                   </p>

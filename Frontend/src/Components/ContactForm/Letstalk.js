@@ -45,19 +45,19 @@ const Letstalk = () => {
         <div className="col-md-2"></div>
         {/* <div className="col-md-8 col-sm-4"> */}
         <div className="col-lg-8 col-md-12 col-sm-12">
-          <h4
+          {/* <h4
             className="font-face-im text-center red text-uppercase"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
             We provide service like never before experienced by you.
-          </h4>
+          </h4> */}
           <p
             className="inner-Heading font-face-im text-center black"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            OVER WHELMED WITH ALL THE OPTIONS FOR YOUR BRANDING SOLUTIONS
+            SUBSCRIBE US TO GET NEW UPDATES AND OFFERS
           </p>
         </div>
         <div className="col-md-2"></div>

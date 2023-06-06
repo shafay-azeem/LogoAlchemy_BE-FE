@@ -31,7 +31,7 @@ const Branding = () => {
       id: 2,
       summary: "How long does the branding process take? ",
       content:
-        "The branding process varies depending on the project's scope and complexity. Typically, it takes between 4-12 weeks to complete a comprehensive branding project.",
+        "The branding process varies depending on the project's scope and complexity. Typically, it takes between 4-12 days to complete a comprehensive branding project.",
       isOpen: false,
     },
     {
@@ -43,9 +43,9 @@ const Branding = () => {
     },
     {
       id: 4,
-      summary: "How do you measure the success of your branding strategies? ",
+      summary: "What is your refund policy?",
       content:
-        "We use various metrics to measure the success of our branding strategies, including brand awareness, customer engagement, and overall ROI. By tracking these metrics, we can optimize your branding strategy for long-term success.",
+        "We will provide you with initial concepts, and if you approve them, we will proceed with revisions. However, please note that in the event you do not like the designs after approval and revision, we will not be able to offer a refund.",
       isOpen: false,
     },
   ];
@@ -165,7 +165,7 @@ const Branding = () => {
       features3: "1 rounds of revisions on the chosen concept",
       features4: "Design of business card (single-sided or double-sided)",
       // feature5: "Formats JPEG, PNG",
-      route: "BrandingAgency"
+      route: "BrandingAgency",
     },
     {
       packageName: "STANDARD",
@@ -179,7 +179,7 @@ const Branding = () => {
       features4: "Design of business card ",
       features5: "Design of letterhead and envelope",
       features6: "Formats: JPEG, PNG, EPS",
-      route: "BrandingAgency"
+      route: "BrandingAgency",
     },
     {
       packageName: "PREMIUM",
@@ -193,7 +193,7 @@ const Branding = () => {
       features4: "Design of business card ",
       features5: "Design of letterhead and envelope",
       features6: "Design of other stationery items (e.g., notepad, folder)",
-      route: "BrandingAgency"
+      route: "BrandingAgency",
     },
   ];
 

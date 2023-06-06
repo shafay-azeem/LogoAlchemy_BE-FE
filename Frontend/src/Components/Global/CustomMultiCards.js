@@ -15,13 +15,13 @@ const CustomMultiCards = (props) => {
           <div className="row">
             <div className="col-md-2"></div>
             <div className="col-md-8">
-              <h3
+              {/* <h3
                 className="title-red font-face-im text-center"
                 data-aos="zoom-in"
                 data-aos-duration="1000"
               >
                 WE’RE A FULL-SERVICE BRANDING & MARKETING AGENCY
-              </h3>
+              </h3> */}
               <h4
                 className="black font-face-im text-center"
                 data-aos="zoom-in"

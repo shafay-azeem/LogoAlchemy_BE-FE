@@ -58,7 +58,7 @@ const Pricing = (props) => {
         amount: packagePrice,
         product: packageName,
         quantity: 1,
-        route: route
+        route: route,
       }),
     })
       .then((response) => response.json())
@@ -81,7 +81,7 @@ const Pricing = (props) => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            Budget and requirement prioritized with tailored packages.
+            Budget-friendly packages tailored to your needs, our priority.
           </h1>
         </div>
       </div>
@@ -136,7 +136,9 @@ const Pricing = (props) => {
                 </div>
                 <div class="bwrap">
                   <div
-                    onClick={() => testStripe(x.packageName, x?.orignalPrice, x?.route)}
+                    onClick={() =>
+                      testStripe(x.packageName, x?.orignalPrice, x?.route)
+                    }
                     class="purchase"
                   >
                     Purchase Now!
