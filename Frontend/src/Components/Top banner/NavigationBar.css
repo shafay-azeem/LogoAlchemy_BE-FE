@@ -1,10 +1,5 @@
 /* Navbar */
 
-.nav-link {
-  color: white !important;
-  text-transform: uppercase;
-}
-
 .navbar-bg {
   background-color: #000;
   color: #fff;
@@ -14,8 +9,10 @@
 .nav-link {
   color: white !important;
   text-transform: uppercase;
+  font-family: "Inter-Bold";
+  letter-spacing: 0.2;
 }
-.active {
+.nav-link.active {
   color: #ba1432 !important;
 }
 
@@ -29,10 +26,6 @@
     text-align: start;
     margin-top: 10px;
   }
-}
-
-.active {
-  color: #ba1432 !important;
 }
 
 .no-scroll {

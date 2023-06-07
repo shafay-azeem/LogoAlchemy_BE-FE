@@ -186,10 +186,9 @@ const NavigationBar = ({ history }) => {
       <div className="my-dropdown row d-flex justify-content-center align-items-center">
         {dropdownItems.map((item, index) => {
           const isActiveService = item.route === location.pathname.substring(1);
-          console.log(isActiveService);
           const nameClassName = isActiveService
-            ? "pt-2 dropdown-name active"
-            : "pt-2 text-white dropdown-name";
+            ? "pt-2 dropdown-name active font-face-im"
+            : "pt-2 text-white dropdown-name font-face-im";
 
           return (
             <div className="col-lg-4 py-2">
@@ -250,8 +249,12 @@ const NavigationBar = ({ history }) => {
             <NavDropdown
               title="Service"
               id="collasible-nav-dropdown"
-              className="font-face-hm"
-              style={{ fontSize: "15px", paddingRight: "2rem" }}
+              className="font-face-im"
+              style={{
+                fontSize: "15px",
+                paddingRight: "2rem",
+                letterSpacing: 0.2,
+              }}
             >
               {renderDropdownItems()}
             </NavDropdown>
