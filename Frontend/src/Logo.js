@@ -24,7 +24,7 @@ const Logo = () => {
       id: 1,
       summary: "How long does it take to create a logo?",
       content:
-        "The time required varies depending on the project's complexity and client's feedback. However, we deliver initial concepts in 24-48 hours.",
+        "The time required for a project can vary depending on its complexity and the feedback provided by the client. However, our standard practice is to deliver initial concepts within a timeframe of 24-48 hours.",
       isOpen: false,
     },
     {
@@ -57,8 +57,7 @@ const Logo = () => {
     },
   ];
 
-  let detailHeading =
-    "Frequently Asked Questions About Our Logo Design Services";
+  let detailHeading = "FAQs About Our Logo Design Services";
 
   let cardHeading =
     "We ignite brand inspiration and artfully shape their distinctive identities.";

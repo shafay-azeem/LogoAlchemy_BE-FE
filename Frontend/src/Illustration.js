@@ -57,8 +57,7 @@ const Illustration = () => {
     },
   ];
 
-  let detailHeading =
-    "Frequently Asked Questions about Our Illustration Services";
+  let detailHeading = "FAQs about Our Illustration Services";
   let cardHeading = "Expert Illustration Services to Elevate Your Brand";
   let cardData = [
     {

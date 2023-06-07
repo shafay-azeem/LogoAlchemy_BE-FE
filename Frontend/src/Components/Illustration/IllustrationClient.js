@@ -136,7 +136,7 @@ const IllustrationClient = (props) => {
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 text-lg-start  text-center mb-2">
           <CustomButton
-            title="Lets Talk"
+            title="Let's Talk"
             padding="10px 45px"
             fontSize="20px"
             rf="ContactForm"

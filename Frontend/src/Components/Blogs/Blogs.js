@@ -233,7 +233,7 @@ const Blogs = () => {
             <a href="#ContactForm">
               <button className="testiBtn">
                 <span className="font-face-im" style={{ padding: "10px 45px" }}>
-                  Lets Talk
+                  Let's Talk
                 </span>
               </button>
             </a>

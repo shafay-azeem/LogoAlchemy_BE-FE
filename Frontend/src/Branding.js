@@ -50,7 +50,7 @@ const Branding = () => {
     },
   ];
 
-  let detailHeading = "Frequently Asked Questions about Our Branding Services";
+  let detailHeading = "FAQs about Our Branding Services";
   let cardHeading = "Empower Your Brand with Our Expert Branding Services";
   let cardData = [
     {

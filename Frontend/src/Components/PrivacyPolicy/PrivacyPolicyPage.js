@@ -197,8 +197,13 @@ const PrivacyPolicyPage = () => {
             <h2 className="text-start py-2">Contact Us</h2>
             <p>
               If you have any questions or concerns about this Privacy Policy or
-              our privacy practices, please contact us at :
-              info@thelogoalchemy.com
+              our privacy practices, please contact us at :&nbsp;
+              <a
+                href="mailto:info@thelogoalchemy.com"
+                style={{ textDecoration: "none", color: "#d40e2f" }}
+              >
+                info@thelogoalchemy.com
+              </a>
             </p>
           </div>
         </div>
