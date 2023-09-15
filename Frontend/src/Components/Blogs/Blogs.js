@@ -129,15 +129,15 @@ const Blogs = () => {
       <div className="row">
         <div className="col-md-2"></div>
         <div className="col-md-8">
-          <h3
+          {/* <h3
             className="red font-face-im text-center"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
             WE TALK ABOUT RECENT ADVANCEMENTS IN TECHNOLOGY{" "}
-          </h3>
+          </h3> */}
           <h2
-            className="font-face-im text-center text-white py-2"
+            className="font-face-im text-center text-white py-4"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >

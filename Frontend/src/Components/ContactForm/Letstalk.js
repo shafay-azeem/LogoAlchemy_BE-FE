@@ -57,7 +57,7 @@ const Letstalk = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            SUBSCRIBE TO US TO GET NEW UPDATES AND OFFERS
+            SUBSCRIBE FOR UPDATES AND EXCLUSIVE OFFERS
           </p>
         </div>
         <div className="col-md-2"></div>

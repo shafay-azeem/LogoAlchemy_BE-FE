@@ -49,6 +49,7 @@ const ContactForm = () => {
     document.getElementById("myForm").reset();
     recaptchaRef.current.reset();
   };
+
   const divStyle = {};
   const inputStyle = {
     padding: "10px",
@@ -107,7 +108,7 @@ const ContactForm = () => {
       <div className="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div style={{ paddingBottom: "80px" }} className="inner-Contact">
-            <h4 className="red font-face-im">CONTACT OUR TEAM</h4>
+            {/* <h4 className="red font-face-im">CONTACT OUR TEAM</h4> */}
             <h2 className="black font-face-im">LET'S COLLABORATE AND</h2>
             <h2 className="red font-face-im">CONJURE UP SOME</h2>
             <h2 className="black font-face-im">EXTRAORDINARY MAGIC!</h2>

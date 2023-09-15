@@ -74,14 +74,14 @@ const Pricing = (props) => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            OUR POCKET FRIENDLY SERVICE PLANS
+            BUDGET-FRIENDLY PACKAGES
           </h3>
           <h1
             className="text-center black font-face-im "
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            Budget-friendly packages tailored to your needs, our priority.
+            Tailored to your needs, our priority.
           </h1>
         </div>
       </div>

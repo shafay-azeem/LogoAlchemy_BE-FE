@@ -45,14 +45,6 @@ const IllustrationClient = (props) => {
       <div className="row text-center">
         <div className="col-md-3"></div>
         <div className="col-md-6">
-          {/* <h4
-            className="font-face-sm"
-            style={{ color: "#c80228" }}
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            OUR BRANDING AGENCY'S PROJECTS
-          </h4> */}
           <h1
             style={{ color: "black", fontSize: "30px" }}
             className="font-face-ex"

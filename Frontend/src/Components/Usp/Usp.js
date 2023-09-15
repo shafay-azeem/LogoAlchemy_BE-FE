@@ -9,20 +9,20 @@ const Usp = () => {
       <div className="container py-5">
         <div className="row py-2">
           <div className="col-lg-6">
-            <h3
+            {/* <h3
               className="font-face-im"
               data-aos="zoom-in"
               data-aos-duration="1000"
               style={{ color: "#d40e2f" }}
             >
               OUR USP'S
-            </h3>
+            </h3> */}
             <h2
               className="font-face-im"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              Our Unique Way Of Selling
+              Why Choose Us ?
             </h2>
             <p className="pt-4" data-aos="zoom-in" data-aos-duration="1000">
               1. Customized Branding Solutions: We tailor our branding

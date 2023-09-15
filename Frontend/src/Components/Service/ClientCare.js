@@ -21,13 +21,13 @@ const ClientCare = (props) => {
   return (
     <div className="section">
       <div className="container py-5">
-        <h3
+        {/* <h3
           className="red text-center"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
           WE CARE ABOUT OUR CLIENTS
-        </h3>
+        </h3> */}
         <h1
           className="text-center text-white font-face-im "
           data-aos="zoom-in"
