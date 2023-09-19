@@ -5,6 +5,7 @@ import CustomButton from "../Global/CustomButton";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const currentProtocol = window.location.protocol;
@@ -27,27 +28,59 @@ const ContactForm = () => {
     setVerified(true);
   }
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const response = await fetch(
-      "https://thelogoalchemy.com/api/email/V1/contactInfoMail",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          userName: name,
-          userEmail: email,
-          userPhoneNumber: phoneNumber,
-          userNotes: notes,
-          userHelp: help,
-        }),
-      }
-    );
-    const responseData = await response.json();
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const response = await fetch(
+  //     "https://thelogoalchemy.com/api/email/V1/contactInfoMail",
+  //     {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({
+  //         userName: name,
+  //         userEmail: email,
+  //         userPhoneNumber: phoneNumber,
+  //         userNotes: notes,
+  //         userHelp: help,
+  //       }),
+  //     }
+  //   );
+  //   const responseData = await response.json();
 
-    alert(responseData.msg);
-    document.getElementById("myForm").reset();
-    recaptchaRef.current.reset();
+  //   alert(responseData.msg);
+  //   document.getElementById("myForm").reset();
+  //   recaptchaRef.current.reset();
+  // };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const emailInput = document.getElementById("email");
+    const messageInput = document.getElementById("message");
+
+    if (emailInput.value === "" || messageInput.value === "") {
+      alert("Please enter all fields.");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_7d7dhka",
+        "template_3vmaz24",
+        form.current,
+        "L1KUtlBDlo8zgEZgB"
+      )
+      .then(
+        (result) => {
+          form.current.reset();
+          window.alert("Email sent successfully!");
+          recaptchaRef.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   const divStyle = {};
@@ -118,7 +151,13 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="col-lg-6 d-flex flex-column justify-content-center">
-          <form onSubmit={handleSubmit} id="myForm">
+          <form
+            // onSubmit={handleSubmit}
+            // id="myForm"
+
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <div className="row">
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -129,8 +168,10 @@ const ContactForm = () => {
                   <div className="fieldwrap inputfield">
                     <input
                       type="text"
+                      id="name"
+                      name="user_name"
                       placeholder="Your Name"
-                      onChange={(e) => setName(e.target.value)}
+                      // onChange={(e) => setName(e.target.value)}
                       required
                     />
                   </div>
@@ -145,9 +186,11 @@ const ContactForm = () => {
                   <div className="fieldwrap inputfield">
                     <input
                       type="email"
+                      id="email"
+                      name="user_email"
                       placeholder="Your Email"
                       style={inputStyle}
-                      onChange={(e) => setEmail(e.target.value)}
+                      // onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -165,9 +208,11 @@ const ContactForm = () => {
                   <div className="fieldwrap inputfield">
                     <input
                       type="text"
+                      id="text"
+                      name="user_text"
                       placeholder="How Can We Help"
                       style={inputStyle}
-                      onChange={(e) => setHelp(e.target.value)}
+                      // onChange={(e) => setHelp(e.target.value)}
                     />
                   </div>
                 </Form.Group>
@@ -182,8 +227,10 @@ const ContactForm = () => {
                     <input
                       type="keypad"
                       placeholder="Your Phone No"
+                      id="phone"
+                      name="user_phone"
                       style={inputStyle}
-                      onChange={(e) => setPhoneNumber(e.target.value)}
+                      // onChange={(e) => setPhoneNumber(e.target.value)}
                     />
                   </div>
                 </Form.Group>
@@ -203,9 +250,11 @@ const ContactForm = () => {
                     <textarea
                       type="text"
                       as="textarea"
+                      id="message"
+                      name="user_message"
                       placeholder="Do You Have Any Notes"
                       style={inputStyle1}
-                      onChange={(e) => setNotes(e.target.value)}
+                      // onChange={(e) => setNotes(e.target.value)}
                     ></textarea>
                   </div>
                 </Form.Group>

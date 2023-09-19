@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../Blogs/Blogs.css";
-import img1 from "../../assets/Layer 2.png";
-import img2 from "../../assets/Layer 3.png";
+
 import icon1 from "../../assets/user.png";
 import icon2 from "../../assets/calendar.png";
-import CustomButton from "../Global/CustomButton";
-import buttonLogo from "../../assets/circle.png";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomButtonArrow from "../Global/CustomButtonArror";
-import GradientCustomButton from "../Global/GradientCustomButton";
+
 import { useNavigate } from "react-router-dom";
 
 const Blogs = () => {
@@ -153,7 +151,7 @@ const Blogs = () => {
             <Slider {...settings}>
               {items.map((x, index) => {
                 return (
-                  <div className="col-lg-8">
+                  <div className="col-lg-8" key={index}>
                     <div className="px-3">
                       <img
                         className="Blog-img img-fluid"
