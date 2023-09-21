@@ -40,7 +40,7 @@ const Usp = () => {
               better return on your invesment.
             </p>
             <div
-              className="usp-btn py-3"
+              className="usp-btn py-3 align-items-center"
               data-aos="fade-up"
               data-aos-duration="1200"
             >

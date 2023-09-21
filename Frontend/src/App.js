@@ -15,10 +15,14 @@ import Portfolio from "./Portfolio.js";
 import Usp from "./Components/Usp/Usp";
 import PortfolioGallery from "./PortfolioGallery";
 import GameBlogDetails from "./Components/Blogs/GameBlogDetails";
+import Zendesk, { ZendeskAPI } from "../src/ZendexConfig";
 
 function App() {
+  const ZENDESK_KEY = "65cca4ad-17f7-438e-ae7b-6f1ab07214cf";
+
   return (
     <div>
+      <Zendesk defer zendeskKey={ZENDESK_KEY} isMobile={true} />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/Illustration" element={<Illustration />} />
